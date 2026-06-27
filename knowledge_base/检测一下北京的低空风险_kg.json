@@ -1,0 +1,117 @@
+{
+  "city_name": "检测一下北京的低空风险",
+  "created_at": "2026-04-01T19:23:18.313306",
+  "kg_data": {
+    "entities": [
+      {
+        "id": "7456f0a7-912b-42d0-96c8-c618cf729ea6",
+        "name": "检测一下北京的低空风险",
+        "entity_type": "airspace_region",
+        "properties": {}
+      },
+      {
+        "id": "53fbbaf3-4ba2-4fa6-80c3-3729e27c9bf9",
+        "name": "人口密度",
+        "entity_type": "risk_factor",
+        "properties": {}
+      },
+      {
+        "id": "d753f7db-4ffb-40e5-8eed-0d5834d6be68",
+        "name": "建筑物密度",
+        "entity_type": "risk_factor",
+        "properties": {}
+      },
+      {
+        "id": "d75e093b-b8fb-405c-a54f-5bb82d868b4a",
+        "name": "空中交通",
+        "entity_type": "risk_factor",
+        "properties": {}
+      },
+      {
+        "id": "4a03a7da-a35b-4f18-bfbc-01f166598f64",
+        "name": "天气条件",
+        "entity_type": "risk_factor",
+        "properties": {}
+      },
+      {
+        "id": "448cf6ea-1a6a-4832-b46f-f9e5e2f8f005",
+        "name": "与市中心距离",
+        "entity_type": "risk_factor",
+        "properties": {}
+      },
+      {
+        "id": "1acc7b77-d07a-4376-8104-9c2f799c521e",
+        "name": "地形复杂度",
+        "entity_type": "risk_factor",
+        "properties": {}
+      },
+      {
+        "id": "293acfab-6dac-4700-b780-6643bda0045e",
+        "name": "建筑物高度",
+        "entity_type": "risk_factor",
+        "properties": {}
+      },
+      {
+        "id": "8b506d30-2abc-4382-867e-85932212ca35",
+        "name": "北京首都国际机场",
+        "entity_type": "infrastructure",
+        "properties": {}
+      },
+      {
+        "id": "8040830e-4f0c-464f-b918-82a55d0a46bb",
+        "name": "北京大兴国际机场",
+        "entity_type": "infrastructure",
+        "properties": {}
+      },
+      {
+        "id": "eb9366d3-eca3-4a9a-bcd3-4e18ab31b7cc",
+        "name": "北京站",
+        "entity_type": "infrastructure",
+        "properties": {}
+      },
+      {
+        "id": "fde1b576-9211-41f1-b022-167444bcc1ca",
+        "name": "北京西站",
+        "entity_type": "infrastructure",
+        "properties": {}
+      },
+      {
+        "id": "e7f4606d-353d-4759-953b-92d0461e22d9",
+        "name": "北京南站",
+        "entity_type": "infrastructure",
+        "properties": {}
+      },
+      {
+        "id": "72c1121a-6516-4a54-9cb8-0e8d36581696",
+        "name": "北京市政府",
+        "entity_type": "sensitive_area",
+        "properties": {}
+      },
+      {
+        "id": "77206759-0dbd-4cd4-bf3c-474c20e7f70f",
+        "name": "清华大学",
+        "entity_type": "sensitive_area",
+        "properties": {}
+      },
+      {
+        "id": "49b3e14f-541f-4b3f-b06f-1573f71b9120",
+        "name": "北京大学",
+        "entity_type": "sensitive_area",
+        "properties": {}
+      },
+      {
+        "id": "47d8ab27-2291-4c58-8fc9-8ed60beecf03",
+        "name": "故宫博物院",
+        "entity_type": "sensitive_area",
+        "properties": {}
+      },
+      {
+        "id": "cc21fce2-d8c0-4059-851c-75296ba6dbfd",
+        "name": "天安门广场",
+        "entity_type": "sensitive_area",
+        "properties": {}
+      }
+    ],
+    "relations": []
+  }
+}

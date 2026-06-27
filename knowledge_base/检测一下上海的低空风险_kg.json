@@ -1,0 +1,372 @@
+{
+  "city_name": "检测一下上海的低空风险",
+  "region_name": null,
+  "created_at": "2026-04-08T15:31:09.547307",
+  "kg_data": {
+    "entities": [
+      {
+        "id": "7cb9536e-ab19-4c97-8f1b-3a84c3115bec",
+        "name": "检测一下上海的低空风险",
+        "entity_type": "airspace_region",
+        "properties": {
+          "importance": 1.0
+        }
+      },
+      {
+        "id": "5ade5ffc-7f16-4222-876a-4630e1004a12",
+        "name": "上海市政府",
+        "entity_type": "sensitive_area",
+        "properties": {
+          "importance": 1.0
+        }
+      },
+      {
+        "id": "e85d2f45-a4b3-4d9a-b2dc-6fb7f7d23bf6",
+        "name": "复旦大学",
+        "entity_type": "sensitive_area",
+        "properties": {
+          "importance": 0.8
+        }
+      },
+      {
+        "id": "df0d5485-4de5-4146-8631-dff3584eb8f8",
+        "name": "上海交通大学",
+        "entity_type": "sensitive_area",
+        "properties": {
+          "importance": 0.8
+        }
+      },
+      {
+        "id": "3b2f2a46-5bd0-4fe2-9113-6489230eba8c",
+        "name": "外滩",
+        "entity_type": "sensitive_area",
+        "properties": {
+          "importance": 0.8
+        }
+      },
+      {
+        "id": "45964f78-5670-4da8-aa71-1e481f162bd5",
+        "name": "东方明珠",
+        "entity_type": "sensitive_area",
+        "properties": {
+          "importance": 0.8
+        }
+      },
+      {
+        "id": "f721e5e6-69a4-4c1a-9a9f-dacbb9c80858",
+        "name": "上海虹桥国际机场",
+        "entity_type": "infrastructure",
+        "properties": {
+          "importance": 0.85
+        }
+      },
+      {
+        "id": "d36db0e5-cf9d-499b-b787-f3dbc98b75e2",
+        "name": "上海浦东国际机场",
+        "entity_type": "infrastructure",
+        "properties": {
+          "importance": 0.85
+        }
+      },
+      {
+        "id": "fac5cdf1-a298-4d63-8ba0-9d6a6a6eaec1",
+        "name": "上海站",
+        "entity_type": "infrastructure",
+        "properties": {
+          "importance": 0.7
+        }
+      },
+      {
+        "id": "4a97c691-6b16-4a4d-af2b-407a56ee4ff4",
+        "name": "上海虹桥站",
+        "entity_type": "infrastructure",
+        "properties": {
+          "importance": 0.7
+        }
+      },
+      {
+        "id": "98c52ca9-55b6-47b9-be81-dc6d53aca86c",
+        "name": "上海南站",
+        "entity_type": "infrastructure",
+        "properties": {
+          "importance": 0.7
+        }
+      },
+      {
+        "id": "d1adbfa4-a9db-41fd-9187-8bdd86a3e33d",
+        "name": "人口密度",
+        "entity_type": "risk_factor",
+        "properties": {
+          "importance": 0.12
+        }
+      },
+      {
+        "id": "7785e8c5-ac19-4cfa-998d-2aea48505f74",
+        "name": "建筑物密度",
+        "entity_type": "risk_factor",
+        "properties": {
+          "importance": 0.108
+        }
+      },
+      {
+        "id": "dd779b80-c828-4d7b-97ac-77ea030bc469",
+        "name": "空中交通",
+        "entity_type": "risk_factor",
+        "properties": {
+          "importance": 0.10200000000000001
+        }
+      },
+      {
+        "id": "ad23f37f-4591-4567-867e-086d9189c520",
+        "name": "天气条件",
+        "entity_type": "risk_factor",
+        "properties": {
+          "importance": 0.09
+        }
+      },
+      {
+        "id": "ee898253-9d48-4a02-a5cd-253634633b75",
+        "name": "与市中心距离",
+        "entity_type": "risk_factor",
+        "properties": {
+          "importance": 0.072
+        }
+      },
+      {
+        "id": "bf00fe4f-9150-47f3-9c27-171c4b45906d",
+        "name": "地形复杂度",
+        "entity_type": "risk_factor",
+        "properties": {
+          "importance": 0.06
+        }
+      },
+      {
+        "id": "5de9debc-7f8a-44ce-a790-13428f191a5d",
+        "name": "建筑物高度",
+        "entity_type": "risk_factor",
+        "properties": {
+          "importance": 0.048
+        }
+      }
+    ],
+    "relations": [
+      {
+        "id": "98395037-b947-4661-89da-bd942627a2fe",
+        "source_id": "7cb9536e-ab19-4c97-8f1b-3a84c3115bec",
+        "target_id": "5ade5ffc-7f16-4222-876a-4630e1004a12",
+        "relation_type": "contains",
+        "properties": {}
+      },
+      {
+        "id": "5a624d77-197e-4bba-9996-6a84cad53b50",
+        "source_id": "7cb9536e-ab19-4c97-8f1b-3a84c3115bec",
+        "target_id": "e85d2f45-a4b3-4d9a-b2dc-6fb7f7d23bf6",
+        "relation_type": "contains",
+        "properties": {}
+      },
+      {
+        "id": "ac60593f-1a30-48f4-8dc2-a62764102737",
+        "source_id": "7cb9536e-ab19-4c97-8f1b-3a84c3115bec",
+        "target_id": "df0d5485-4de5-4146-8631-dff3584eb8f8",
+        "relation_type": "contains",
+        "properties": {}
+      },
+      {
+        "id": "214cae6a-c543-4c07-9fd6-8122db9ce69c",
+        "source_id": "7cb9536e-ab19-4c97-8f1b-3a84c3115bec",
+        "target_id": "3b2f2a46-5bd0-4fe2-9113-6489230eba8c",
+        "relation_type": "contains",
+        "properties": {}
+      },
+      {
+        "id": "c70b84a4-cdbe-4605-89c8-29b3088786bb",
+        "source_id": "7cb9536e-ab19-4c97-8f1b-3a84c3115bec",
+        "target_id": "45964f78-5670-4da8-aa71-1e481f162bd5",
+        "relation_type": "contains",
+        "properties": {}
+      },
+      {
+        "id": "7e5d736d-1969-4494-a13a-fadfd242575b",
+        "source_id": "7cb9536e-ab19-4c97-8f1b-3a84c3115bec",
+        "target_id": "f721e5e6-69a4-4c1a-9a9f-dacbb9c80858",
+        "relation_type": "contains",
+        "properties": {}
+      },
+      {
+        "id": "1542471a-3e6f-4d8c-bc5e-ecbdf85c4beb",
+        "source_id": "7cb9536e-ab19-4c97-8f1b-3a84c3115bec",
+        "target_id": "d36db0e5-cf9d-499b-b787-f3dbc98b75e2",
+        "relation_type": "contains",
+        "properties": {}
+      },
+      {
+        "id": "020d5e25-92c2-4e69-82a5-e2d7a7e17d40",
+        "source_id": "7cb9536e-ab19-4c97-8f1b-3a84c3115bec",
+        "target_id": "fac5cdf1-a298-4d63-8ba0-9d6a6a6eaec1",
+        "relation_type": "contains",
+        "properties": {}
+      },
+      {
+        "id": "6dd21066-ebff-4b9b-9cdc-d5ab279bf5e9",
+        "source_id": "7cb9536e-ab19-4c97-8f1b-3a84c3115bec",
+        "target_id": "4a97c691-6b16-4a4d-af2b-407a56ee4ff4",
+        "relation_type": "contains",
+        "properties": {}
+      },
+      {
+        "id": "bf9afaba-3f66-4b4e-85a4-0fc400f43a18",
+        "source_id": "7cb9536e-ab19-4c97-8f1b-3a84c3115bec",
+        "target_id": "98c52ca9-55b6-47b9-be81-dc6d53aca86c",
+        "relation_type": "contains",
+        "properties": {}
+      },
+      {
+        "id": "a8683d36-9d5d-48e3-8896-a0bf9df916ab",
+        "source_id": "5ade5ffc-7f16-4222-876a-4630e1004a12",
+        "target_id": "d1adbfa4-a9db-41fd-9187-8bdd86a3e33d",
+        "relation_type": "influences",
+        "properties": {}
+      },
+      {
+        "id": "89a3c823-2529-4d4f-8cf1-dfcc9f340b9a",
+        "source_id": "e85d2f45-a4b3-4d9a-b2dc-6fb7f7d23bf6",
+        "target_id": "d1adbfa4-a9db-41fd-9187-8bdd86a3e33d",
+        "relation_type": "influences",
+        "properties": {}
+      },
+      {
+        "id": "5083a08e-db5b-4d53-b705-1c347d4b0947",
+        "source_id": "f721e5e6-69a4-4c1a-9a9f-dacbb9c80858",
+        "target_id": "d1adbfa4-a9db-41fd-9187-8bdd86a3e33d",
+        "relation_type": "influences",
+        "properties": {}
+      },
+      {
+        "id": "58363583-90f7-4567-adc1-dd154f22a81c",
+        "source_id": "5ade5ffc-7f16-4222-876a-4630e1004a12",
+        "target_id": "7785e8c5-ac19-4cfa-998d-2aea48505f74",
+        "relation_type": "influences",
+        "properties": {}
+      },
+      {
+        "id": "f0a22b03-4cbe-4f14-a744-4de59f9cd2b3",
+        "source_id": "e85d2f45-a4b3-4d9a-b2dc-6fb7f7d23bf6",
+        "target_id": "7785e8c5-ac19-4cfa-998d-2aea48505f74",
+        "relation_type": "influences",
+        "properties": {}
+      },
+      {
+        "id": "25d782e3-7a82-4f4e-a362-6debfb831b74",
+        "source_id": "f721e5e6-69a4-4c1a-9a9f-dacbb9c80858",
+        "target_id": "7785e8c5-ac19-4cfa-998d-2aea48505f74",
+        "relation_type": "influences",
+        "properties": {}
+      },
+      {
+        "id": "24e6fd68-7a33-43fa-9b44-21c7b57e4e63",
+        "source_id": "5ade5ffc-7f16-4222-876a-4630e1004a12",
+        "target_id": "dd779b80-c828-4d7b-97ac-77ea030bc469",
+        "relation_type": "influences",
+        "properties": {}
+      },
+      {
+        "id": "068a7333-a054-4272-805c-17f191bcb7bd",
+        "source_id": "e85d2f45-a4b3-4d9a-b2dc-6fb7f7d23bf6",
+        "target_id": "dd779b80-c828-4d7b-97ac-77ea030bc469",
+        "relation_type": "influences",
+        "properties": {}
+      },
+      {
+        "id": "57eb8419-baef-4dac-909d-0f0c83ee63cd",
+        "source_id": "f721e5e6-69a4-4c1a-9a9f-dacbb9c80858",
+        "target_id": "dd779b80-c828-4d7b-97ac-77ea030bc469",
+        "relation_type": "influences",
+        "properties": {}
+      },
+      {
+        "id": "f4006edf-e7f4-4968-a977-66ee4ff43920",
+        "source_id": "5ade5ffc-7f16-4222-876a-4630e1004a12",
+        "target_id": "ad23f37f-4591-4567-867e-086d9189c520",
+        "relation_type": "influences",
+        "properties": {}
+      },
+      {
+        "id": "fe69f786-4005-4a47-8232-d0ac3cf963d5",
+        "source_id": "e85d2f45-a4b3-4d9a-b2dc-6fb7f7d23bf6",
+        "target_id": "ad23f37f-4591-4567-867e-086d9189c520",
+        "relation_type": "influences",
+        "properties": {}
+      },
+      {
+        "id": "f0dae182-3bf5-4f28-b40f-19dabb99a25e",
+        "source_id": "f721e5e6-69a4-4c1a-9a9f-dacbb9c80858",
+        "target_id": "ad23f37f-4591-4567-867e-086d9189c520",
+        "relation_type": "influences",
+        "properties": {}
+      },
+      {
+        "id": "d326efda-e7cc-4871-9972-92b43c50628f",
+        "source_id": "5ade5ffc-7f16-4222-876a-4630e1004a12",
+        "target_id": "ee898253-9d48-4a02-a5cd-253634633b75",
+        "relation_type": "influences",
+        "properties": {}
+      },
+      {
+        "id": "0edeb072-037e-496b-98db-0665615db90f",
+        "source_id": "e85d2f45-a4b3-4d9a-b2dc-6fb7f7d23bf6",
+        "target_id": "ee898253-9d48-4a02-a5cd-253634633b75",
+        "relation_type": "influences",
+        "properties": {}
+      },
+      {
+        "id": "f6c0c4f5-a728-4535-8823-ffc475577e9f",
+        "source_id": "f721e5e6-69a4-4c1a-9a9f-dacbb9c80858",
+        "target_id": "ee898253-9d48-4a02-a5cd-253634633b75",
+        "relation_type": "influences",
+        "properties": {}
+      },
+      {
+        "id": "a9bb89b0-b0c9-4ba2-8914-45ff9f05ab6d",
+        "source_id": "5ade5ffc-7f16-4222-876a-4630e1004a12",
+        "target_id": "bf00fe4f-9150-47f3-9c27-171c4b45906d",
+        "relation_type": "influences",
+        "properties": {}
+      },
+      {
+        "id": "981eeef0-513c-4eed-be90-18e5d58155fd",
+        "source_id": "e85d2f45-a4b3-4d9a-b2dc-6fb7f7d23bf6",
+        "target_id": "bf00fe4f-9150-47f3-9c27-171c4b45906d",
+        "relation_type": "influences",
+        "properties": {}
+      },
+      {
+        "id": "cd0ac336-8855-4246-a32e-3bb0f6e6cfc4",
+        "source_id": "f721e5e6-69a4-4c1a-9a9f-dacbb9c80858",
+        "target_id": "bf00fe4f-9150-47f3-9c27-171c4b45906d",
+        "relation_type": "influences",
+        "properties": {}
+      },
+      {
+        "id": "c1030f20-4723-4a03-b017-f329cc225fb1",
+        "source_id": "5ade5ffc-7f16-4222-876a-4630e1004a12",
+        "target_id": "5de9debc-7f8a-44ce-a790-13428f191a5d",
+        "relation_type": "influences",
+        "properties": {}
+      },
+      {
+        "id": "f9627823-51a8-4654-b8f6-2555ccbecd1a",
+        "source_id": "e85d2f45-a4b3-4d9a-b2dc-6fb7f7d23bf6",
+        "target_id": "5de9debc-7f8a-44ce-a790-13428f191a5d",
+        "relation_type": "influences",
+        "properties": {}
+      },
+      {
+        "id": "183f8771-91c7-4eb3-bb21-4a3df7d3b2ee",
+        "source_id": "f721e5e6-69a4-4c1a-9a9f-dacbb9c80858",
+        "target_id": "5de9debc-7f8a-44ce-a790-13428f191a5d",
+        "relation_type": "influences",
+        "properties": {}
+      }
+    ]
+  }
+}

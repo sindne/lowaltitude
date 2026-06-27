@@ -1,0 +1,105 @@
+{
+  "city_name": "武汉",
+  "created_at": "2026-03-30T15:32:22.395429",
+  "kg_data": {
+    "entities": [
+      {
+        "id": "90a221e2-1546-45f9-b41d-280bb76ec4b0",
+        "name": "武汉",
+        "entity_type": "airspace_region",
+        "properties": {}
+      },
+      {
+        "id": "6906eee4-e0b2-454e-a3a4-0110315eda2a",
+        "name": "人口密度",
+        "entity_type": "risk_factor",
+        "properties": {}
+      },
+      {
+        "id": "093018a0-ee8e-45d7-b28c-948f6fa56e95",
+        "name": "建筑物密度",
+        "entity_type": "risk_factor",
+        "properties": {}
+      },
+      {
+        "id": "f448b8e5-54ca-4cb1-826f-96fc9676b564",
+        "name": "空中交通",
+        "entity_type": "risk_factor",
+        "properties": {}
+      },
+      {
+        "id": "9bc4799a-7f37-4a15-a0ed-343632f55409",
+        "name": "天气条件",
+        "entity_type": "risk_factor",
+        "properties": {}
+      },
+      {
+        "id": "47533d61-6bd0-43a3-8fb1-e341eaa6a034",
+        "name": "与市中心距离",
+        "entity_type": "risk_factor",
+        "properties": {}
+      },
+      {
+        "id": "b4edbad4-da3e-44c5-8730-87af7fd2c23f",
+        "name": "地形复杂度",
+        "entity_type": "risk_factor",
+        "properties": {}
+      },
+      {
+        "id": "29ec962e-1b79-4eea-b585-9b6baa4350a0",
+        "name": "建筑物高度",
+        "entity_type": "risk_factor",
+        "properties": {}
+      },
+      {
+        "id": "7524a1a2-bf6d-491e-910b-15442e9342bd",
+        "name": "武汉天河国际机场",
+        "entity_type": "infrastructure",
+        "properties": {}
+      },
+      {
+        "id": "b98167e3-f2b6-4efd-b9a5-6585c2a102f9",
+        "name": "武昌火车站",
+        "entity_type": "infrastructure",
+        "properties": {}
+      },
+      {
+        "id": "df442f73-96ed-42ee-9a68-d54b342ce5a8",
+        "name": "武汉站",
+        "entity_type": "infrastructure",
+        "properties": {}
+      },
+      {
+        "id": "69be3a55-b995-4a25-8a89-b03638121b0a",
+        "name": "汉口火车站",
+        "entity_type": "infrastructure",
+        "properties": {}
+      },
+      {
+        "id": "8c5f90c5-702f-4f98-8f13-ac7088122c98",
+        "name": "湖北省政府",
+        "entity_type": "sensitive_area",
+        "properties": {}
+      },
+      {
+        "id": "9f5f992f-1b59-479a-a209-28cc4a167b52",
+        "name": "武汉大学",
+        "entity_type": "sensitive_area",
+        "properties": {}
+      },
+      {
+        "id": "f20b7ed4-3a5a-4c87-8b00-637270a4da6f",
+        "name": "黄鹤楼",
+        "entity_type": "sensitive_area",
+        "properties": {}
+      },
+      {
+        "id": "6c43fce8-bb82-4dfb-bf9f-b540b69272b9",
+        "name": "东湖风景区",
+        "entity_type": "sensitive_area",
+        "properties": {}
+      }
+    ],
+    "relations": []
+  }
+}

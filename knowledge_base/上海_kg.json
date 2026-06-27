@@ -1,0 +1,117 @@
+{
+  "city_name": "上海",
+  "created_at": "2026-04-02T13:15:14.448895",
+  "kg_data": {
+    "entities": [
+      {
+        "id": "e3ed07da-2fe1-43c9-adc4-7e2f79bb9504",
+        "name": "上海",
+        "entity_type": "airspace_region",
+        "properties": {}
+      },
+      {
+        "id": "2bdb2a23-b185-43e0-bbd6-e5cd62d9c01f",
+        "name": "人口密度",
+        "entity_type": "risk_factor",
+        "properties": {}
+      },
+      {
+        "id": "27945928-7314-4763-a1cb-5d4b09a1484d",
+        "name": "建筑物密度",
+        "entity_type": "risk_factor",
+        "properties": {}
+      },
+      {
+        "id": "fa0e024a-7b4c-456e-bff3-a3c91f2e6e67",
+        "name": "空中交通",
+        "entity_type": "risk_factor",
+        "properties": {}
+      },
+      {
+        "id": "f8970ee1-6bca-42c0-9886-b65db0ac7e82",
+        "name": "天气条件",
+        "entity_type": "risk_factor",
+        "properties": {}
+      },
+      {
+        "id": "cc296d87-7279-43ee-bb58-429035db9170",
+        "name": "与市中心距离",
+        "entity_type": "risk_factor",
+        "properties": {}
+      },
+      {
+        "id": "1f0614d5-8937-4626-b6f2-9ff6283c33c0",
+        "name": "地形复杂度",
+        "entity_type": "risk_factor",
+        "properties": {}
+      },
+      {
+        "id": "463b23d1-fbc8-42a9-be58-1760c97144ce",
+        "name": "建筑物高度",
+        "entity_type": "risk_factor",
+        "properties": {}
+      },
+      {
+        "id": "541ea7d6-72a2-44db-93ad-222eeb1d2ec1",
+        "name": "上海虹桥国际机场",
+        "entity_type": "infrastructure",
+        "properties": {}
+      },
+      {
+        "id": "b663c0a6-4415-4598-85cc-aa8faba3a94c",
+        "name": "上海浦东国际机场",
+        "entity_type": "infrastructure",
+        "properties": {}
+      },
+      {
+        "id": "adb713ef-63fc-42bb-8636-955e24c6c820",
+        "name": "上海站",
+        "entity_type": "infrastructure",
+        "properties": {}
+      },
+      {
+        "id": "7d62dd8a-5c42-44fe-8192-9517674e0f40",
+        "name": "上海虹桥站",
+        "entity_type": "infrastructure",
+        "properties": {}
+      },
+      {
+        "id": "163deb60-f3ec-46ba-8182-d15865f2b8dc",
+        "name": "上海南站",
+        "entity_type": "infrastructure",
+        "properties": {}
+      },
+      {
+        "id": "9f03a47e-58fe-4f4e-9500-3a3bedae1102",
+        "name": "上海市政府",
+        "entity_type": "sensitive_area",
+        "properties": {}
+      },
+      {
+        "id": "2c48fec0-9b31-4c9c-9645-de24430949bb",
+        "name": "复旦大学",
+        "entity_type": "sensitive_area",
+        "properties": {}
+      },
+      {
+        "id": "1c1ef446-4621-4e42-a6e6-3450480decb3",
+        "name": "上海交通大学",
+        "entity_type": "sensitive_area",
+        "properties": {}
+      },
+      {
+        "id": "12627b87-0390-4ef2-945e-ce43eb4296c2",
+        "name": "外滩",
+        "entity_type": "sensitive_area",
+        "properties": {}
+      },
+      {
+        "id": "8125e462-d84e-436a-9a46-81f3b410eaa8",
+        "name": "东方明珠",
+        "entity_type": "sensitive_area",
+        "properties": {}
+      }
+    ],
+    "relations": []
+  }
+}

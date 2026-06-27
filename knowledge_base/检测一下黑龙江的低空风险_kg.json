@@ -1,0 +1,135 @@
+{
+  "city_name": "检测一下黑龙江的低空风险",
+  "created_at": "2026-03-30T15:54:46.529917",
+  "kg_data": {
+    "entities": [
+      {
+        "id": "c8cd7085-ed62-47f5-b394-1f162069692a",
+        "name": "检测一下黑龙江的低空风险",
+        "entity_type": "airspace_region",
+        "properties": {}
+      },
+      {
+        "id": "21a8d404-ae10-4033-a9de-aa3e4de3c0a8",
+        "name": "人口密度",
+        "entity_type": "risk_factor",
+        "properties": {}
+      },
+      {
+        "id": "9ed5f2d0-7372-46c4-aa39-2c6fd1f93ced",
+        "name": "建筑物密度",
+        "entity_type": "risk_factor",
+        "properties": {}
+      },
+      {
+        "id": "537e8c93-7229-4c8a-887d-3ce523f6a128",
+        "name": "空中交通",
+        "entity_type": "risk_factor",
+        "properties": {}
+      },
+      {
+        "id": "f0241e59-b4f1-4fbf-8ff9-856864163abe",
+        "name": "天气条件",
+        "entity_type": "risk_factor",
+        "properties": {}
+      },
+      {
+        "id": "05285077-44dc-4c75-afa5-0ec260a98699",
+        "name": "与市中心距离",
+        "entity_type": "risk_factor",
+        "properties": {}
+      },
+      {
+        "id": "3a18336a-bbac-46c2-8304-ff8039e844e1",
+        "name": "地形复杂度",
+        "entity_type": "risk_factor",
+        "properties": {}
+      },
+      {
+        "id": "9a92b423-3fb1-457f-a12e-3bec1746f5ec",
+        "name": "建筑物高度",
+        "entity_type": "risk_factor",
+        "properties": {}
+      },
+      {
+        "id": "0f3a8aa7-2e45-4554-bb35-cd12adf58561",
+        "name": "检测一下黑龙江的低空风险机场",
+        "entity_type": "infrastructure",
+        "properties": {}
+      },
+      {
+        "id": "1e6544c6-afdc-424a-9673-24b4313b7d1f",
+        "name": "检测一下黑龙江的低空风险火车站",
+        "entity_type": "infrastructure",
+        "properties": {}
+      },
+      {
+        "id": "7250a34c-e290-462c-91c9-919eb7d1bc02",
+        "name": "检测一下黑龙江的低空风险政府",
+        "entity_type": "sensitive_area",
+        "properties": {}
+      },
+      {
+        "id": "28a7ce73-3761-45d0-bbff-f93e4d9dc5a8",
+        "name": "检测一下黑龙江的低空风险大学",
+        "entity_type": "sensitive_area",
+        "properties": {}
+      },
+      {
+        "id": "cc18ec34-3d44-4d87-8643-118378dc5a9e",
+        "name": "检测一下黑龙江的低空风险国际机场",
+        "entity_type": "infrastructure",
+        "properties": {}
+      },
+      {
+        "id": "913bad0f-9a1e-4eb6-a3ef-452ee9a1a96d",
+        "name": "检测一下黑龙江的低空风险站",
+        "entity_type": "infrastructure",
+        "properties": {}
+      },
+      {
+        "id": "c3bc0cf7-b4e6-4082-a930-e4e096ed79e9",
+        "name": "检测一下黑龙江的低空风险东站",
+        "entity_type": "infrastructure",
+        "properties": {}
+      },
+      {
+        "id": "74205191-1094-4662-b2a5-388f5cd015af",
+        "name": "检测一下黑龙江的低空风险西站",
+        "entity_type": "infrastructure",
+        "properties": {}
+      },
+      {
+        "id": "e5db30e0-ab17-4655-9550-ffed226a2e4f",
+        "name": "检测一下黑龙江的低空风险市政府",
+        "entity_type": "sensitive_area",
+        "properties": {}
+      },
+      {
+        "id": "a433aee1-933a-44a7-9d31-8a41ac40fbfe",
+        "name": "检测一下黑龙江的低空风险大学",
+        "entity_type": "sensitive_area",
+        "properties": {}
+      },
+      {
+        "id": "fde64234-9cb7-4eef-b37b-140ece044376",
+        "name": "检测一下黑龙江的低空风险师范大学",
+        "entity_type": "sensitive_area",
+        "properties": {}
+      },
+      {
+        "id": "d34373eb-8111-4322-9494-a19e0ce78c0e",
+        "name": "检测一下黑龙江的低空风险博物馆",
+        "entity_type": "sensitive_area",
+        "properties": {}
+      },
+      {
+        "id": "37f6814a-2b88-442c-aabc-686c0e0bfe3c",
+        "name": "检测一下黑龙江的低空风险公园",
+        "entity_type": "sensitive_area",
+        "properties": {}
+      }
+    ],
+    "relations": []
+  }
+}

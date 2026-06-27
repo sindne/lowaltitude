@@ -1,0 +1,135 @@
+{
+  "city_name": "检测一下黄石的低空风险",
+  "created_at": "2026-04-01T19:12:41.486445",
+  "kg_data": {
+    "entities": [
+      {
+        "id": "42fecc86-ef25-4df6-a97b-5ba767ed02a0",
+        "name": "检测一下黄石的低空风险",
+        "entity_type": "airspace_region",
+        "properties": {}
+      },
+      {
+        "id": "40fe695f-28a1-4acd-9d8a-823764d761ac",
+        "name": "人口密度",
+        "entity_type": "risk_factor",
+        "properties": {}
+      },
+      {
+        "id": "fd9eada5-457c-4889-ae32-f2d5d81df469",
+        "name": "建筑物密度",
+        "entity_type": "risk_factor",
+        "properties": {}
+      },
+      {
+        "id": "db254ff6-ec8b-40ef-b0c9-3a2a79574014",
+        "name": "空中交通",
+        "entity_type": "risk_factor",
+        "properties": {}
+      },
+      {
+        "id": "c6b3eb1a-5787-43ab-84b6-dd32de8c246b",
+        "name": "天气条件",
+        "entity_type": "risk_factor",
+        "properties": {}
+      },
+      {
+        "id": "77273738-0846-4179-b237-c263235f1ddc",
+        "name": "与市中心距离",
+        "entity_type": "risk_factor",
+        "properties": {}
+      },
+      {
+        "id": "170b4590-acac-4021-84ae-d51dc2959f79",
+        "name": "地形复杂度",
+        "entity_type": "risk_factor",
+        "properties": {}
+      },
+      {
+        "id": "e7081da1-e0c4-4508-946d-f12b7ec577d2",
+        "name": "建筑物高度",
+        "entity_type": "risk_factor",
+        "properties": {}
+      },
+      {
+        "id": "7411928a-3a9c-4f2d-9bd2-2089a8b4d880",
+        "name": "检测一下黄石的低空风险机场",
+        "entity_type": "infrastructure",
+        "properties": {}
+      },
+      {
+        "id": "9f34d7d9-1fc8-48c6-9f2d-d10660d4c291",
+        "name": "检测一下黄石的低空风险火车站",
+        "entity_type": "infrastructure",
+        "properties": {}
+      },
+      {
+        "id": "ea6ecdd5-d59a-49c0-8e9f-32fc6297e4e9",
+        "name": "检测一下黄石的低空风险政府",
+        "entity_type": "sensitive_area",
+        "properties": {}
+      },
+      {
+        "id": "06a292c8-8f56-4013-bd3b-917f7dec5e8a",
+        "name": "检测一下黄石的低空风险大学",
+        "entity_type": "sensitive_area",
+        "properties": {}
+      },
+      {
+        "id": "9320ce74-6d3c-4987-b2b8-09739f91e7a0",
+        "name": "检测一下黄石的低空风险国际机场",
+        "entity_type": "infrastructure",
+        "properties": {}
+      },
+      {
+        "id": "0eba436a-e24c-4910-b283-fddae09ab0b3",
+        "name": "检测一下黄石的低空风险站",
+        "entity_type": "infrastructure",
+        "properties": {}
+      },
+      {
+        "id": "4dfc018e-a6ee-4b78-801b-f8c312d02f51",
+        "name": "检测一下黄石的低空风险东站",
+        "entity_type": "infrastructure",
+        "properties": {}
+      },
+      {
+        "id": "e1d01633-4a95-46ba-bed3-3357f7a3af84",
+        "name": "检测一下黄石的低空风险西站",
+        "entity_type": "infrastructure",
+        "properties": {}
+      },
+      {
+        "id": "24c03e76-5048-42f6-9a04-b5e4a533d68d",
+        "name": "检测一下黄石的低空风险市政府",
+        "entity_type": "sensitive_area",
+        "properties": {}
+      },
+      {
+        "id": "a24ffd2b-349d-4caa-9208-3b0ada15be85",
+        "name": "检测一下黄石的低空风险大学",
+        "entity_type": "sensitive_area",
+        "properties": {}
+      },
+      {
+        "id": "f3614dff-4c5c-4c24-aaf7-5383ba90c422",
+        "name": "检测一下黄石的低空风险师范大学",
+        "entity_type": "sensitive_area",
+        "properties": {}
+      },
+      {
+        "id": "723eadd5-77d7-4a4c-b428-b41ad3509c5c",
+        "name": "检测一下黄石的低空风险博物馆",
+        "entity_type": "sensitive_area",
+        "properties": {}
+      },
+      {
+        "id": "dad9347e-dcbb-45c6-b449-cb4abc62b7fd",
+        "name": "检测一下黄石的低空风险公园",
+        "entity_type": "sensitive_area",
+        "properties": {}
+      }
+    ],
+    "relations": []
+  }
+}

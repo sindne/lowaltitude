@@ -1,0 +1,135 @@
+{
+  "city_name": "黑龙江",
+  "created_at": "2026-03-30T15:54:45.548478",
+  "kg_data": {
+    "entities": [
+      {
+        "id": "0864e702-5043-4351-af42-69273b959b08",
+        "name": "黑龙江",
+        "entity_type": "airspace_region",
+        "properties": {}
+      },
+      {
+        "id": "1eea7580-7bad-407b-8cbb-ab86186c913b",
+        "name": "人口密度",
+        "entity_type": "risk_factor",
+        "properties": {}
+      },
+      {
+        "id": "65b7ea4b-aed6-40b3-bb7c-030001727caf",
+        "name": "建筑物密度",
+        "entity_type": "risk_factor",
+        "properties": {}
+      },
+      {
+        "id": "f913e655-ca48-43cf-b601-a826b7e266ef",
+        "name": "空中交通",
+        "entity_type": "risk_factor",
+        "properties": {}
+      },
+      {
+        "id": "260e614e-6931-41f6-8eed-681e4554e1ae",
+        "name": "天气条件",
+        "entity_type": "risk_factor",
+        "properties": {}
+      },
+      {
+        "id": "fd3f4edf-dc20-45ef-9cfb-f90992effba5",
+        "name": "与市中心距离",
+        "entity_type": "risk_factor",
+        "properties": {}
+      },
+      {
+        "id": "4579e0d0-2af9-41e0-9bf5-61c73ca85725",
+        "name": "地形复杂度",
+        "entity_type": "risk_factor",
+        "properties": {}
+      },
+      {
+        "id": "688b9e9b-d602-4ee7-9434-4d3c955830c2",
+        "name": "建筑物高度",
+        "entity_type": "risk_factor",
+        "properties": {}
+      },
+      {
+        "id": "4c58fa26-ccd6-4174-ba0e-87dc839bf5a6",
+        "name": "黑龙江机场",
+        "entity_type": "infrastructure",
+        "properties": {}
+      },
+      {
+        "id": "e4b11b66-8594-4f50-8878-108b528289b6",
+        "name": "黑龙江火车站",
+        "entity_type": "infrastructure",
+        "properties": {}
+      },
+      {
+        "id": "e53dd1d6-ff90-4faf-85fe-e52dbae593d3",
+        "name": "黑龙江政府",
+        "entity_type": "sensitive_area",
+        "properties": {}
+      },
+      {
+        "id": "0da3f732-8f23-442b-b506-a53518a30d5b",
+        "name": "黑龙江大学",
+        "entity_type": "sensitive_area",
+        "properties": {}
+      },
+      {
+        "id": "4d406d5f-9e4c-4278-bcc2-e0aa01a779bd",
+        "name": "黑龙江国际机场",
+        "entity_type": "infrastructure",
+        "properties": {}
+      },
+      {
+        "id": "6a344c4d-d30a-4959-a65b-5c9a97dd3f06",
+        "name": "黑龙江站",
+        "entity_type": "infrastructure",
+        "properties": {}
+      },
+      {
+        "id": "cf3b8a01-0809-4709-bf32-bc578b0e1f62",
+        "name": "黑龙江东站",
+        "entity_type": "infrastructure",
+        "properties": {}
+      },
+      {
+        "id": "47310184-2015-4c4f-94bd-dfda6dfcf076",
+        "name": "黑龙江西站",
+        "entity_type": "infrastructure",
+        "properties": {}
+      },
+      {
+        "id": "8523295b-24fd-4957-98b2-b2b893025fed",
+        "name": "黑龙江市政府",
+        "entity_type": "sensitive_area",
+        "properties": {}
+      },
+      {
+        "id": "cba48110-9be8-45cf-861f-5655903292ef",
+        "name": "黑龙江大学",
+        "entity_type": "sensitive_area",
+        "properties": {}
+      },
+      {
+        "id": "101e89b6-b18d-46d1-9666-bc6d030a67ee",
+        "name": "黑龙江师范大学",
+        "entity_type": "sensitive_area",
+        "properties": {}
+      },
+      {
+        "id": "f6ecc103-050a-4892-88d7-67caee85c576",
+        "name": "黑龙江博物馆",
+        "entity_type": "sensitive_area",
+        "properties": {}
+      },
+      {
+        "id": "8870bafe-53db-4a95-a39f-893772ca9c7b",
+        "name": "黑龙江公园",
+        "entity_type": "sensitive_area",
+        "properties": {}
+      }
+    ],
+    "relations": []
+  }
+}

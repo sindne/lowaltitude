@@ -1,0 +1,188 @@
+{
+  "city_name": "general_low_altitude",
+  "created_at": "2026-03-30T15:26:16.698007",
+  "kg_data": {
+    "entities": [
+      {
+        "id": "low_altitude_airspace",
+        "type": "airspace_region",
+        "name": "低空空域",
+        "properties": {
+          "min_altitude": 0,
+          "max_altitude": 1000,
+          "description": "海拔1000米以下的空域"
+        }
+      },
+      {
+        "id": "population_density",
+        "type": "risk_factor",
+        "name": "人口密度",
+        "properties": {
+          "weight": 20,
+          "description": "区域人口密集程度"
+        }
+      },
+      {
+        "id": "building_density",
+        "type": "risk_factor",
+        "name": "建筑物密度",
+        "properties": {
+          "weight": 18,
+          "description": "建筑物分布密度和高度"
+        }
+      },
+      {
+        "id": "air_traffic",
+        "type": "risk_factor",
+        "name": "空中交通",
+        "properties": {
+          "weight": 17,
+          "description": "航线密集度、飞行高度层"
+        }
+      },
+      {
+        "id": "weather_condition",
+        "type": "risk_factor",
+        "name": "天气条件",
+        "properties": {
+          "weight": 15,
+          "description": "包括降水、能见度、风速等"
+        }
+      },
+      {
+        "id": "distance_to_center",
+        "type": "risk_factor",
+        "name": "与市中心距离",
+        "properties": {
+          "weight": 12,
+          "description": "距离城市核心区域的远近"
+        }
+      },
+      {
+        "id": "terrain_complexity",
+        "type": "risk_factor",
+        "name": "地形复杂度",
+        "properties": {
+          "weight": 10,
+          "description": "地形复杂度、海拔高度变化"
+        }
+      },
+      {
+        "id": "building_height",
+        "type": "risk_factor",
+        "name": "建筑物高度",
+        "properties": {
+          "weight": 8,
+          "description": "区域平均建筑高度"
+        }
+      },
+      {
+        "id": "generic_airport",
+        "type": "infrastructure",
+        "name": "机场",
+        "properties": {
+          "infra_type": "airport",
+          "description": "通用航空机场"
+        }
+      },
+      {
+        "id": "generic_train_station",
+        "type": "infrastructure",
+        "name": "火车站",
+        "properties": {
+          "infra_type": "train_station",
+          "description": "铁路交通枢纽"
+        }
+      },
+      {
+        "id": "generic_government",
+        "type": "sensitive_area",
+        "name": "政府机关",
+        "properties": {
+          "area_type": "government",
+          "priority": 1
+        }
+      },
+      {
+        "id": "generic_university",
+        "type": "sensitive_area",
+        "name": "大学",
+        "properties": {
+          "area_type": "university",
+          "priority": 2
+        }
+      },
+      {
+        "id": "generic_nature_reserve",
+        "type": "sensitive_area",
+        "name": "自然保护区",
+        "properties": {
+          "area_type": "nature_reserve",
+          "priority": 1
+        }
+      }
+    ],
+    "relations": [
+      {
+        "source": "population_density",
+        "target": "low_altitude_airspace",
+        "type": "influences"
+      },
+      {
+        "source": "building_density",
+        "target": "low_altitude_airspace",
+        "type": "influences"
+      },
+      {
+        "source": "air_traffic",
+        "target": "low_altitude_airspace",
+        "type": "influences"
+      },
+      {
+        "source": "weather_condition",
+        "target": "low_altitude_airspace",
+        "type": "influences"
+      },
+      {
+        "source": "distance_to_center",
+        "target": "low_altitude_airspace",
+        "type": "influences"
+      },
+      {
+        "source": "terrain_complexity",
+        "target": "low_altitude_airspace",
+        "type": "influences"
+      },
+      {
+        "source": "building_height",
+        "target": "low_altitude_airspace",
+        "type": "influences"
+      },
+      {
+        "source": "generic_airport",
+        "target": "low_altitude_airspace",
+        "type": "located_in"
+      },
+      {
+        "source": "generic_train_station",
+        "target": "low_altitude_airspace",
+        "type": "located_in"
+      },
+      {
+        "source": "generic_government",
+        "target": "low_altitude_airspace",
+        "type": "located_in"
+      },
+      {
+        "source": "generic_university",
+        "target": "low_altitude_airspace",
+        "type": "located_in"
+      },
+      {
+        "source": "generic_nature_reserve",
+        "target": "low_altitude_airspace",
+        "type": "located_in"
+      }
+    ]
+  }
+}

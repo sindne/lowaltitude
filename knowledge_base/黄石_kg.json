@@ -1,0 +1,135 @@
+{
+  "city_name": "黄石",
+  "created_at": "2026-04-01T19:12:41.010746",
+  "kg_data": {
+    "entities": [
+      {
+        "id": "ace2d84e-8652-4003-aced-d8d33c774df8",
+        "name": "黄石",
+        "entity_type": "airspace_region",
+        "properties": {}
+      },
+      {
+        "id": "2c6c8d45-597a-4b12-986d-4636e2d2d88d",
+        "name": "人口密度",
+        "entity_type": "risk_factor",
+        "properties": {}
+      },
+      {
+        "id": "c8e45288-1655-447e-97f7-febf98fa7620",
+        "name": "建筑物密度",
+        "entity_type": "risk_factor",
+        "properties": {}
+      },
+      {
+        "id": "a62e2045-f49a-4918-ad8f-67f048e9766d",
+        "name": "空中交通",
+        "entity_type": "risk_factor",
+        "properties": {}
+      },
+      {
+        "id": "3f7bd5a6-8a7f-44c4-9a6f-2835d44e686b",
+        "name": "天气条件",
+        "entity_type": "risk_factor",
+        "properties": {}
+      },
+      {
+        "id": "305ef191-033d-4631-ade6-e7a18613cdd1",
+        "name": "与市中心距离",
+        "entity_type": "risk_factor",
+        "properties": {}
+      },
+      {
+        "id": "d4fd382e-6c48-44e6-a6bb-943bf7c4f029",
+        "name": "地形复杂度",
+        "entity_type": "risk_factor",
+        "properties": {}
+      },
+      {
+        "id": "a0d0b4e3-d8bf-4c35-a169-68cd428d0b61",
+        "name": "建筑物高度",
+        "entity_type": "risk_factor",
+        "properties": {}
+      },
+      {
+        "id": "b12ac96e-224f-488d-8e34-58efb0500de6",
+        "name": "黄石机场",
+        "entity_type": "infrastructure",
+        "properties": {}
+      },
+      {
+        "id": "24afad8a-1aaf-484d-a117-31f6bc3a8fab",
+        "name": "黄石火车站",
+        "entity_type": "infrastructure",
+        "properties": {}
+      },
+      {
+        "id": "be2d0ee3-d50e-4516-aec6-65c1c05efbd9",
+        "name": "黄石政府",
+        "entity_type": "sensitive_area",
+        "properties": {}
+      },
+      {
+        "id": "7a771498-ac05-4bc2-acf5-27e2564f0122",
+        "name": "黄石大学",
+        "entity_type": "sensitive_area",
+        "properties": {}
+      },
+      {
+        "id": "4c86301a-411f-415e-b627-414fc32c3010",
+        "name": "黄石国际机场",
+        "entity_type": "infrastructure",
+        "properties": {}
+      },
+      {
+        "id": "8d9d98cc-0519-4d85-a042-4459ed8f8e8b",
+        "name": "黄石站",
+        "entity_type": "infrastructure",
+        "properties": {}
+      },
+      {
+        "id": "f044fb0c-0a40-4426-b520-8fc6018dc4bb",
+        "name": "黄石东站",
+        "entity_type": "infrastructure",
+        "properties": {}
+      },
+      {
+        "id": "82ab59aa-54a7-41c9-92df-de07028d3ee1",
+        "name": "黄石西站",
+        "entity_type": "infrastructure",
+        "properties": {}
+      },
+      {
+        "id": "de35e861-9ba1-48f5-9f9d-8b985c9ad7e3",
+        "name": "黄石市政府",
+        "entity_type": "sensitive_area",
+        "properties": {}
+      },
+      {
+        "id": "fa3e267b-f562-4edf-940b-482b592f7669",
+        "name": "黄石大学",
+        "entity_type": "sensitive_area",
+        "properties": {}
+      },
+      {
+        "id": "1ea617a2-7d09-4ee6-81e2-3c231a3ff6c3",
+        "name": "黄石师范大学",
+        "entity_type": "sensitive_area",
+        "properties": {}
+      },
+      {
+        "id": "0acc533a-d042-4b47-9980-683d90feabd2",
+        "name": "黄石博物馆",
+        "entity_type": "sensitive_area",
+        "properties": {}
+      },
+      {
+        "id": "ba0edaf2-6832-4a8a-948d-48c0da8cc571",
+        "name": "黄石公园",
+        "entity_type": "sensitive_area",
+        "properties": {}
+      }
+    ],
+    "relations": []
+  }
+}

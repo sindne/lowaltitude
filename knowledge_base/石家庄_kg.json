@@ -1,0 +1,135 @@
+{
+  "city_name": "石家庄",
+  "created_at": "2026-03-30T15:55:16.477001",
+  "kg_data": {
+    "entities": [
+      {
+        "id": "792c260b-c0eb-4f84-8b01-a347714f721f",
+        "name": "石家庄",
+        "entity_type": "airspace_region",
+        "properties": {}
+      },
+      {
+        "id": "530004f2-4034-4ae6-8a70-f6aad5fde291",
+        "name": "人口密度",
+        "entity_type": "risk_factor",
+        "properties": {}
+      },
+      {
+        "id": "55c2de4f-1133-4944-8093-877ac4cb3a2c",
+        "name": "建筑物密度",
+        "entity_type": "risk_factor",
+        "properties": {}
+      },
+      {
+        "id": "6159a16f-dde7-4547-b7af-901676275f6a",
+        "name": "空中交通",
+        "entity_type": "risk_factor",
+        "properties": {}
+      },
+      {
+        "id": "94d92f44-4657-45e8-bb36-ef9c932eca43",
+        "name": "天气条件",
+        "entity_type": "risk_factor",
+        "properties": {}
+      },
+      {
+        "id": "ac56f726-edd5-459c-8c40-4c738ae7a3e5",
+        "name": "与市中心距离",
+        "entity_type": "risk_factor",
+        "properties": {}
+      },
+      {
+        "id": "45a0f89e-18cf-47ec-afb3-71e4a4f15393",
+        "name": "地形复杂度",
+        "entity_type": "risk_factor",
+        "properties": {}
+      },
+      {
+        "id": "4ea87f95-d8e6-4661-8576-1a7be2180767",
+        "name": "建筑物高度",
+        "entity_type": "risk_factor",
+        "properties": {}
+      },
+      {
+        "id": "0f106e43-7a7b-448c-9d3d-7fc3a4d92237",
+        "name": "石家庄机场",
+        "entity_type": "infrastructure",
+        "properties": {}
+      },
+      {
+        "id": "13f48248-88f2-497f-9e7d-07d6790d8546",
+        "name": "石家庄火车站",
+        "entity_type": "infrastructure",
+        "properties": {}
+      },
+      {
+        "id": "7d3340b2-7a9e-43f6-a8cb-a2c681ac30fe",
+        "name": "石家庄政府",
+        "entity_type": "sensitive_area",
+        "properties": {}
+      },
+      {
+        "id": "573b27fd-48a6-4e3a-80ac-86321ae5e672",
+        "name": "石家庄大学",
+        "entity_type": "sensitive_area",
+        "properties": {}
+      },
+      {
+        "id": "ea962193-1b71-4159-8537-611e91d7f7a0",
+        "name": "石家庄国际机场",
+        "entity_type": "infrastructure",
+        "properties": {}
+      },
+      {
+        "id": "b0c7f1c1-f68d-45b0-8c25-84c057729cea",
+        "name": "石家庄站",
+        "entity_type": "infrastructure",
+        "properties": {}
+      },
+      {
+        "id": "002d640c-522c-4977-bed5-406ec686fd78",
+        "name": "石家庄东站",
+        "entity_type": "infrastructure",
+        "properties": {}
+      },
+      {
+        "id": "8b09e110-7d66-41e1-a325-79c0972dcc6a",
+        "name": "石家庄西站",
+        "entity_type": "infrastructure",
+        "properties": {}
+      },
+      {
+        "id": "25b89ec7-af11-48ea-9b20-0207fa4c043a",
+        "name": "石家庄市政府",
+        "entity_type": "sensitive_area",
+        "properties": {}
+      },
+      {
+        "id": "e21e8add-a294-4a23-9444-94c4ec54acac",
+        "name": "石家庄大学",
+        "entity_type": "sensitive_area",
+        "properties": {}
+      },
+      {
+        "id": "c559bf7d-211e-406e-ad11-251ba8860737",
+        "name": "石家庄师范大学",
+        "entity_type": "sensitive_area",
+        "properties": {}
+      },
+      {
+        "id": "ae3d083b-99dc-4a0c-bf31-251de3d77906",
+        "name": "石家庄博物馆",
+        "entity_type": "sensitive_area",
+        "properties": {}
+      },
+      {
+        "id": "ec4e4633-a4a2-42ef-977d-ef1ba91abd48",
+        "name": "石家庄公园",
+        "entity_type": "sensitive_area",
+        "properties": {}
+      }
+    ],
+    "relations": []
+  }
+}

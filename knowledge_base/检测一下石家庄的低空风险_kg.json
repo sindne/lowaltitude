@@ -1,0 +1,135 @@
+{
+  "city_name": "检测一下石家庄的低空风险",
+  "created_at": "2026-03-30T15:55:17.112576",
+  "kg_data": {
+    "entities": [
+      {
+        "id": "96a12611-75e3-4885-bb13-4624bd9df2db",
+        "name": "检测一下石家庄的低空风险",
+        "entity_type": "airspace_region",
+        "properties": {}
+      },
+      {
+        "id": "5db6de08-eaca-4883-a00c-cec4d29f2343",
+        "name": "人口密度",
+        "entity_type": "risk_factor",
+        "properties": {}
+      },
+      {
+        "id": "41836f09-361a-45e7-980a-6077acc2ceb2",
+        "name": "建筑物密度",
+        "entity_type": "risk_factor",
+        "properties": {}
+      },
+      {
+        "id": "521fb9fd-826e-4873-a7a5-e45886407572",
+        "name": "空中交通",
+        "entity_type": "risk_factor",
+        "properties": {}
+      },
+      {
+        "id": "8660c957-95d6-4125-8da6-5bb1e5315df8",
+        "name": "天气条件",
+        "entity_type": "risk_factor",
+        "properties": {}
+      },
+      {
+        "id": "f3016961-2a2b-472b-91c1-486a5375f9d6",
+        "name": "与市中心距离",
+        "entity_type": "risk_factor",
+        "properties": {}
+      },
+      {
+        "id": "c58b0989-a9f1-4941-a730-2087b20dde57",
+        "name": "地形复杂度",
+        "entity_type": "risk_factor",
+        "properties": {}
+      },
+      {
+        "id": "e481007d-6403-46f5-a1a0-b3823a8396dd",
+        "name": "建筑物高度",
+        "entity_type": "risk_factor",
+        "properties": {}
+      },
+      {
+        "id": "7a78b516-e8ad-48bb-a2b1-5e9f30bb92d4",
+        "name": "检测一下石家庄的低空风险机场",
+        "entity_type": "infrastructure",
+        "properties": {}
+      },
+      {
+        "id": "e2b7a56d-a705-4186-989a-99f7952ef109",
+        "name": "检测一下石家庄的低空风险火车站",
+        "entity_type": "infrastructure",
+        "properties": {}
+      },
+      {
+        "id": "8f505686-0f5a-488f-8c94-c2395d7deebc",
+        "name": "检测一下石家庄的低空风险政府",
+        "entity_type": "sensitive_area",
+        "properties": {}
+      },
+      {
+        "id": "f409dbaf-8a34-4e5f-bfc9-ca36bbc2c0fa",
+        "name": "检测一下石家庄的低空风险大学",
+        "entity_type": "sensitive_area",
+        "properties": {}
+      },
+      {
+        "id": "9a523ca6-7ee7-47a5-8edb-9c6bf5537250",
+        "name": "检测一下石家庄的低空风险国际机场",
+        "entity_type": "infrastructure",
+        "properties": {}
+      },
+      {
+        "id": "d8351630-321a-4ae4-8978-02b916890aeb",
+        "name": "检测一下石家庄的低空风险站",
+        "entity_type": "infrastructure",
+        "properties": {}
+      },
+      {
+        "id": "47316e63-44fa-497a-b5b8-fa5b34368ff3",
+        "name": "检测一下石家庄的低空风险东站",
+        "entity_type": "infrastructure",
+        "properties": {}
+      },
+      {
+        "id": "f8041ad0-b0e7-44f7-9c45-249166ac7ec9",
+        "name": "检测一下石家庄的低空风险西站",
+        "entity_type": "infrastructure",
+        "properties": {}
+      },
+      {
+        "id": "9dc22115-f0f3-43d1-a0f8-f65801463b5f",
+        "name": "检测一下石家庄的低空风险市政府",
+        "entity_type": "sensitive_area",
+        "properties": {}
+      },
+      {
+        "id": "ace348cb-eef0-4c1f-83ff-ac1bea4a1cb3",
+        "name": "检测一下石家庄的低空风险大学",
+        "entity_type": "sensitive_area",
+        "properties": {}
+      },
+      {
+        "id": "9c4b51d7-d913-4bed-9965-244aa5d28cdf",
+        "name": "检测一下石家庄的低空风险师范大学",
+        "entity_type": "sensitive_area",
+        "properties": {}
+      },
+      {
+        "id": "9143a058-cc98-4589-badf-b33c2dfe3532",
+        "name": "检测一下石家庄的低空风险博物馆",
+        "entity_type": "sensitive_area",
+        "properties": {}
+      },
+      {
+        "id": "a1c342c7-b7da-4062-a9e0-6fbfe94bcdec",
+        "name": "检测一下石家庄的低空风险公园",
+        "entity_type": "sensitive_area",
+        "properties": {}
+      }
+    ],
+    "relations": []
+  }
+}
