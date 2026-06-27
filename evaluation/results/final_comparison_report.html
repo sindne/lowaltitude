@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>低空风险评估方法真实对比实验报告</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif; background: linear-gradient(135deg, #f5f7fa 0%, #e8ecef 100%); color: #333; line-height: 1.6; padding: 20px; min-height: 100vh; }
+        .container { max-width: 1500px; margin: 0 auto; }
+        header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 50px 30px; text-align: center; border-radius: 20px; margin-bottom: 40px; box-shadow: 0 10px 25px rgba(102, 126, 234, 0.3); position: relative; overflow: hidden; }
+        header::before { content: ''; position: absolute; top: -50%; left: -50%; width: 200%; height: 200%; background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%); animation: pulse 4s ease-in-out infinite; }
+        @keyframes pulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.05); } }
+        header h1 { font-size: 2.8em; margin-bottom: 15px; position: relative; z-index: 1; text-shadow: 0 2px 4px rgba(0,0,0,0.2); }
+        header p { font-size: 1.2em; opacity: 0.95; position: relative; z-index: 1; }
+        
+        .section { background: white; border-radius: 20px; padding: 40px; margin-bottom: 40px; box-shadow: 0 8px 20px rgba(0,0,0,0.08); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .section:hover { transform: translateY(-3px); box-shadow: 0 12px 30px rgba(0,0,0,0.12); }
+        .section h2 { color: #667eea; border-bottom: 4px solid #667eea; padding-bottom: 18px; margin-bottom: 30px; font-size: 2em; }
+        .section h3 { color: #555; margin: 30px 0 18px 0; font-size: 1.5em; border-left: 5px solid #667eea; padding-left: 15px; }
+        
+        table { width: 100%; border-collapse: separate; border-spacing: 0; margin: 30px 0; box-shadow: 0 4px 10px rgba(0,0,0,0.06); border-radius: 12px; overflow: hidden; }
+        th, td { padding: 16px 14px; text-align: center; border-bottom: 1px solid #e8ecef; }
+        th { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; font-weight: 700; font-size: 1em; text-transform: uppercase; letter-spacing: 0.5px; }
+        tr:nth-child(even) { background: #f8f9fb; }
+        tr:hover { background: linear-gradient(135deg, #e3f2fd 0%, #f3e5f5 100%); }
+        td:first-child { font-weight: 700; background: linear-gradient(135deg, #f0f2f5 0%, #e8ecef 100%); text-align: left; padding-left: 22px; color: #555; }
+        td { font-size: 1.05em; }
+        
+        .best { background: linear-gradient(135deg, #d4edda 0%, #c3e6cb 100%) !important; color: #155724; font-weight: 700; font-size: 1.1em; }
+        .good { background: linear-gradient(135deg, #fff3cd 0%, #ffeeba 100%) !important; color: #856404; font-weight: 600; }
+        .poor { background: linear-gradient(135deg, #f8d7da 0%, #f5c6cb 100%) !important; color: #721c24; }
+        
+        .method-card { background: linear-gradient(135deg, #f8f9fb 0%, #ffffff 100%); padding: 30px; border-radius: 15px; margin-bottom: 25px; border-left: 6px solid #667eea; box-shadow: 0 4px 12px rgba(0,0,0,0.05); transition: all 0.3s ease; }
+        .method-card:hover { box-shadow: 0 8px 20px rgba(102, 126, 234, 0.15); border-left-color: #764ba2; }
+        .method-card h4 { color: #667eea; margin-bottom: 18px; font-size: 1.4em; }
+        .method-card p { margin: 12px 0; line-height: 1.7; color: #555; }
+        .method-card ul { margin-left: 28px; margin-top: 12px; }
+        .method-card li { margin-bottom: 10px; line-height: 1.6; color: #666; }
+        .method-card li strong { color: #667eea; }
+        
+        .conclusion-box { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 35px; border-radius: 18px; margin: 30px 0; box-shadow: 0 8px 20px rgba(102, 126, 234, 0.25); }
+        .conclusion-box h3 { margin-bottom: 25px; font-size: 1.7em; color: white; border: none; padding: 0; }
+        .conclusion-box ul { list-style: none; padding: 0; }
+        .conclusion-box li { padding: 12px 0 12px 35px; position: relative; font-size: 1.05em; line-height: 1.6; }
+        .conclusion-box li::before { content: '✓'; position: absolute; left: 0; color: #4ade80; font-weight: bold; font-size: 1.3em; }
+        
+        .metric-explanation { background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%); padding: 25px; border-radius: 12px; margin: 25px 0; border-left: 5px solid #2196f3; }
+        .metric-explanation h4 { color: #1976d2; margin-bottom: 15px; font-size: 1.2em; }
+        .metric-explanation p { margin: 10px 0; line-height: 1.7; color: #444; }
+        .metric-explanation strong { color: #1565c0; }
+        
+        .summary-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; margin: 25px 0; }
+        .summary-card { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 25px; border-radius: 15px; text-align: center; box-shadow: 0 6px 15px rgba(102, 126, 234, 0.25); transition: transform 0.3s ease; }
+        .summary-card:hover { transform: translateY(-5px); }
+        .summary-card h4 { font-size: 0.95em; opacity: 0.9; margin-bottom: 8px; }
+        .summary-card .value { font-size: 2.5em; font-weight: 700; margin: 10px 0; }
+        .summary-card p { font-size: 0.9em; opacity: 0.85; }
+        
+        .chart-bar { display: flex; align-items: center; margin: 18px 0; }
+        .chart-label { width: 160px; font-size: 0.95em; text-align: right; padding-right: 18px; color: #555; font-weight: 600; }
+        .chart-bar-bg { flex: 1; height: 38px; background: #e8ecef; border-radius: 8px; overflow: hidden; position: relative; }
+        .chart-bar-fill { height: 100%; border-radius: 8px; display: flex; align-items: center; padding-left: 12px; color: white; font-weight: 700; font-size: 0.9em; transition: width 0.6s ease; }
+        .chart-value { margin-left: 12px; font-weight: 700; min-width: 60px; color: #667eea; }
+        
+        footer { text-align: center; padding: 35px; color: #888; font-size: 0.95em; margin-top: 50px; border-top: 2px solid #e8ecef; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>低空风险评估方法真实对比实验报告</h1>
+            <p>基于系统真实组件的对比分析 | 实验时间: 2026-06-01</p>
+            <p>测试区域: 深圳市、广州市、上海市、北京市、成都市、杭州市</p>
+        </header>
+
+        <div class="section">
+            <h2>一、各方法对比实验结果</h2>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>评价指标</th>
+                        <th>本系统</th>
+                        <th>基于规则</th>
+                        <th>向量检索</th>
+                        <th>LLM方法</th>
+                        <th>AHP方法</th>
+                        <th>SORA方法</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>准确性</td>
+                        <td>0.800</td>
+                        <td class="best">0.917</td>
+                        <td>0.772</td>
+                        <td class="poor">0.600</td>
+                        <td class="best">0.917</td>
+                        <td class="poor">0.539</td>
+                    </tr>
+                    <tr>
+                        <td>完整性</td>
+                        <td>0.800</td>
+                        <td class="best">0.917</td>
+                        <td>0.772</td>
+                        <td class="poor">0.600</td>
+                        <td class="best">0.917</td>
+                        <td class="poor">0.539</td>
+                    </tr>
+                    <tr>
+                        <td>一致性</td>
+                        <td class="good">0.893</td>
+                        <td>0.778</td>
+                        <td class="poor">0.633</td>
+                        <td class="best">1.000</td>
+                        <td class="best">0.999</td>
+                        <td>0.767</td>
+                    </tr>
+                    <tr>
+                        <td>可解释性</td>
+                        <td class="best">0.950</td>
+                        <td class="best">0.950</td>
+                        <td class="poor">0.600</td>
+                        <td>0.700</td>
+                        <td>0.850</td>
+                        <td>0.800</td>
+                    </tr>
+                    <tr>
+                        <td>覆盖率</td>
+                        <td>0.800</td>
+                        <td class="best">0.917</td>
+                        <td>0.772</td>
+                        <td class="poor">0.600</td>
+                        <td class="best">0.917</td>
+                        <td class="poor">0.539</td>
+                    </tr>
+                    <tr>
+                        <td>精确度</td>
+                        <td class="best">1.000</td>
+                        <td class="best">1.000</td>
+                        <td class="best">1.000</td>
+                        <td class="best">1.000</td>
+                        <td class="best">1.000</td>
+                        <td class="best">1.000</td>
+                    </tr>
+                    <tr>
+                        <td>召回率</td>
+                        <td>0.800</td>
+                        <td class="best">0.917</td>
+                        <td>0.772</td>
+                        <td class="poor">0.600</td>
+                        <td class="best">0.917</td>
+                        <td class="poor">0.539</td>
+                    </tr>
+                    <tr>
+                        <td>F1分数</td>
+                        <td>0.888</td>
+                        <td class="good">0.952</td>
+                        <td>0.859</td>
+                        <td>0.744</td>
+                        <td class="best">0.955</td>
+                        <td class="poor">0.687</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="metric-explanation">
+                <h4>📊 指标说明</h4>
+                <p><strong>准确性</strong>：预测与实际风险因素的Jaccard相似度，值越高表示预测越准确</p>
+                <p><strong>完整性</strong>：召回率，表示实际风险因素中被正确识别的比例</p>
+                <p><strong>一致性</strong>：多次运行结果的稳定性，值越高表示结果越稳定</p>
+                <p><strong>可解释性</strong>：评估结果的可理解程度，值越高表示越容易解释</p>
+                <p><strong>覆盖率</strong>：识别的风险因素占实际总因素的比例</p>
+                <p><strong>精确度</strong>：预测正确的风险因素占所有预测的比例</p>
+                <p><strong>召回率</strong>：实际风险因素中被正确识别的比例</p>
+                <p><strong>F1分数</strong>：精确度和召回率的调和平均，综合评估指标</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>二、综合得分排名</h2>
+            
+            <div class="chart-bar">
+                <div class="chart-label">AHP方法</div>
+                <div class="chart-bar-bg">
+                    <div class="chart-bar-fill" style="width: 95.5%; background: linear-gradient(90deg, #667eea, #764ba2);">0.955</div>
+                </div>
+                <div class="chart-value">0.955</div>
+            </div>
+            
+            <div class="chart-bar">
+                <div class="chart-label">基于规则</div>
+                <div class="chart-bar-bg">
+                    <div class="chart-bar-fill" style="width: 95.2%; background: linear-gradient(90deg, #4facfe, #00f2fe);">0.952</div>
+                </div>
+                <div class="chart-value">0.952</div>
+            </div>
+            
+            <div class="chart-bar">
+                <div class="chart-label">向量检索</div>
+                <div class="chart-bar-bg">
+                    <div class="chart-bar-fill" style="width: 85.9%; background: linear-gradient(90deg, #43e97b, #38f9d7);">0.859</div>
+                </div>
+                <div class="chart-value">0.859</div>
+            </div>
+            
+            <div class="chart-bar">
+                <div class="chart-label">本系统</div>
+                <div class="chart-bar-bg">
+                    <div class="chart-bar-fill" style="width: 88.8%; background: linear-gradient(90deg, #fa709a, #fee140);">0.888</div>
+                </div>
+                <div class="chart-value">0.888</div>
+            </div>
+            
+            <div class="chart-bar">
+                <div class="chart-label">LLM方法</div>
+                <div class="chart-bar-bg">
+                    <div class="chart-bar-fill" style="width: 74.4%; background: linear-gradient(90deg, #a8edea, #fed6e3); color: #333;">0.744</div>
+                </div>
+                <div class="chart-value">0.744</div>
+            </div>
+            
+            <div class="chart-bar">
+                <div class="chart-label">SORA方法</div>
+                <div class="chart-bar-bg">
+                    <div class="chart-bar-fill" style="width: 68.7%; background: linear-gradient(90deg, #d9afd9, #97d9e1); color: #333;">0.687</div>
+                </div>
+                <div class="chart-value">0.687</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>三、各评估方法详细介绍</h2>
+
+            <div class="method-card">
+                <h4>🥇 AHP方法（层次分析法） - F1分数: 0.955</h4>
+                <p><strong>核心原理</strong>：使用AHPWeightCalculator计算权重，进行层次化风险评估。通过构建判断矩阵，计算各风险因素的权重，然后进行加权评分。</p>
+                <p><strong>技术流程</strong>：构建判断矩阵 → 计算权重 → 一致性检验 → 加权评分</p>
+                <p><strong>优势</strong>：</p>
+                <ul>
+                    <li><strong>准确性最高</strong>（0.917），能精准识别风险因素</li>
+                    <li><strong>完整性最好</strong>（0.917），覆盖大部分实际风险因素</li>
+                    <li><strong>F1分数最高</strong>（0.955），综合表现最优</li>
+                    <li>一致性极高（0.999），结果稳定可靠</li>
+                    <li>可解释性良好（0.850），层次结构清晰</li>
+                </ul>
+            </div>
+
+            <div class="method-card">
+                <h4>🥈 基于规则的方法 - F1分数: 0.952</h4>
+                <p><strong>核心原理</strong>：基于预定义的规则集进行风险评估，不依赖机器学习模型或知识图谱。规则设计参考《民用无人驾驶航空器飞行管理暂行条例》和相关行业标准。</p>
+                <p><strong>规则集包含10条核心规则</strong>：</p>
+                <ul>
+                    <li><strong>空域分类规则</strong>（权重15%）：根据空域类型（管制/报告/监视/适飞）评估风险</li>
+                    <li><strong>人口密度规则</strong>（权重12%）：根据人口密度（>10000人/km²极高风险）</li>
+                    <li><strong>建筑物高度规则</strong>（权重10%）：根据建筑物高度（>100m极高风险）</li>
+                    <li><strong>气象条件规则</strong>（权重8%）：根据风速、能见度、降水评估气象风险</li>
+                    <li><strong>机场距离规则</strong>（权重15%）：根据与机场距离（<5km极高风险）</li>
+                    <li><strong>敏感区域规则</strong>（权重12%）：根据军事设施、学校等敏感区域评估风险</li>
+                    <li><strong>地形复杂度规则</strong>（权重8%）：根据地形类型（山地/丘陵/平原）评估风险</li>
+                    <li><strong>电磁环境规则</strong>（权重8%）：根据电磁干扰强度评估通信风险</li>
+                    <li><strong>飞行高度规则</strong>（权重7%）：根据飞行高度是否符合规定评估风险</li>
+                    <li><strong>飞行时间规则</strong>（权重5%）：根据飞行时段（白天/夜间）评估风险</li>
+                </ul>
+                <p><strong>优势</strong>：</p>
+                <ul>
+                    <li><strong>可解释性极强</strong>（0.950），规则明确可追溯</li>
+                    <li>准确性高（0.917），仅次于AHP方法</li>
+                    <li>完整性优秀（0.917），能覆盖大部分风险因素</li>
+                </ul>
+            </div>
+
+            <div class="method-card">
+                <h4>🥉 本系统（GraphRAG + 知识图谱） - F1分数: 0.888</h4>
+                <p><strong>核心原理</strong>：基于Microsoft GraphRAG知识图谱引擎，结合结构化知识检索和大语言模型推理。系统从知识图谱中提取实体和关系，构建结构化的风险评估上下文。</p>
+                <p><strong>技术架构</strong>：Microsoft GraphRAG → 知识图谱检索 → 结构化上下文 → 风险评估</p>
+                <p><strong>优势</strong>：</p>
+                <ul>
+                    <li><strong>可解释性最强</strong>（0.950），知识图谱提供结构化解释</li>
+                    <li><strong>精确度完美</strong>（1.000），所有预测都正确</li>
+                    <li>一致性高（0.893），结果稳定可靠</li>
+                    <li>支持多维度风险因素识别和关系推理</li>
+                </ul>
+            </div>
+
+            <div class="method-card">
+                <h4>向量检索方法 - F1分数: 0.859</h4>
+                <p><strong>核心原理</strong>：基于语义相似度检索，使用向量表示进行风险因素匹配。</p>
+                <p><strong>技术流程</strong>：查询向量化 → 相似度计算 → 风险因素检索 → 风险评分</p>
+                <p><strong>特点</strong>：</p>
+                <ul>
+                    <li>精确度完美（1.000），但召回率较低（0.772）</li>
+                    <li>可解释性较差（0.600），向量相似度缺乏语义解释</li>
+                    <li>一致性一般（0.633），结果稳定性有待提高</li>
+                </ul>
+            </div>
+
+            <div class="method-card">
+                <h4>LLM方法（无知识图谱） - F1分数: 0.744</h4>
+                <p><strong>核心原理</strong>：仅依赖大语言模型进行风险评估，无外部知识支持。</p>
+                <p><strong>特点</strong>：</p>
+                <ul>
+                    <li><strong>一致性最佳</strong>（1.000），结果非常稳定</li>
+                    <li><strong>精确度完美</strong>（1.000），但召回率低（0.600）</li>
+                    <li>准确性较低（0.600），识别风险因素能力有限</li>
+                    <li>响应时间最长（约4.1秒），但灵活性高</li>
+                </ul>
+            </div>
+
+            <div class="method-card">
+                <h4>SORA方法（特定运行风险评估） - F1分数: 0.687</h4>
+                <p><strong>核心原理</strong>：基于SORA（Specific Operations Risk Assessment）框架的风险评估，是欧洲航空安全局（EASA）推荐的方法。</p>
+                <p><strong>评估要素</strong>：</p>
+                <ul>
+                    <li><strong>地面风险</strong>：基于人口密度计算地面风险等级</li>
+                    <li><strong>空中风险</strong>：基于机场距离计算空中风险等级</li>
+                    <li><strong>复杂度</strong>：基于建筑物高度等计算运行复杂度</li>
+                    <li><strong>缓解措施</strong>：评估现有缓解措施的有效性</li>
+                </ul>
+                <p><strong>特点</strong>：</p>
+                <ul>
+                    <li>可解释性良好（0.800），符合国际标准</li>
+                    <li>准确性较低（0.539），识别风险因素能力有限</li>
+                    <li>需要更多本地化适配以提升准确性</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>四、实验结论与建议</h2>
+            
+            <div class="conclusion-box">
+                <h3>🎯 核心发现</h3>
+                <ul>
+                    <li><strong>AHP方法</strong>以F1分数<strong>0.955</strong>位居第一，在准确性（0.917）和完整性（0.917）上表现最优</li>
+                    <li><strong>基于规则的方法</strong>紧随其后（F1: 0.952），可解释性极强（0.950），规则明确可追溯</li>
+                    <li><strong>本系统</strong>（GraphRAG + 知识图谱）在可解释性（0.950）和精确度（1.000）上并列第一</li>
+                    <li><strong>LLM方法</strong>一致性最佳（1.000），但召回率较低（0.600），识别能力有限</li>
+                    <li><strong>向量检索方法</strong>精确度完美但召回率低，可解释性较差</li>
+                    <li><strong>SORA方法</strong>符合国际标准，但准确性和召回率都需要提升</li>
+                </ul>
+            </div>
+
+            <h3>📋 综合建议</h3>
+            <div class="method-card">
+                <h4>🎯 实际应用建议</h4>
+                <ul>
+                    <li><strong>优先使用AHP方法</strong>：在需要高精度和高完整性的场景下，AHP方法表现最佳</li>
+                    <li><strong>结合本系统</strong>：利用知识图谱的可解释性优势，提升评估结果的可理解性</li>
+                    <li><strong>基于规则方法作为补充</strong>：规则明确，可解释性强，适合作为验证手段</li>
+                    <li><strong>SORA方法国际化</strong>：符合国际标准，适合对外交流和合规性评估</li>
+                    <li><strong>多方法融合</strong>：建议将AHP的准确性与本系统的可解释性结合，实现优势互补</li>
+                    <li><strong>持续优化</strong>：建议进一步优化本系统在准确性和完整性上的表现</li>
+                </ul>
+            </div>
+        </div>
+
+        <footer>
+            <p>本报告由低空风险评估真实对比实验系统自动生成 | 实验时间: 2026-06-01</p>
+            <p>基于 Microsoft GraphRAG + LLaMA Factory + AHP + SORA</p>
+        </footer>
+    </div>
+</body>
+</html>
