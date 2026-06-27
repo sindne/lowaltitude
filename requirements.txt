@@ -1,0 +1,104 @@
+# 低空空域风险评估系统 - 依赖包
+
+# Web框架
+flask>=3.0.0
+flask-cors>=4.0.0
+
+# LangChain框架
+langchain>=0.1.0
+langchain-community>=0.0.10
+langchain-openai>=0.0.2
+
+# 向量数据库
+chromadb>=0.4.0
+
+# 数据处理
+numpy>=1.24.0
+pandas>=2.0.0
+
+# 地理空间处理
+geopandas>=0.14.0
+shapely>=2.0.0
+pyproj>=3.6.0
+
+# 大模型微调
+peft>=0.7.0
+transformers>=4.36.0
+torch>=2.0.0
+datasets>=2.14.0
+accelerate>=0.25.0
+
+# Microsoft GraphRAG 知识图谱检索增强生成
+graphrag>=0.1.0
+
+# 工具库
+requests>=2.31.0
+httpx>=0.25.0
+python-dotenv>=1.0.0
+tqdm>=4.66.0
+
+# 可选：用于更好的嵌入模型
+sentence-transformers>=2.2.0
+
+# ==================== 新增：国内可用的网络工具库与数据库 ====================
+
+# 系统监控与性能分析
+psutil>=5.9.0
+
+# 数据库支持
+# SQLite（Python内置，无需额外安装）
+psycopg2-binary>=2.9.0
+# pymysql>=1.1.0
+
+# 数据分析与可视化
+matplotlib>=3.8.0
+seaborn>=0.13.0
+plotly>=5.18.0
+
+# 时间序列分析
+scipy>=1.11.0
+
+# 国内地图API SDK
+# 高德地图（Web API直接调用，无需SDK）
+# 百度地图（Web API直接调用，无需SDK）
+# 腾讯地图（Web API直接调用，无需SDK）
+
+# 天气数据API
+# 和风天气SDK（可选）
+# qweather>=0.1.0
+
+# HTTP请求增强
+urllib3>=2.1.0
+
+# 缓存支持
+cachetools>=5.3.0
+redis>=5.0.0  # 可选，用于分布式缓存
+
+# 异步支持
+aiohttp>=3.9.0
+asyncio>=3.4.3
+
+# 配置管理
+pydantic>=2.5.0
+pydantic-settings>=2.1.0
+
+# 日志增强
+loguru>=0.7.0
+
+# JSON处理增强
+orjson>=3.9.0
+
+# 加密与安全
+cryptography>=41.0.0
+
+# 定时任务
+apscheduler>=3.10.0
+
+# 单元测试
+pytest>=7.4.0
+pytest-asyncio>=0.21.0
+
+# 代码质量
+black>=23.0.0
+flake8>=6.0.0
+mypy>=1.6.0

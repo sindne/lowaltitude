@@ -1,0 +1,291 @@
+<html>
+<head>
+    <title>低空空域环境风险评估系统</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://webapi.amap.com/maps?v=2.0&key=0b138faf337795363b9a7e96d7c79301"></script>
+    <script type="text/javascript" src="https://unpkg.com/vis-network@9.1.6/dist/vis-network.min.js"></script>
+    <link href="https://unpkg.com/vis-network@9.1.6/dist/vis-network.min.css" rel="stylesheet" type="text/css" />
+    <style>
+        .tab-container {
+            display: flex;
+            background: #f1f5f9;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        .tab-btn {
+            padding: 12px 20px;
+            border: none;
+            background: transparent;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 500;
+            color: #64748b;
+            transition: all 0.2s;
+        }
+        .tab-btn:hover {
+            color: #3b82f6;
+            background: rgba(59, 130, 246, 0.1);
+        }
+        .tab-btn.active {
+            color: #3b82f6;
+            border-bottom: 2px solid #3b82f6;
+            background: white;
+        }
+        .tab-content {
+            display: none;
+            padding: 20px;
+        }
+        .tab-content.active {
+            display: block;
+        }
+        .kg-tree-container {
+            max-height: 500px;
+            overflow-y: auto;
+            padding: 20px;
+            background: #f8fafc;
+            border-radius: 8px;
+        }
+        .tree-node {
+            margin: 5px 0;
+            padding: 8px 12px;
+            background: white;
+            border-radius: 6px;
+            border-left: 3px solid #3b82f6;
+        }
+        .tree-node.level-0 {
+            border-left-color: #1e40af;
+            font-weight: 600;
+            font-size: 16px;
+        }
+        .tree-node.level-1 {
+            border-left-color: #3b82f6;
+            margin-left: 20px;
+        }
+        .tree-node.level-2 {
+            border-left-color: #60a5fa;
+            margin-left: 40px;
+        }
+        .iteration-controls {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .iteration-btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 500;
+            transition: all 0.2s;
+        }
+        .iteration-btn.start {
+            background: #10b981;
+            color: white;
+        }
+        .iteration-btn.start:hover {
+            background: #059669;
+        }
+        .iteration-btn.stop {
+            background: #ef4444;
+            color: white;
+        }
+        .iteration-btn.stop:hover {
+            background: #dc2626;
+        }
+        .iteration-status {
+            padding: 15px;
+            background: #f0fdf4;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .route-display {
+            padding: 20px;
+            background: #f8fafc;
+            border-radius: 8px;
+        }
+        .route-step {
+            display: flex;
+            align-items: center;
+            padding: 12px;
+            background: white;
+            border-radius: 6px;
+            margin: 8px 0;
+        }
+        .route-step-number {
+            width: 30px;
+            height: 30px;
+            background: #3b82f6;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            margin-right: 15px;
+        }
+        .history-list {
+            max-height: 400px;
+            overflow-y: auto;
+        }
+        .history-item {
+            padding: 15px;
+            background: white;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            border-left: 4px solid #3b82f6;
+        }
+    </style>
+</head>
+<body>
+	<div class="app-header">
+		<h1>低空空域环境风险评估系统</h1>
+	</div>
+
+	<div class="app-container" id="appContainer">
+		<aside id="leftPanel" class="left-panel" aria-label="评估历史面板">
+			<div class="agent-header">
+				<div class="agent-avatar">AI</div>
+				<div>
+					<div class="agent-title">智能风险评估</div>
+					<div style="font-size:12px;color:#64748b;">Powered by DeepSeek</div>
+				</div>
+			</div>
+			<div id="chatMessages" class="chat-messages" aria-live="polite"></div>
+			<div class="chat-input">
+				<input id="chatInput" placeholder="输入城市名称（如：北京、上海）..." />
+				<button id="chatSend" style="background: #10b981; color: white; font-weight: 600;"> 风险评估</button>
+			</div>
+		</aside>
+
+		<main id="rightPanel" class="right-panel" aria-label="地图面板">
+            <div class="tab-container">
+                <button class="tab-btn active" data-tab="map">地图评估</button>
+                <button class="tab-btn" data-tab="kg">知识图谱</button>
+                <button class="tab-btn" data-tab="training">迭代训练</button>
+                <button class="tab-btn" data-tab="route">动态路线</button>
+                <button class="tab-btn" data-tab="history">评估历史</button>
+            </div>
+            
+            <div class="tab-content active" id="tab-map">
+                <div class="map-controls">
+                    <input type="text" id="regionInput" placeholder="请输入城市名称（如：北京、上海、武汉）">
+                    <button id="evaluateBtn" style="background: #10b981; color: white; font-weight: 600; padding: 12px 24px;"> 开始风险评估</button>
+                </div>
+                
+                <div style="margin-top: 15px; padding: 10px; background: #f0fdf4; border-radius: 8px; border: 1px solid #bbf7d0;">
+                    <p style="margin: 0; color: #065f46; font-size: 14px;">输入城市名称后，点击 <strong>「开始风险评估」</strong> 按钮进行风险评估</p>
+                </div>
+                
+                <div class="smart-features" style="margin-top: 20px;">
+                    <div style="font-size: 14px; color: #64748b; margin-bottom: 10px; font-weight: 500;"> 其他功能（需先完成风险评估）</div>
+                    <button id="weatherBtn" class="smart-feature-btn"> 天气查询</button>
+                    <button id="highRiskBtn" class="smart-feature-btn"> 高风险分析</button>
+                    <button id="compareBtn" class="smart-feature-btn"> 城市对比</button>
+                    <button id="reportBtn" class="smart-feature-btn"> 生成报告</button>
+                </div>
+                
+                <div class="map-wrapper">
+                    <div id="map" class="map-area"></div>
+                    <div id="legend" class="map-legend" aria-hidden="false"></div>
+                </div>
+                
+                <div id="realTimeInfo" class="real-time-info" style="display:none;"></div>
+                
+                <div id="riskResult"></div>
+                <div id="soraResultPanel" style="display:none;margin-top:15px;padding:15px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+                    <h4 style="margin:0 0 10px;color:#1e40af;">SORA风险评估结果</h4>
+                    <div id="soraResultContent" style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;"></div>
+                </div>
+                <div id="llmResultPanel" style="display:none;margin-top:10px;padding:15px;background:#fefce8;border-radius:8px;border:1px solid #fde68a;">
+                    <h4 style="margin:0 0 10px;color:#92400e;">LLM微调模型辅助评估</h4>
+                    <div id="llmResultContent"></div>
+                </div>
+                <div id="roadmap" aria-label="评估路线图"></div>
+            </div>
+            
+            <div class="tab-content" id="tab-kg">
+                <h3>知识图谱</h3>
+                <div style="margin-bottom: 15px;">
+                    <button id="showTreeView" class="smart-feature-btn">树状视图</button>
+                    <button id="showNetworkView" class="smart-feature-btn">节点连接视图</button>
+                </div>
+                <div id="kgTreeContainer" class="kg-tree-container" style="display: none; max-height: 600px; min-height: 500px;">
+                    <p>加载中...</p>
+                </div>
+                <div id="kgNetworkContainer" style="width: 100%; height: 850px; background: #f8fafc; border-radius: 8px; border: 1px solid #e2e8f0; display: none; min-height: 650px; position: relative; overflow: hidden;"></div>
+            </div>
+            
+            <div class="tab-content" id="tab-training">
+                <h3>LoRA迭代训练</h3>
+                <div class="iteration-controls">
+                    <button class="iteration-btn start" id="startIteration">开始迭代训练</button>
+                    <button class="iteration-btn stop" id="stopIteration">停止训练</button>
+                </div>
+                <div class="iteration-status" id="iterationStatus">
+                    <p>等待开始训练...</p>
+                </div>
+                
+                <h3 style="margin-top: 20px;">SORA评估参数</h3>
+                <div class="kg-tree-container" id="soraParamsDisplay" style="margin-bottom: 20px;">
+                    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">
+                        <div style="padding:8px;background:white;border-radius:6px;border-left:3px solid #3b82f6;"><strong>无人机重量</strong><div>8 kg</div></div>
+                        <div style="padding:8px;background:white;border-radius:6px;border-left:3px solid #3b82f6;"><strong>飞行速度</strong><div>10 m/s</div></div>
+                        <div style="padding:8px;background:white;border-radius:6px;border-left:3px solid #10b981;"><strong>动能</strong><div>400 J</div></div>
+                        <div style="padding:8px;background:white;border-radius:6px;border-left:3px solid #10b981;"><strong>动能等级</strong><div>Low (&lt;700J)</div></div>
+                        <div style="padding:8px;background:white;border-radius:6px;border-left:3px solid #f59e0b;"><strong>SORA权重</strong><div>60%</div></div>
+                        <div style="padding:8px;background:white;border-radius:6px;border-left:3px solid #f59e0b;"><strong>加权权重</strong><div>40%</div></div>
+                    </div>
+                    <div style="margin-top:10px;padding:8px;background:#f0fdf4;border-radius:6px;font-size:12px;">
+                        <strong>加权因子:</strong> 人口29.2% + 空中交通24.9% + 建筑20.7% + 天气14.6% + 地形10.7% (AHP权重)
+                    </div>
+                </div>
+                
+                <h3 style="margin-top: 20px;">训练数据集信息</h3>
+                <div class="kg-tree-container" id="datasetInfoDisplay" style="margin-bottom: 20px;">
+                    <p>训练数据将在开始迭代训练时自动生成</p>
+                </div>
+                
+                <div id="iterationHistory"></div>
+                
+                <h3 style="margin-top: 30px;">训练模型列表</h3>
+                <div id="modelList" style="margin-bottom: 20px;"></div>
+                
+                <h3 style="margin-top: 30px;">训练数据预览</h3>
+                <div class="kg-tree-container" id="trainingDataPreview" style="margin-bottom: 20px;">
+                    <p>请先选择一个模型</p>
+                </div>
+                
+                <h3 style="margin-top: 30px;">模型参数与优化指标</h3>
+                <div class="kg-tree-container" id="modelMetrics" style="margin-bottom: 20px;">
+                    <p>请先选择一个模型</p>
+                </div>
+            </div>
+            
+            <div class="tab-content" id="tab-route">
+                <h3>动态评估路线</h3>
+                <div style="margin-bottom: 20px;">
+                    <input type="text" id="routeRegionInput" placeholder="请输入城市名称" style="padding: 10px; width: 200px; border: 1px solid #e2e8f0; border-radius: 6px;">
+                    <button id="generateRouteBtn" style="padding: 10px 20px; background: #3b82f6; color: white; border: none; border-radius: 6px; cursor: pointer;">生成路线</button>
+                </div>
+                <div class="route-display" id="routeDisplay">
+                    <p>请输入城市并点击"生成路线"</p>
+                </div>
+            </div>
+            
+            <div class="tab-content" id="tab-history">
+                <h3>评估历史</h3>
+                <div style="margin-bottom: 20px;">
+                    <input type="text" id="historyRegionInput" placeholder="按城市筛选（可选）" style="padding: 10px; width: 200px; border: 1px solid #e2e8f0; border-radius: 6px;">
+                    <button id="loadHistoryBtn" style="padding: 10px 20px; background: #3b82f6; color: white; border: none; border-radius: 6px; cursor: pointer;">加载历史</button>
+                </div>
+                <div class="history-list" id="historyList">
+                    <p>点击"加载历史"查看评估记录</p>
+                </div>
+            </div>
+		</main>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+</html>
