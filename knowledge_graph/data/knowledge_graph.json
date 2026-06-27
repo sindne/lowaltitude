@@ -1,0 +1,95 @@
+{
+  "entities": [
+    {
+      "id": "1cbec2b0-5f00-4afd-886a-93177a168523",
+      "name": "人口密度",
+      "entity_type": "risk_factor",
+      "properties": {}
+    },
+    {
+      "id": "c5536698-4dce-4f87-9caf-e7c71ecc6afa",
+      "name": "建筑物密度",
+      "entity_type": "risk_factor",
+      "properties": {}
+    },
+    {
+      "id": "72c3e948-176c-4e3d-b50d-8ecf54215bbc",
+      "name": "空中交通",
+      "entity_type": "risk_factor",
+      "properties": {}
+    },
+    {
+      "id": "bfba5b37-96da-4589-a72c-ee6dea70d475",
+      "name": "天气条件",
+      "entity_type": "risk_factor",
+      "properties": {}
+    },
+    {
+      "id": "f5e868b5-39e8-45e4-8a92-c93b444185ee",
+      "name": "与市中心距离",
+      "entity_type": "risk_factor",
+      "properties": {}
+    },
+    {
+      "id": "563c1ca5-0c17-4c04-98ae-d163f62aad0c",
+      "name": "地形复杂度",
+      "entity_type": "risk_factor",
+      "properties": {}
+    },
+    {
+      "id": "933edc04-df90-4679-aeb6-5d2e114057d4",
+      "name": "建筑物高度",
+      "entity_type": "risk_factor",
+      "properties": {}
+    },
+    {
+      "id": "289fffef-c336-45f5-aa54-8e113dc0c3c5",
+      "name": "武汉天河国际机场",
+      "entity_type": "infrastructure",
+      "properties": {}
+    },
+    {
+      "id": "87ec03f4-8ed3-4b7f-baab-f4fac74facef",
+      "name": "武昌火车站",
+      "entity_type": "infrastructure",
+      "properties": {}
+    },
+    {
+      "id": "dba7a748-ad0e-4bfa-8e72-595a0c831215",
+      "name": "武汉站",
+      "entity_type": "infrastructure",
+      "properties": {}
+    },
+    {
+      "id": "242276ed-bf73-40e6-98be-665ba63920af",
+      "name": "汉口火车站",
+      "entity_type": "infrastructure",
+      "properties": {}
+    },
+    {
+      "id": "2562e5ba-c14f-4ee9-bc6e-8aee2f1fa04c",
+      "name": "湖北省政府",
+      "entity_type": "sensitive_area",
+      "properties": {}
+    },
+    {
+      "id": "00ab8be4-40d7-42fb-8e0b-f5e7cef2e06f",
+      "name": "武汉大学",
+      "entity_type": "sensitive_area",
+      "properties": {}
+    },
+    {
+      "id": "7145fa44-f85e-4d31-8a0f-3a66f3336fcd",
+      "name": "黄鹤楼",
+      "entity_type": "sensitive_area",
+      "properties": {}
+    },
+    {
+      "id": "00be19af-5155-4b9a-8d1f-070c38db5221",
+      "name": "东湖风景区",
+      "entity_type": "sensitive_area",
+      "properties": {}
+    }
+  ],
+  "relations": []
+}
