@@ -1,0 +1,322 @@
+[
+  {
+    "id": "conv_20260415_213007_109921",
+    "type": "conversation",
+    "messages": [
+      {
+        "role": "user",
+        "content": "请评估武汉的低空空域风险"
+      },
+      {
+        "role": "assistant",
+        "content": "武汉的低空空域风险等级为高风险。主要风险因素包括：人口密度高、建筑高度过高、机场净空区。如有具体飞行计划，可提供更精确的评估。"
+      }
+    ],
+    "source": "database",
+    "quality_score": 0.8
+  },
+  {
+    "id": "conv_20260415_213007_109921",
+    "type": "conversation",
+    "messages": [
+      {
+        "role": "user",
+        "content": "请评估深圳的低空空域风险"
+      },
+      {
+        "role": "assistant",
+        "content": "深圳的低空空域风险等级为中等风险。主要风险因素包括：商业区密集、部分机场净空区、人口密度较高。如有具体飞行计划，可提供更精确的评估。"
+      }
+    ],
+    "source": "database",
+    "quality_score": 0.8
+  },
+  {
+    "id": "conv_20260415_213007_109921",
+    "type": "conversation",
+    "messages": [
+      {
+        "role": "user",
+        "content": "请评估武汉的低空空域风险"
+      },
+      {
+        "role": "assistant",
+        "content": "武汉的低空空域风险等级为低风险。主要风险因素包括：人口密度高。如有具体飞行计划，可提供更精确的评估。"
+      }
+    ],
+    "source": "generated",
+    "quality_score": 0.6
+  },
+  {
+    "id": "conv_20260415_213007_109921",
+    "type": "conversation",
+    "messages": [
+      {
+        "role": "user",
+        "content": "请评估北京的低空空域风险"
+      },
+      {
+        "role": "assistant",
+        "content": "北京的低空空域风险等级为中等风险。主要风险因素包括：建筑高度过高、机场净空区。如有具体飞行计划，可提供更精确的评估。"
+      }
+    ],
+    "source": "generated",
+    "quality_score": 0.6
+  },
+  {
+    "id": "conv_20260415_213007_109921",
+    "type": "conversation",
+    "messages": [
+      {
+        "role": "user",
+        "content": "请评估上海的低空空域风险"
+      },
+      {
+        "role": "assistant",
+        "content": "上海的低空空域风险等级为高风险。主要风险因素包括：机场净空区、敏感目标附近、天气恶劣（强风）。如有具体飞行计划，可提供更精确的评估。"
+      }
+    ],
+    "source": "generated",
+    "quality_score": 0.6
+  },
+  {
+    "id": "conv_20260415_213007_109921",
+    "type": "conversation",
+    "messages": [
+      {
+        "role": "user",
+        "content": "请评估广州的低空空域风险"
+      },
+      {
+        "role": "assistant",
+        "content": "广州的低空空域风险等级为低风险。主要风险因素包括：敏感目标附近。如有具体飞行计划，可提供更精确的评估。"
+      }
+    ],
+    "source": "generated",
+    "quality_score": 0.6
+  },
+  {
+    "id": "conv_20260415_213007_109921",
+    "type": "conversation",
+    "messages": [
+      {
+        "role": "user",
+        "content": "请评估深圳的低空空域风险"
+      },
+      {
+        "role": "assistant",
+        "content": "深圳的低空空域风险等级为中等风险。主要风险因素包括：天气恶劣（强风）、地形复杂。如有具体飞行计划，可提供更精确的评估。"
+      }
+    ],
+    "source": "generated",
+    "quality_score": 0.6
+  },
+  {
+    "id": "conv_20260415_213007_109921",
+    "type": "conversation",
+    "messages": [
+      {
+        "role": "user",
+        "content": "请评估成都的低空空域风险"
+      },
+      {
+        "role": "assistant",
+        "content": "成都的低空空域风险等级为高风险。主要风险因素包括：地形复杂、电磁干扰严重、交通繁忙。如有具体飞行计划，可提供更精确的评估。"
+      }
+    ],
+    "source": "generated",
+    "quality_score": 0.6
+  },
+  {
+    "id": "conv_20260415_213007_109921",
+    "type": "conversation",
+    "messages": [
+      {
+        "role": "user",
+        "content": "请评估重庆的低空空域风险"
+      },
+      {
+        "role": "assistant",
+        "content": "重庆的低空空域风险等级为低风险。主要风险因素包括：电磁干扰严重。如有具体飞行计划，可提供更精确的评估。"
+      }
+    ],
+    "source": "generated",
+    "quality_score": 0.6
+  },
+  {
+    "id": "conv_20260415_213007_109921",
+    "type": "conversation",
+    "messages": [
+      {
+        "role": "user",
+        "content": "请评估杭州的低空空域风险"
+      },
+      {
+        "role": "assistant",
+        "content": "杭州的低空空域风险等级为中等风险。主要风险因素包括：交通繁忙。如有具体飞行计划，可提供更精确的评估。"
+      }
+    ],
+    "source": "generated",
+    "quality_score": 0.6
+  },
+  {
+    "id": "conv_20260415_213007_109921",
+    "type": "conversation",
+    "messages": [
+      {
+        "role": "user",
+        "content": "请评估南京的低空空域风险"
+      },
+      {
+        "role": "assistant",
+        "content": "南京的低空空域风险等级为高风险。主要风险因素包括：人口密度高、建筑高度过高、机场净空区。如有具体飞行计划，可提供更精确的评估。"
+      }
+    ],
+    "source": "generated",
+    "quality_score": 0.6
+  },
+  {
+    "id": "conv_20260415_213007_109921",
+    "type": "conversation",
+    "messages": [
+      {
+        "role": "user",
+        "content": "请评估西安的低空空域风险"
+      },
+      {
+        "role": "assistant",
+        "content": "西安的低空空域风险等级为低风险。主要风险因素包括：建筑高度过高。如有具体飞行计划，可提供更精确的评估。"
+      }
+    ],
+    "source": "generated",
+    "quality_score": 0.6
+  },
+  {
+    "id": "conv_20260415_213007_109921",
+    "type": "conversation",
+    "messages": [
+      {
+        "role": "user",
+        "content": "请评估武汉的低空空域风险"
+      },
+      {
+        "role": "assistant",
+        "content": "武汉的低空空域风险等级为中等风险。主要风险因素包括：机场净空区、敏感目标附近。如有具体飞行计划，可提供更精确的评估。"
+      }
+    ],
+    "source": "generated",
+    "quality_score": 0.6
+  },
+  {
+    "id": "conv_20260415_213007_109921",
+    "type": "conversation",
+    "messages": [
+      {
+        "role": "user",
+        "content": "请评估北京的低空空域风险"
+      },
+      {
+        "role": "assistant",
+        "content": "北京的低空空域风险等级为高风险。主要风险因素包括：敏感目标附近、天气恶劣（强风）、地形复杂。如有具体飞行计划，可提供更精确的评估。"
+      }
+    ],
+    "source": "generated",
+    "quality_score": 0.6
+  },
+  {
+    "id": "conv_20260415_213007_109921",
+    "type": "conversation",
+    "messages": [
+      {
+        "role": "user",
+        "content": "请评估上海的低空空域风险"
+      },
+      {
+        "role": "assistant",
+        "content": "上海的低空空域风险等级为低风险。主要风险因素包括：天气恶劣（强风）。如有具体飞行计划，可提供更精确的评估。"
+      }
+    ],
+    "source": "generated",
+    "quality_score": 0.6
+  },
+  {
+    "id": "conv_20260415_213007_109921",
+    "type": "conversation",
+    "messages": [
+      {
+        "role": "user",
+        "content": "请评估广州的低空空域风险"
+      },
+      {
+        "role": "assistant",
+        "content": "广州的低空空域风险等级为中等风险。主要风险因素包括：地形复杂、电磁干扰严重。如有具体飞行计划，可提供更精确的评估。"
+      }
+    ],
+    "source": "generated",
+    "quality_score": 0.6
+  },
+  {
+    "id": "conv_20260415_213007_109921",
+    "type": "conversation",
+    "messages": [
+      {
+        "role": "user",
+        "content": "请评估深圳的低空空域风险"
+      },
+      {
+        "role": "assistant",
+        "content": "深圳的低空空域风险等级为高风险。主要风险因素包括：电磁干扰严重、交通繁忙。如有具体飞行计划，可提供更精确的评估。"
+      }
+    ],
+    "source": "generated",
+    "quality_score": 0.6
+  },
+  {
+    "id": "conv_20260415_213007_109921",
+    "type": "conversation",
+    "messages": [
+      {
+        "role": "user",
+        "content": "请评估成都的低空空域风险"
+      },
+      {
+        "role": "assistant",
+        "content": "成都的低空空域风险等级为低风险。主要风险因素包括：交通繁忙。如有具体飞行计划，可提供更精确的评估。"
+      }
+    ],
+    "source": "generated",
+    "quality_score": 0.6
+  },
+  {
+    "id": "conv_20260415_213007_109921",
+    "type": "conversation",
+    "messages": [
+      {
+        "role": "user",
+        "content": "请评估重庆的低空空域风险"
+      },
+      {
+        "role": "assistant",
+        "content": "重庆的低空空域风险等级为中等风险。主要风险因素包括：人口密度高、建筑高度过高。如有具体飞行计划，可提供更精确的评估。"
+      }
+    ],
+    "source": "generated",
+    "quality_score": 0.6
+  },
+  {
+    "id": "conv_20260415_213007_109921",
+    "type": "conversation",
+    "messages": [
+      {
+        "role": "user",
+        "content": "请评估杭州的低空空域风险"
+      },
+      {
+        "role": "assistant",
+        "content": "杭州的低空空域风险等级为高风险。主要风险因素包括：建筑高度过高、机场净空区、敏感目标附近。如有具体飞行计划，可提供更精确的评估。"
+      }
+    ],
+    "source": "generated",
+    "quality_score": 0.6
+  }
+]

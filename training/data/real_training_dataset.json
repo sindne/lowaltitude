@@ -1,0 +1,734 @@
+[
+  {
+    "id": "real_risk_北京_20260422",
+    "type": "risk_assessment",
+    "region": "北京",
+    "coordinates": {
+      "lat": 39.9042,
+      "lng": 116.4074
+    },
+    "population_density": 1311,
+    "building_density": 0.45,
+    "terrain_complexity": 0.3,
+    "num_airports": 2,
+    "administrative_level": "capital",
+    "weather_data": {
+      "avg_wind_speed_ms": 2.5,
+      "avg_temperature_c": 12.5
+    },
+    "risk_factors": {
+      "人口密度": 0.8,
+      "建筑物高度": 0.7,
+      "空中交通": 0.75,
+      "天气条件": 0.4,
+      "敏感区域": 0.9,
+      "地形复杂度": 0.3
+    },
+    "sora_assessment": {
+      "drone_kinetic_energy_j": 400.0,
+      "kinetic_energy_tier": "low",
+      "ground_risk_level": 4,
+      "air_risk_class": "d",
+      "sail_level": "VI"
+    },
+    "risk_level": "较高风险",
+    "explanation": "北京作为首都，人口密度高，敏感区域多，空中交通繁忙。主要风险因素包括敏感区域（政府机关、军事设施）、人口密度和空中交通（首都机场、大兴机场）。综合评估为较高风险区域。",
+    "data_sources": [
+      "中国统计年鉴2023",
+      "中国气象局",
+      "民航局公开数据",
+      "高德地图API"
+    ],
+    "created_at": "2026-04-22T23:43:34.555819",
+    "source": "real_public_data"
+  },
+  {
+    "id": "real_conv_北京_20260422",
+    "type": "conversation",
+    "messages": [
+      {
+        "role": "user",
+        "content": "北京的低空空域风险如何？"
+      },
+      {
+        "role": "assistant",
+        "content": "根据SORA框架评估，北京的低空空域风险等级为：较高风险。\n\n主要风险因素包括：敏感区域、人口密度、空中交通。\n\n北京作为首都，人口密度高，敏感区域多，空中交通繁忙。主要风险因素包括敏感区域（政府机关、军事设施）、人口密度和空中交通（首都机场、大兴机场）。综合评估为较高风险区域。\n\nSORA评估结果：\n- SAIL等级：VI\n- 地面风险等级：4\n- 空中风险等级：d\n- 无人机动能：400J（8kg×10m/s）"
+      }
+    ],
+    "region": "北京",
+    "risk_level": "较高风险",
+    "created_at": "2026-04-22T23:43:34.555899",
+    "source": "real_public_data"
+  },
+  {
+    "id": "real_risk_上海_20260422",
+    "type": "risk_assessment",
+    "region": "上海",
+    "coordinates": {
+      "lat": 31.2304,
+      "lng": 121.4737
+    },
+    "population_density": 3800,
+    "building_density": 0.55,
+    "terrain_complexity": 0.2,
+    "num_airports": 2,
+    "administrative_level": "capital",
+    "weather_data": {
+      "avg_wind_speed_ms": 3.2,
+      "avg_temperature_c": 16.0
+    },
+    "risk_factors": {
+      "人口密度": 0.95,
+      "建筑物高度": 0.85,
+      "空中交通": 0.7,
+      "天气条件": 0.5,
+      "敏感区域": 0.75,
+      "地形复杂度": 0.2
+    },
+    "sora_assessment": {
+      "drone_kinetic_energy_j": 400.0,
+      "kinetic_energy_tier": "low",
+      "ground_risk_level": 6,
+      "air_risk_class": "d",
+      "sail_level": "VI"
+    },
+    "risk_level": "高风险",
+    "explanation": "上海作为中国最大城市，人口密度极高，高层建筑密集。主要风险因素包括人口密度、建筑物高度和密度。浦东机场和虹桥机场增加了空中交通风险。综合评估为高风险区域。",
+    "data_sources": [
+      "中国统计年鉴2023",
+      "中国气象局",
+      "民航局公开数据",
+      "高德地图API"
+    ],
+    "created_at": "2026-04-22T23:43:34.555938",
+    "source": "real_public_data"
+  },
+  {
+    "id": "real_conv_上海_20260422",
+    "type": "conversation",
+    "messages": [
+      {
+        "role": "user",
+        "content": "评估一下上海的飞行风险"
+      },
+      {
+        "role": "assistant",
+        "content": "根据SORA框架评估，上海的低空空域风险等级为：高风险。\n\n主要风险因素包括：人口密度、建筑物高度、敏感区域。\n\n上海作为中国最大城市，人口密度极高，高层建筑密集。主要风险因素包括人口密度、建筑物高度和密度。浦东机场和虹桥机场增加了空中交通风险。综合评估为高风险区域。\n\nSORA评估结果：\n- SAIL等级：VI\n- 地面风险等级：6\n- 空中风险等级：d\n- 无人机动能：400J（8kg×10m/s）"
+      }
+    ],
+    "region": "上海",
+    "risk_level": "高风险",
+    "created_at": "2026-04-22T23:43:34.555982",
+    "source": "real_public_data"
+  },
+  {
+    "id": "real_risk_广州_20260422",
+    "type": "risk_assessment",
+    "region": "广州",
+    "coordinates": {
+      "lat": 23.1291,
+      "lng": 113.2644
+    },
+    "population_density": 2500,
+    "building_density": 0.48,
+    "terrain_complexity": 0.25,
+    "num_airports": 1,
+    "administrative_level": "capital",
+    "weather_data": {
+      "avg_wind_speed_ms": 2.8,
+      "avg_temperature_c": 22.5
+    },
+    "risk_factors": {
+      "人口密度": 0.85,
+      "建筑物高度": 0.65,
+      "空中交通": 0.6,
+      "天气条件": 0.55,
+      "敏感区域": 0.7,
+      "地形复杂度": 0.25
+    },
+    "sora_assessment": {
+      "drone_kinetic_energy_j": 400.0,
+      "kinetic_energy_tier": "low",
+      "ground_risk_level": 6,
+      "air_risk_class": "c",
+      "sail_level": "V"
+    },
+    "risk_level": "较高风险",
+    "explanation": "广州作为一线城市，人口密度高，白云机场增加了空中交通风险。天气条件复杂，夏季多雷雨。综合评估为较高风险区域。",
+    "data_sources": [
+      "中国统计年鉴2023",
+      "中国气象局",
+      "民航局公开数据",
+      "高德地图API"
+    ],
+    "created_at": "2026-04-22T23:43:34.556012",
+    "source": "real_public_data"
+  },
+  {
+    "id": "real_conv_广州_20260422",
+    "type": "conversation",
+    "messages": [
+      {
+        "role": "user",
+        "content": "评估一下广州的飞行风险"
+      },
+      {
+        "role": "assistant",
+        "content": "根据SORA框架评估，广州的低空空域风险等级为：较高风险。\n\n主要风险因素包括：人口密度、敏感区域、建筑物高度。\n\n广州作为一线城市，人口密度高，白云机场增加了空中交通风险。天气条件复杂，夏季多雷雨。综合评估为较高风险区域。\n\nSORA评估结果：\n- SAIL等级：V\n- 地面风险等级：6\n- 空中风险等级：c\n- 无人机动能：400J（8kg×10m/s）"
+      }
+    ],
+    "region": "广州",
+    "risk_level": "较高风险",
+    "created_at": "2026-04-22T23:43:34.556044",
+    "source": "real_public_data"
+  },
+  {
+    "id": "real_risk_深圳_20260422",
+    "type": "risk_assessment",
+    "region": "深圳",
+    "coordinates": {
+      "lat": 22.5431,
+      "lng": 114.0579
+    },
+    "population_density": 8000,
+    "building_density": 0.52,
+    "terrain_complexity": 0.35,
+    "num_airports": 1,
+    "administrative_level": "economic",
+    "weather_data": {
+      "avg_wind_speed_ms": 3.0,
+      "avg_temperature_c": 23.0
+    },
+    "risk_factors": {
+      "人口密度": 0.98,
+      "建筑物高度": 0.8,
+      "空中交通": 0.65,
+      "天气条件": 0.5,
+      "敏感区域": 0.65,
+      "地形复杂度": 0.35
+    },
+    "sora_assessment": {
+      "drone_kinetic_energy_j": 400.0,
+      "kinetic_energy_tier": "low",
+      "ground_risk_level": 8,
+      "air_risk_class": "c",
+      "sail_level": "VI"
+    },
+    "risk_level": "高风险",
+    "explanation": "深圳人口密度全国最高，高楼林立。宝安机场位于市中心附近。综合评估为高风险区域。",
+    "data_sources": [
+      "中国统计年鉴2023",
+      "中国气象局",
+      "民航局公开数据",
+      "高德地图API"
+    ],
+    "created_at": "2026-04-22T23:43:34.556071",
+    "source": "real_public_data"
+  },
+  {
+    "id": "real_conv_深圳_20260422",
+    "type": "conversation",
+    "messages": [
+      {
+        "role": "user",
+        "content": "深圳的低空空域风险如何？"
+      },
+      {
+        "role": "assistant",
+        "content": "根据SORA框架评估，深圳的低空空域风险等级为：高风险。\n\n主要风险因素包括：人口密度、建筑物高度、空中交通。\n\n深圳人口密度全国最高，高楼林立。宝安机场位于市中心附近。综合评估为高风险区域。\n\nSORA评估结果：\n- SAIL等级：VI\n- 地面风险等级：8\n- 空中风险等级：c\n- 无人机动能：400J（8kg×10m/s）"
+      }
+    ],
+    "region": "深圳",
+    "risk_level": "高风险",
+    "created_at": "2026-04-22T23:43:34.556102",
+    "source": "real_public_data"
+  },
+  {
+    "id": "real_risk_杭州_20260422",
+    "type": "risk_assessment",
+    "region": "杭州",
+    "coordinates": {
+      "lat": 30.2741,
+      "lng": 120.1551
+    },
+    "population_density": 1300,
+    "building_density": 0.42,
+    "terrain_complexity": 0.4,
+    "num_airports": 1,
+    "administrative_level": "capital",
+    "weather_data": {
+      "avg_wind_speed_ms": 2.6,
+      "avg_temperature_c": 17.0
+    },
+    "risk_factors": {
+      "人口密度": 0.7,
+      "建筑物高度": 0.6,
+      "空中交通": 0.5,
+      "天气条件": 0.45,
+      "敏感区域": 0.6,
+      "地形复杂度": 0.4
+    },
+    "sora_assessment": {
+      "drone_kinetic_energy_j": 400.0,
+      "kinetic_energy_tier": "low",
+      "ground_risk_level": 4,
+      "air_risk_class": "c",
+      "sail_level": "IV"
+    },
+    "risk_level": "中等风险",
+    "explanation": "杭州作为新一线城市，人口密度适中。西湖景区等敏感区域需要注意。地形有一定复杂度，有丘陵地形。综合评估为中等风险区域。",
+    "data_sources": [
+      "中国统计年鉴2023",
+      "中国气象局",
+      "民航局公开数据",
+      "高德地图API"
+    ],
+    "created_at": "2026-04-22T23:43:34.556127",
+    "source": "real_public_data"
+  },
+  {
+    "id": "real_conv_杭州_20260422",
+    "type": "conversation",
+    "messages": [
+      {
+        "role": "user",
+        "content": "杭州的低空空域风险如何？"
+      },
+      {
+        "role": "assistant",
+        "content": "根据SORA框架评估，杭州的低空空域风险等级为：中等风险。\n\n主要风险因素包括：人口密度、建筑物高度、敏感区域。\n\n杭州作为新一线城市，人口密度适中。西湖景区等敏感区域需要注意。地形有一定复杂度，有丘陵地形。综合评估为中等风险区域。\n\nSORA评估结果：\n- SAIL等级：IV\n- 地面风险等级：4\n- 空中风险等级：c\n- 无人机动能：400J（8kg×10m/s）"
+      }
+    ],
+    "region": "杭州",
+    "risk_level": "中等风险",
+    "created_at": "2026-04-22T23:43:34.556156",
+    "source": "real_public_data"
+  },
+  {
+    "id": "real_risk_南京_20260422",
+    "type": "risk_assessment",
+    "region": "南京",
+    "coordinates": {
+      "lat": 32.0603,
+      "lng": 118.7969
+    },
+    "population_density": 1800,
+    "building_density": 0.45,
+    "terrain_complexity": 0.35,
+    "num_airports": 1,
+    "administrative_level": "capital",
+    "weather_data": {
+      "avg_wind_speed_ms": 2.8,
+      "avg_temperature_c": 15.5
+    },
+    "risk_factors": {
+      "人口密度": 0.75,
+      "建筑物高度": 0.6,
+      "空中交通": 0.55,
+      "天气条件": 0.5,
+      "敏感区域": 0.7,
+      "地形复杂度": 0.35
+    },
+    "sora_assessment": {
+      "drone_kinetic_energy_j": 400.0,
+      "kinetic_energy_tier": "low",
+      "ground_risk_level": 4,
+      "air_risk_class": "c",
+      "sail_level": "IV"
+    },
+    "risk_level": "中等风险",
+    "explanation": "南京作为省会城市，人口密度中等偏高。有军事设施等敏感区域。长江穿城而过，地形有一定复杂度。综合评估为中等风险区域。",
+    "data_sources": [
+      "中国统计年鉴2023",
+      "中国气象局",
+      "民航局公开数据",
+      "高德地图API"
+    ],
+    "created_at": "2026-04-22T23:43:34.556179",
+    "source": "real_public_data"
+  },
+  {
+    "id": "real_conv_南京_20260422",
+    "type": "conversation",
+    "messages": [
+      {
+        "role": "user",
+        "content": "南京哪些区域风险较低？"
+      },
+      {
+        "role": "assistant",
+        "content": "根据SORA框架评估，南京的低空空域风险等级为：中等风险。\n\n主要风险因素包括：人口密度、敏感区域、建筑物高度。\n\n南京作为省会城市，人口密度中等偏高。有军事设施等敏感区域。长江穿城而过，地形有一定复杂度。综合评估为中等风险区域。\n\nSORA评估结果：\n- SAIL等级：IV\n- 地面风险等级：4\n- 空中风险等级：c\n- 无人机动能：400J（8kg×10m/s）"
+      }
+    ],
+    "region": "南京",
+    "risk_level": "中等风险",
+    "created_at": "2026-04-22T23:43:34.556208",
+    "source": "real_public_data"
+  },
+  {
+    "id": "real_risk_成都_20260422",
+    "type": "risk_assessment",
+    "region": "成都",
+    "coordinates": {
+      "lat": 30.5728,
+      "lng": 104.0668
+    },
+    "population_density": 1100,
+    "building_density": 0.4,
+    "terrain_complexity": 0.45,
+    "num_airports": 2,
+    "administrative_level": "capital",
+    "weather_data": {
+      "avg_wind_speed_ms": 1.8,
+      "avg_temperature_c": 16.0
+    },
+    "risk_factors": {
+      "人口密度": 0.65,
+      "建筑物高度": 0.6,
+      "空中交通": 0.7,
+      "天气条件": 0.45,
+      "敏感区域": 0.65,
+      "地形复杂度": 0.45
+    },
+    "sora_assessment": {
+      "drone_kinetic_energy_j": 400.0,
+      "kinetic_energy_tier": "low",
+      "ground_risk_level": 4,
+      "air_risk_class": "d",
+      "sail_level": "VI"
+    },
+    "risk_level": "中等风险",
+    "explanation": "成都拥有双流和天府两个机场，空中交通繁忙。位于四川盆地，地形有一定复杂度。综合评估为中等风险区域。",
+    "data_sources": [
+      "中国统计年鉴2023",
+      "中国气象局",
+      "民航局公开数据",
+      "高德地图API"
+    ],
+    "created_at": "2026-04-22T23:43:34.556232",
+    "source": "real_public_data"
+  },
+  {
+    "id": "real_conv_成都_20260422",
+    "type": "conversation",
+    "messages": [
+      {
+        "role": "user",
+        "content": "成都哪些区域风险较低？"
+      },
+      {
+        "role": "assistant",
+        "content": "根据SORA框架评估，成都的低空空域风险等级为：中等风险。\n\n主要风险因素包括：空中交通、人口密度、敏感区域。\n\n成都拥有双流和天府两个机场，空中交通繁忙。位于四川盆地，地形有一定复杂度。综合评估为中等风险区域。\n\nSORA评估结果：\n- SAIL等级：VI\n- 地面风险等级：4\n- 空中风险等级：d\n- 无人机动能：400J（8kg×10m/s）"
+      }
+    ],
+    "region": "成都",
+    "risk_level": "中等风险",
+    "created_at": "2026-04-22T23:43:34.556261",
+    "source": "real_public_data"
+  },
+  {
+    "id": "real_risk_武汉_20260422",
+    "type": "risk_assessment",
+    "region": "武汉",
+    "coordinates": {
+      "lat": 30.5928,
+      "lng": 114.3055
+    },
+    "population_density": 1200,
+    "building_density": 0.42,
+    "terrain_complexity": 0.3,
+    "num_airports": 1,
+    "administrative_level": "capital",
+    "weather_data": {
+      "avg_wind_speed_ms": 2.5,
+      "avg_temperature_c": 17.0
+    },
+    "risk_factors": {
+      "人口密度": 0.65,
+      "建筑物高度": 0.55,
+      "空中交通": 0.45,
+      "天气条件": 0.5,
+      "敏感区域": 0.5,
+      "地形复杂度": 0.3
+    },
+    "sora_assessment": {
+      "drone_kinetic_energy_j": 400.0,
+      "kinetic_energy_tier": "low",
+      "ground_risk_level": 4,
+      "air_risk_class": "c",
+      "sail_level": "IV"
+    },
+    "risk_level": "中等风险",
+    "explanation": "武汉位于江汉平原，地形平坦。长江和汉江交汇，水域较多。综合评估为中等风险区域。",
+    "data_sources": [
+      "中国统计年鉴2023",
+      "中国气象局",
+      "民航局公开数据",
+      "高德地图API"
+    ],
+    "created_at": "2026-04-22T23:43:34.556284",
+    "source": "real_public_data"
+  },
+  {
+    "id": "real_conv_武汉_20260422",
+    "type": "conversation",
+    "messages": [
+      {
+        "role": "user",
+        "content": "评估一下武汉的飞行风险"
+      },
+      {
+        "role": "assistant",
+        "content": "根据SORA框架评估，武汉的低空空域风险等级为：中等风险。\n\n主要风险因素包括：人口密度、建筑物高度、天气条件。\n\n武汉位于江汉平原，地形平坦。长江和汉江交汇，水域较多。综合评估为中等风险区域。\n\nSORA评估结果：\n- SAIL等级：IV\n- 地面风险等级：4\n- 空中风险等级：c\n- 无人机动能：400J（8kg×10m/s）"
+      }
+    ],
+    "region": "武汉",
+    "risk_level": "中等风险",
+    "created_at": "2026-04-22T23:43:34.556312",
+    "source": "real_public_data"
+  },
+  {
+    "id": "real_risk_西安_20260422",
+    "type": "risk_assessment",
+    "region": "西安",
+    "coordinates": {
+      "lat": 34.3416,
+      "lng": 108.9398
+    },
+    "population_density": 900,
+    "building_density": 0.38,
+    "terrain_complexity": 0.5,
+    "num_airports": 1,
+    "administrative_level": "capital",
+    "weather_data": {
+      "avg_wind_speed_ms": 2.2,
+      "avg_temperature_c": 13.5
+    },
+    "risk_factors": {
+      "人口密度": 0.55,
+      "建筑物高度": 0.5,
+      "空中交通": 0.5,
+      "天气条件": 0.4,
+      "敏感区域": 0.75,
+      "地形复杂度": 0.5
+    },
+    "sora_assessment": {
+      "drone_kinetic_energy_j": 400.0,
+      "kinetic_energy_tier": "low",
+      "ground_risk_level": 3,
+      "air_risk_class": "c",
+      "sail_level": "IV"
+    },
+    "risk_level": "较低风险",
+    "explanation": "西安人口密度相对较低，但有大量文物古迹等敏感区域。地形有一定复杂度。综合评估为较低风险区域。",
+    "data_sources": [
+      "中国统计年鉴2023",
+      "中国气象局",
+      "民航局公开数据",
+      "高德地图API"
+    ],
+    "created_at": "2026-04-22T23:43:34.556336",
+    "source": "real_public_data"
+  },
+  {
+    "id": "real_conv_西安_20260422",
+    "type": "conversation",
+    "messages": [
+      {
+        "role": "user",
+        "content": "在西安进行无人机飞行安全吗？"
+      },
+      {
+        "role": "assistant",
+        "content": "根据SORA框架评估，西安的低空空域风险等级为：较低风险。\n\n主要风险因素包括：敏感区域、人口密度、建筑物高度。\n\n西安人口密度相对较低，但有大量文物古迹等敏感区域。地形有一定复杂度。综合评估为较低风险区域。\n\nSORA评估结果：\n- SAIL等级：IV\n- 地面风险等级：3\n- 空中风险等级：c\n- 无人机动能：400J（8kg×10m/s）"
+      }
+    ],
+    "region": "西安",
+    "risk_level": "较低风险",
+    "created_at": "2026-04-22T23:43:34.556365",
+    "source": "real_public_data"
+  },
+  {
+    "id": "real_risk_重庆_20260422",
+    "type": "risk_assessment",
+    "region": "重庆",
+    "coordinates": {
+      "lat": 29.563,
+      "lng": 106.5516
+    },
+    "population_density": 380,
+    "building_density": 0.35,
+    "terrain_complexity": 0.85,
+    "num_airports": 1,
+    "administrative_level": "capital",
+    "weather_data": {
+      "avg_wind_speed_ms": 1.5,
+      "avg_temperature_c": 18.0
+    },
+    "risk_factors": {
+      "人口密度": 0.4,
+      "建筑物高度": 0.75,
+      "空中交通": 0.45,
+      "天气条件": 0.5,
+      "敏感区域": 0.5,
+      "地形复杂度": 0.85
+    },
+    "sora_assessment": {
+      "drone_kinetic_energy_j": 400.0,
+      "kinetic_energy_tier": "low",
+      "ground_risk_level": 2,
+      "air_risk_class": "c",
+      "sail_level": "IV"
+    },
+    "risk_level": "中等风险",
+    "explanation": "重庆是山城，地形复杂度全国最高。虽然人口密度相对较低，但高层建筑众多，地形复杂。综合评估为中等风险区域。",
+    "data_sources": [
+      "中国统计年鉴2023",
+      "中国气象局",
+      "民航局公开数据",
+      "高德地图API"
+    ],
+    "created_at": "2026-04-22T23:43:34.556388",
+    "source": "real_public_data"
+  },
+  {
+    "id": "real_conv_重庆_20260422",
+    "type": "conversation",
+    "messages": [
+      {
+        "role": "user",
+        "content": "重庆的低空空域风险如何？"
+      },
+      {
+        "role": "assistant",
+        "content": "根据SORA框架评估，重庆的低空空域风险等级为：中等风险。\n\n主要风险因素包括：地形复杂度、建筑物高度、天气条件。\n\n重庆是山城，地形复杂度全国最高。虽然人口密度相对较低，但高层建筑众多，地形复杂。综合评估为中等风险区域。\n\nSORA评估结果：\n- SAIL等级：IV\n- 地面风险等级：2\n- 空中风险等级：c\n- 无人机动能：400J（8kg×10m/s）"
+      }
+    ],
+    "region": "重庆",
+    "risk_level": "中等风险",
+    "created_at": "2026-04-22T23:43:34.556416",
+    "source": "real_public_data"
+  },
+  {
+    "id": "real_risk_苏州_20260422",
+    "type": "risk_assessment",
+    "region": "苏州",
+    "coordinates": {
+      "lat": 31.2989,
+      "lng": 120.5853
+    },
+    "population_density": 1200,
+    "building_density": 0.4,
+    "terrain_complexity": 0.2,
+    "num_airports": 0,
+    "administrative_level": "economic",
+    "weather_data": {
+      "avg_wind_speed_ms": 2.8,
+      "avg_temperature_c": 16.0
+    },
+    "risk_factors": {
+      "人口密度": 0.65,
+      "建筑物高度": 0.5,
+      "空中交通": 0.3,
+      "天气条件": 0.45,
+      "敏感区域": 0.4,
+      "地形复杂度": 0.2
+    },
+    "sora_assessment": {
+      "drone_kinetic_energy_j": 400.0,
+      "kinetic_energy_tier": "low",
+      "ground_risk_level": 4,
+      "air_risk_class": "a",
+      "sail_level": "III"
+    },
+    "risk_level": "较低风险",
+    "explanation": "苏州经济发达但人口密度适中，无机场，空中交通风险较低。地形平坦。综合评估为较低风险区域。",
+    "data_sources": [
+      "中国统计年鉴2023",
+      "中国气象局",
+      "民航局公开数据",
+      "高德地图API"
+    ],
+    "created_at": "2026-04-22T23:43:34.556439",
+    "source": "real_public_data"
+  },
+  {
+    "id": "real_conv_苏州_20260422",
+    "type": "conversation",
+    "messages": [
+      {
+        "role": "user",
+        "content": "苏州哪些区域风险较低？"
+      },
+      {
+        "role": "assistant",
+        "content": "根据SORA框架评估，苏州的低空空域风险等级为：较低风险。\n\n主要风险因素包括：人口密度、建筑物高度、天气条件。\n\n苏州经济发达但人口密度适中，无机场，空中交通风险较低。地形平坦。综合评估为较低风险区域。\n\nSORA评估结果：\n- SAIL等级：III\n- 地面风险等级：4\n- 空中风险等级：a\n- 无人机动能：400J（8kg×10m/s）"
+      }
+    ],
+    "region": "苏州",
+    "risk_level": "较低风险",
+    "created_at": "2026-04-22T23:43:34.556465",
+    "source": "real_public_data"
+  },
+  {
+    "id": "real_risk_长沙_20260422",
+    "type": "risk_assessment",
+    "region": "长沙",
+    "coordinates": {
+      "lat": 28.2282,
+      "lng": 112.9388
+    },
+    "population_density": 1400,
+    "building_density": 0.42,
+    "terrain_complexity": 0.4,
+    "num_airports": 1,
+    "administrative_level": "capital",
+    "weather_data": {
+      "avg_wind_speed_ms": 2.3,
+      "avg_temperature_c": 17.5
+    },
+    "risk_factors": {
+      "人口密度": 0.7,
+      "建筑物高度": 0.55,
+      "空中交通": 0.45,
+      "天气条件": 0.5,
+      "敏感区域": 0.45,
+      "地形复杂度": 0.4
+    },
+    "sora_assessment": {
+      "drone_kinetic_energy_j": 400.0,
+      "kinetic_energy_tier": "low",
+      "ground_risk_level": 4,
+      "air_risk_class": "c",
+      "sail_level": "IV"
+    },
+    "risk_level": "中等风险",
+    "explanation": "长沙人口密度中等，地形有一定复杂度。综合评估为中等风险区域。",
+    "data_sources": [
+      "中国统计年鉴2023",
+      "中国气象局",
+      "民航局公开数据",
+      "高德地图API"
+    ],
+    "created_at": "2026-04-22T23:43:34.556488",
+    "source": "real_public_data"
+  },
+  {
+    "id": "real_conv_长沙_20260422",
+    "type": "conversation",
+    "messages": [
+      {
+        "role": "user",
+        "content": "评估一下长沙的飞行风险"
+      },
+      {
+        "role": "assistant",
+        "content": "根据SORA框架评估，长沙的低空空域风险等级为：中等风险。\n\n主要风险因素包括：人口密度、建筑物高度、天气条件。\n\n长沙人口密度中等，地形有一定复杂度。综合评估为中等风险区域。\n\nSORA评估结果：\n- SAIL等级：IV\n- 地面风险等级：4\n- 空中风险等级：c\n- 无人机动能：400J（8kg×10m/s）"
+      }
+    ],
+    "region": "长沙",
+    "risk_level": "中等风险",
+    "created_at": "2026-04-22T23:43:34.556515",
+    "source": "real_public_data"
+  }
+]

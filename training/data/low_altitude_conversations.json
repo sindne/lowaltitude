@@ -1,0 +1,6002 @@
+[
+  {
+    "id": "LOW_ALT_CONV_00001",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00001",
+    "scenario": "技术讨论",
+    "user_role": "监管人员-交通委低空管理处处长",
+    "assistant_role": "操作人员-地面站操作员",
+    "messages": [
+      {
+        "role": "user",
+        "content": "针对敏感区域拍摄事件，从技术角度分析主要原因是什么？"
+      },
+      {
+        "role": "assistant",
+        "content": "从技术分析，敏感区域拍摄事件的主要原因包括：\n1. 飞控系统软件存在bug，导致飞控系统异常导致航线偏离\n2. 传感器数据异常，未能及时识别障碍物\n3. 通讯链路受到干扰，失去地面站控制\n4. 电池老化导致供电不稳定\n建议升级飞控固件，定期维护传感器，加强电磁环境监测。"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.492250",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00002",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00002",
+    "scenario": "事件报告",
+    "user_role": "公众-企业安全负责人",
+    "assistant_role": "技术专家-传感器技术专家",
+    "messages": [
+      {
+        "role": "user",
+        "content": "报告！苏州吴中区发生一起非法空域进入事件，请求指示。"
+      },
+      {
+        "role": "assistant",
+        "content": "收到。请立即执行以下操作：\n1. 启动应急响应预案\n2. 疏散周边人员，确保安全\n3. 封锁现场，保留证据\n4. 联系技术专家进行风险评估\n5. 按照《民用无人驾驶航空器飞行管理暂行条例》要求上报相关部门"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.492250",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00003",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00003",
+    "scenario": "风险咨询",
+    "user_role": "监管人员-空管中心管制员",
+    "assistant_role": "公众-学校教师",
+    "messages": [
+      {
+        "role": "user",
+        "content": "请问在扬州广陵区进行环境监测飞行，需要注意哪些安全事项？"
+      },
+      {
+        "role": "assistant",
+        "content": "在扬州广陵区进行环境监测飞行，需注意以下事项：\n1. 提前向空管部门申请飞行计划\n2. 确保飞行器适航，电池电量充足\n3. 避开敏感区域，保持安全高度\n4. 关注气象条件，风速不超过8m/s\n5. 遵守《eVTOL航空器适航审定程序》相关规定"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.492250",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00004",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00004",
+    "scenario": "事件报告",
+    "user_role": "技术专家-飞控系统工程师",
+    "assistant_role": "监管人员-民航地区管理局监管员",
+    "messages": [
+      {
+        "role": "user",
+        "content": "报告！苏州吴中区发生一起航线偏离事件事件，请求指示。"
+      },
+      {
+        "role": "assistant",
+        "content": "收到。请立即执行以下操作：\n1. 启动应急响应预案\n2. 疏散周边人员，确保安全\n3. 封锁现场，保留证据\n4. 联系技术专家进行风险评估\n5. 按照《民用机场净空保护区域管理规定》要求上报相关部门"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.492250",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00005",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00005",
+    "scenario": "安全培训",
+    "user_role": "监管人员-民航地区管理局监管员",
+    "assistant_role": "公众-社区居民代表",
+    "messages": [
+      {
+        "role": "user",
+        "content": "作为新手飞手，应该如何避免政府机关区域飞行事件？"
+      },
+      {
+        "role": "assistant",
+        "content": "新手飞手避免政府机关区域飞行事件的要点：\n1. 系统学习飞行理论知识，取得资质证书\n2. 在开阔场地练习，积累飞行经验\n3. 飞行前检查清单：电池、螺旋桨、GPS信号\n4. 了解当地空域划设，避开禁飞区\n5. 保持视距内飞行，高度不超过120米\n6. 密切关注气象条件，避免恶劣天气飞行\n7. 安装并开启电子围栏功能"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.492250",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00006",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00006",
+    "scenario": "事件报告",
+    "user_role": "操作人员-飞行教员",
+    "assistant_role": "监管人员-应急管理局副局长",
+    "messages": [
+      {
+        "role": "user",
+        "content": "报告！上海闵行区发生一起大型活动区域飞行事件，请求指示。"
+      },
+      {
+        "role": "assistant",
+        "content": "收到。请立即执行以下操作：\n1. 启动应急响应预案\n2. 疏散周边人员，确保安全\n3. 封锁现场，保留证据\n4. 联系技术专家进行风险评估\n5. 按照《无人机驾驶员培训考核管理办法》要求上报相关部门"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.492250",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00007",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00007",
+    "scenario": "技术讨论",
+    "user_role": "监管人员-军分区空域协调员",
+    "assistant_role": "技术专家-传感器技术专家",
+    "messages": [
+      {
+        "role": "user",
+        "content": "针对医院上空飞行事件，从技术角度分析主要原因是什么？"
+      },
+      {
+        "role": "assistant",
+        "content": "从技术分析，医院上空飞行事件的主要原因包括：\n1. 飞控系统软件存在bug，导致通讯信号中断失去控制\n2. 传感器数据异常，未能及时识别障碍物\n3. 通讯链路受到干扰，失去地面站控制\n4. 电池老化导致供电不稳定\n建议升级飞控固件，定期维护传感器，加强电磁环境监测。"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.492767",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00008",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00008",
+    "scenario": "风险咨询",
+    "user_role": "技术专家-航空安全评估师",
+    "assistant_role": "操作人员-航线规划师",
+    "messages": [
+      {
+        "role": "user",
+        "content": "请问在杭州西湖区进行农业植保飞行，需要注意哪些安全事项？"
+      },
+      {
+        "role": "assistant",
+        "content": "在杭州西湖区进行农业植保飞行，需注意以下事项：\n1. 提前向空管部门申请飞行计划\n2. 确保飞行器适航，电池电量充足\n3. 避开敏感区域，保持安全高度\n4. 关注气象条件，风速不超过11m/s\n5. 遵守《无人驾驶航空器飞行管理暂行条例》相关规定"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.492767",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00009",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00009",
+    "scenario": "风险咨询",
+    "user_role": "操作人员-任务载荷操作员",
+    "assistant_role": "监管人员-生态环境局监测中心主任",
+    "messages": [
+      {
+        "role": "user",
+        "content": "请问在昆明官渡区进行医疗物资配送飞行，需要注意哪些安全事项？"
+      },
+      {
+        "role": "assistant",
+        "content": "在昆明官渡区进行医疗物资配送飞行，需注意以下事项：\n1. 提前向空管部门申请飞行计划\n2. 确保飞行器适航，电池电量充足\n3. 避开敏感区域，保持安全高度\n4. 关注气象条件，风速不超过13m/s\n5. 遵守《通用航空飞行管制条例》相关规定"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.492767",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00010",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00010",
+    "scenario": "政策解读",
+    "user_role": "技术专家-航空安全评估师",
+    "assistant_role": "公众-物业管理人员",
+    "messages": [
+      {
+        "role": "user",
+        "content": "《民用无人驾驶航空器飞行管理暂行条例》对低空飞行有哪些新的要求？"
+      },
+      {
+        "role": "assistant",
+        "content": "《民用无人驾驶航空器飞行管理暂行条例》对低空飞行的主要要求包括：\n1. 所有无人机飞行必须实名登记\n2. 在管制空域飞行需提前申请\n3. 操作人员需取得相应资质\n4. 禁止在禁飞区、限制区飞行\n5. 商业运营需取得经营许可证\n6. 建立飞行数据记录和报告制度"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.492767",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00011",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00011",
+    "scenario": "安全培训",
+    "user_role": "公众-农业合作社代表",
+    "assistant_role": "监管人员-应急管理局副局长",
+    "messages": [
+      {
+        "role": "user",
+        "content": "作为新手飞手，应该如何避免医院上空飞行事件？"
+      },
+      {
+        "role": "assistant",
+        "content": "新手飞手避免医院上空飞行事件的要点：\n1. 系统学习飞行理论知识，取得资质证书\n2. 在开阔场地练习，积累飞行经验\n3. 飞行前检查清单：电池、螺旋桨、GPS信号\n4. 了解当地空域划设，避开禁飞区\n5. 保持视距内飞行，高度不超过120米\n6. 密切关注气象条件，避免恶劣天气飞行\n7. 安装并开启电子围栏功能"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.492767",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00012",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00012",
+    "scenario": "技术讨论",
+    "user_role": "公众-农业合作社代表",
+    "assistant_role": "技术专家-空管系统架构师",
+    "messages": [
+      {
+        "role": "user",
+        "content": "针对雷达探测盲区事件，从技术角度分析主要原因是什么？"
+      },
+      {
+        "role": "assistant",
+        "content": "从技术分析，雷达探测盲区事件的主要原因包括：\n1. 飞控系统软件存在bug，导致电池供电不足引发紧急迫降\n2. 传感器数据异常，未能及时识别障碍物\n3. 通讯链路受到干扰，失去地面站控制\n4. 电池老化导致供电不稳定\n建议升级飞控固件，定期维护传感器，加强电磁环境监测。"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.492767",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00013",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00013",
+    "scenario": "风险咨询",
+    "user_role": "操作人员-飞行调度员",
+    "assistant_role": "公众-物流用户",
+    "messages": [
+      {
+        "role": "user",
+        "content": "请问在石家庄长安区进行农业植保飞行，需要注意哪些安全事项？"
+      },
+      {
+        "role": "assistant",
+        "content": "在石家庄长安区进行农业植保飞行，需注意以下事项：\n1. 提前向空管部门申请飞行计划\n2. 确保飞行器适航，电池电量充足\n3. 避开敏感区域，保持安全高度\n4. 关注气象条件，风速不超过14m/s\n5. 遵守《民用无人机驾驶员管理规定》相关规定"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.492767",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00014",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00014",
+    "scenario": "技术讨论",
+    "user_role": "监管人员-空管中心管制员",
+    "assistant_role": "操作人员-设备维护工程师",
+    "messages": [
+      {
+        "role": "user",
+        "content": "针对飞行控制系统异常事件，从技术角度分析主要原因是什么？"
+      },
+      {
+        "role": "assistant",
+        "content": "从技术分析，飞行控制系统异常事件的主要原因包括：\n1. 飞控系统软件存在bug，导致操作人员失误导致违规飞行\n2. 传感器数据异常，未能及时识别障碍物\n3. 通讯链路受到干扰，失去地面站控制\n4. 电池老化导致供电不稳定\n建议升级飞控固件，定期维护传感器，加强电磁环境监测。"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.492767",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00015",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00015",
+    "scenario": "技术讨论",
+    "user_role": "操作人员-试飞员",
+    "assistant_role": "监管人员-军分区空域协调员",
+    "messages": [
+      {
+        "role": "user",
+        "content": "针对导航系统故障事件，从技术角度分析主要原因是什么？"
+      },
+      {
+        "role": "assistant",
+        "content": "从技术分析，导航系统故障事件的主要原因包括：\n1. 飞控系统软件存在bug，导致操作人员失误导致违规飞行\n2. 传感器数据异常，未能及时识别障碍物\n3. 通讯链路受到干扰，失去地面站控制\n4. 电池老化导致供电不稳定\n建议升级飞控固件，定期维护传感器，加强电磁环境监测。"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.492767",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00016",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00016",
+    "scenario": "风险咨询",
+    "user_role": "操作人员-设备维护工程师",
+    "assistant_role": "监管人员-军分区空域协调员",
+    "messages": [
+      {
+        "role": "user",
+        "content": "请问在北京海淀区进行医疗物资配送飞行，需要注意哪些安全事项？"
+      },
+      {
+        "role": "assistant",
+        "content": "在北京海淀区进行医疗物资配送飞行，需注意以下事项：\n1. 提前向空管部门申请飞行计划\n2. 确保飞行器适航，电池电量充足\n3. 避开敏感区域，保持安全高度\n4. 关注气象条件，风速不超过8m/s\n5. 遵守《低空经济产业发展指导意见》相关规定"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.492767",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00017",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00017",
+    "scenario": "安全培训",
+    "user_role": "技术专家-无人机系统工程师",
+    "assistant_role": "公众-媒体记者",
+    "messages": [
+      {
+        "role": "user",
+        "content": "作为新手飞手，应该如何避免导航系统故障事件？"
+      },
+      {
+        "role": "assistant",
+        "content": "新手飞手避免导航系统故障事件的要点：\n1. 系统学习飞行理论知识，取得资质证书\n2. 在开阔场地练习，积累飞行经验\n3. 飞行前检查清单：电池、螺旋桨、GPS信号\n4. 了解当地空域划设，避开禁飞区\n5. 保持视距内飞行，高度不超过120米\n6. 密切关注气象条件，避免恶劣天气飞行\n7. 安装并开启电子围栏功能"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.492767",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00018",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00018",
+    "scenario": "事件报告",
+    "user_role": "技术专家-空管系统架构师",
+    "assistant_role": "操作人员-农业植保操作员",
+    "messages": [
+      {
+        "role": "user",
+        "content": "报告！衢州柯城区发生一起雷达探测盲区事件，请求指示。"
+      },
+      {
+        "role": "assistant",
+        "content": "收到。请立即执行以下操作：\n1. 启动应急响应预案\n2. 疏散周边人员，确保安全\n3. 封锁现场，保留证据\n4. 联系技术专家进行风险评估\n5. 按照《无人驾驶航空器飞行管理暂行条例》要求上报相关部门"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.492767",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00019",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00019",
+    "scenario": "技术讨论",
+    "user_role": "操作人员-航线规划师",
+    "assistant_role": "公众-医院管理人员",
+    "messages": [
+      {
+        "role": "user",
+        "content": "针对无人机非法入侵事件，从技术角度分析主要原因是什么？"
+      },
+      {
+        "role": "assistant",
+        "content": "从技术分析，无人机非法入侵事件的主要原因包括：\n1. 飞控系统软件存在bug，导致设备老化引发系统故障\n2. 传感器数据异常，未能及时识别障碍物\n3. 通讯链路受到干扰，失去地面站控制\n4. 电池老化导致供电不稳定\n建议升级飞控固件，定期维护传感器，加强电磁环境监测。"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.493773",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00020",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00020",
+    "scenario": "政策解读",
+    "user_role": "公众-媒体记者",
+    "assistant_role": "监管人员-市低空空域管理局局长",
+    "messages": [
+      {
+        "role": "user",
+        "content": "《eVTOL航空器适航审定程序》对低空飞行有哪些新的要求？"
+      },
+      {
+        "role": "assistant",
+        "content": "《eVTOL航空器适航审定程序》对低空飞行的主要要求包括：\n1. 所有无人机飞行必须实名登记\n2. 在管制空域飞行需提前申请\n3. 操作人员需取得相应资质\n4. 禁止在禁飞区、限制区飞行\n5. 商业运营需取得经营许可证\n6. 建立飞行数据记录和报告制度"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.493773",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00021",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00021",
+    "scenario": "事件报告",
+    "user_role": "监管人员-空管中心管制员",
+    "assistant_role": "操作人员-飞行教员",
+    "messages": [
+      {
+        "role": "user",
+        "content": "报告！乌鲁木齐沙依巴克区发生一起通讯中断事件，请求指示。"
+      },
+      {
+        "role": "assistant",
+        "content": "收到。请立即执行以下操作：\n1. 启动应急响应预案\n2. 疏散周边人员，确保安全\n3. 封锁现场，保留证据\n4. 联系技术专家进行风险评估\n5. 按照《民用机场净空保护区域管理规定》要求上报相关部门"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.493773",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00022",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00022",
+    "scenario": "技术讨论",
+    "user_role": "公众-物业管理人员",
+    "assistant_role": "技术专家-低空空域规划专家",
+    "messages": [
+      {
+        "role": "user",
+        "content": "针对超载飞行事件，从技术角度分析主要原因是什么？"
+      },
+      {
+        "role": "assistant",
+        "content": "从技术分析，超载飞行事件的主要原因包括：\n1. 飞控系统软件存在bug，导致避障系统故障造成飞行冲突\n2. 传感器数据异常，未能及时识别障碍物\n3. 通讯链路受到干扰，失去地面站控制\n4. 电池老化导致供电不稳定\n建议升级飞控固件，定期维护传感器，加强电磁环境监测。"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.493773",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00023",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00023",
+    "scenario": "政策解读",
+    "user_role": "公众-物业管理人员",
+    "assistant_role": "操作人员-任务载荷操作员",
+    "messages": [
+      {
+        "role": "user",
+        "content": "《特定类无人机试运行管理规程》对低空飞行有哪些新的要求？"
+      },
+      {
+        "role": "assistant",
+        "content": "《特定类无人机试运行管理规程》对低空飞行的主要要求包括：\n1. 所有无人机飞行必须实名登记\n2. 在管制空域飞行需提前申请\n3. 操作人员需取得相应资质\n4. 禁止在禁飞区、限制区飞行\n5. 商业运营需取得经营许可证\n6. 建立飞行数据记录和报告制度"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.493773",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00024",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00024",
+    "scenario": "风险咨询",
+    "user_role": "监管人员-生态环境局监测中心主任",
+    "assistant_role": "操作人员-飞行调度员",
+    "messages": [
+      {
+        "role": "user",
+        "content": "请问在深圳宝安区进行影视拍摄飞行，需要注意哪些安全事项？"
+      },
+      {
+        "role": "assistant",
+        "content": "在深圳宝安区进行影视拍摄飞行，需注意以下事项：\n1. 提前向空管部门申请飞行计划\n2. 确保飞行器适航，电池电量充足\n3. 避开敏感区域，保持安全高度\n4. 关注气象条件，风速不超过11m/s\n5. 遵守《无人机驾驶员培训考核管理办法》相关规定"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.493773",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00025",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00025",
+    "scenario": "安全培训",
+    "user_role": "公众-媒体记者",
+    "assistant_role": "监管人员-公安局治安大队队长",
+    "messages": [
+      {
+        "role": "user",
+        "content": "作为新手飞手，应该如何避免紧急迫降事件？"
+      },
+      {
+        "role": "assistant",
+        "content": "新手飞手避免紧急迫降事件的要点：\n1. 系统学习飞行理论知识，取得资质证书\n2. 在开阔场地练习，积累飞行经验\n3. 飞行前检查清单：电池、螺旋桨、GPS信号\n4. 了解当地空域划设，避开禁飞区\n5. 保持视距内飞行，高度不超过120米\n6. 密切关注气象条件，避免恶劣天气飞行\n7. 安装并开启电子围栏功能"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.493773",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00026",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00026",
+    "scenario": "风险咨询",
+    "user_role": "公众-媒体记者",
+    "assistant_role": "技术专家-飞控系统工程师",
+    "messages": [
+      {
+        "role": "user",
+        "content": "请问在南宁青秀区进行测绘建模飞行，需要注意哪些安全事项？"
+      },
+      {
+        "role": "assistant",
+        "content": "在南宁青秀区进行测绘建模飞行，需注意以下事项：\n1. 提前向空管部门申请飞行计划\n2. 确保飞行器适航，电池电量充足\n3. 避开敏感区域，保持安全高度\n4. 关注气象条件，风速不超过13m/s\n5. 遵守《民用机场净空保护区域管理规定》相关规定"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.493773",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00027",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00027",
+    "scenario": "安全培训",
+    "user_role": "公众-农业合作社代表",
+    "assistant_role": "监管人员-公安局治安大队队长",
+    "messages": [
+      {
+        "role": "user",
+        "content": "作为新手飞手，应该如何避免超载飞行事件？"
+      },
+      {
+        "role": "assistant",
+        "content": "新手飞手避免超载飞行事件的要点：\n1. 系统学习飞行理论知识，取得资质证书\n2. 在开阔场地练习，积累飞行经验\n3. 飞行前检查清单：电池、螺旋桨、GPS信号\n4. 了解当地空域划设，避开禁飞区\n5. 保持视距内飞行，高度不超过120米\n6. 密切关注气象条件，避免恶劣天气飞行\n7. 安装并开启电子围栏功能"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.493773",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00028",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00028",
+    "scenario": "风险咨询",
+    "user_role": "公众-企业安全负责人",
+    "assistant_role": "监管人员-军分区空域协调员",
+    "messages": [
+      {
+        "role": "user",
+        "content": "请问在常州新北区进行应急救援飞行，需要注意哪些安全事项？"
+      },
+      {
+        "role": "assistant",
+        "content": "在常州新北区进行应急救援飞行，需注意以下事项：\n1. 提前向空管部门申请飞行计划\n2. 确保飞行器适航，电池电量充足\n3. 避开敏感区域，保持安全高度\n4. 关注气象条件，风速不超过8m/s\n5. 遵守《特定类无人机试运行管理规程》相关规定"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.493773",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00029",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00029",
+    "scenario": "风险咨询",
+    "user_role": "监管人员-空管中心管制员",
+    "assistant_role": "操作人员-飞行教员",
+    "messages": [
+      {
+        "role": "user",
+        "content": "请问在郑州金水区进行农业植保飞行，需要注意哪些安全事项？"
+      },
+      {
+        "role": "assistant",
+        "content": "在郑州金水区进行农业植保飞行，需注意以下事项：\n1. 提前向空管部门申请飞行计划\n2. 确保飞行器适航，电池电量充足\n3. 避开敏感区域，保持安全高度\n4. 关注气象条件，风速不超过15m/s\n5. 遵守《低空经济产业发展指导意见》相关规定"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.493773",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00030",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00030",
+    "scenario": "事件报告",
+    "user_role": "公众-环保志愿者",
+    "assistant_role": "操作人员-物流配送操作员",
+    "messages": [
+      {
+        "role": "user",
+        "content": "报告！昆明官渡区发生一起航线偏离事件事件，请求指示。"
+      },
+      {
+        "role": "assistant",
+        "content": "收到。请立即执行以下操作：\n1. 启动应急响应预案\n2. 疏散周边人员，确保安全\n3. 封锁现场，保留证据\n4. 联系技术专家进行风险评估\n5. 按照《民用机场净空保护区域管理规定》要求上报相关部门"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.493773",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00031",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00031",
+    "scenario": "风险咨询",
+    "user_role": "操作人员-飞行调度员",
+    "assistant_role": "公众-医院管理人员",
+    "messages": [
+      {
+        "role": "user",
+        "content": "请问在济南历下区进行广告宣传飞行，需要注意哪些安全事项？"
+      },
+      {
+        "role": "assistant",
+        "content": "在济南历下区进行广告宣传飞行，需注意以下事项：\n1. 提前向空管部门申请飞行计划\n2. 确保飞行器适航，电池电量充足\n3. 避开敏感区域，保持安全高度\n4. 关注气象条件，风速不超过13m/s\n5. 遵守《轻小无人机运行规定（试行）》相关规定"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.493773",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00032",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00032",
+    "scenario": "政策解读",
+    "user_role": "监管人员-生态环境局监测中心主任",
+    "assistant_role": "公众-医院管理人员",
+    "messages": [
+      {
+        "role": "user",
+        "content": "《民用无人机驾驶员管理规定》对低空飞行有哪些新的要求？"
+      },
+      {
+        "role": "assistant",
+        "content": "《民用无人机驾驶员管理规定》对低空飞行的主要要求包括：\n1. 所有无人机飞行必须实名登记\n2. 在管制空域飞行需提前申请\n3. 操作人员需取得相应资质\n4. 禁止在禁飞区、限制区飞行\n5. 商业运营需取得经营许可证\n6. 建立飞行数据记录和报告制度"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.493773",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00033",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00033",
+    "scenario": "风险咨询",
+    "user_role": "操作人员-飞行教员",
+    "assistant_role": "技术专家-气象预报专家",
+    "messages": [
+      {
+        "role": "user",
+        "content": "请问在北京通州区进行广告宣传飞行，需要注意哪些安全事项？"
+      },
+      {
+        "role": "assistant",
+        "content": "在北京通州区进行广告宣传飞行，需注意以下事项：\n1. 提前向空管部门申请飞行计划\n2. 确保飞行器适航，电池电量充足\n3. 避开敏感区域，保持安全高度\n4. 关注气象条件，风速不超过9m/s\n5. 遵守《低空飞行服务保障体系建设方案》相关规定"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.494772",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00034",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00034",
+    "scenario": "技术讨论",
+    "user_role": "技术专家-无人机系统工程师",
+    "assistant_role": "公众-物流用户",
+    "messages": [
+      {
+        "role": "user",
+        "content": "针对学校上空飞行事件，从技术角度分析主要原因是什么？"
+      },
+      {
+        "role": "assistant",
+        "content": "从技术分析，学校上空飞行事件的主要原因包括：\n1. 飞控系统软件存在bug，导致通讯信号中断失去控制\n2. 传感器数据异常，未能及时识别障碍物\n3. 通讯链路受到干扰，失去地面站控制\n4. 电池老化导致供电不稳定\n建议升级飞控固件，定期维护传感器，加强电磁环境监测。"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.494772",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00035",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00035",
+    "scenario": "风险咨询",
+    "user_role": "公众-航空爱好者",
+    "assistant_role": "操作人员-地面站操作员",
+    "messages": [
+      {
+        "role": "user",
+        "content": "请问在重庆渝北区进行影视拍摄飞行，需要注意哪些安全事项？"
+      },
+      {
+        "role": "assistant",
+        "content": "在重庆渝北区进行影视拍摄飞行，需注意以下事项：\n1. 提前向空管部门申请飞行计划\n2. 确保飞行器适航，电池电量充足\n3. 避开敏感区域，保持安全高度\n4. 关注气象条件，风速不超过11m/s\n5. 遵守《民用无人机驾驶员管理规定》相关规定"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.494772",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00036",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00036",
+    "scenario": "风险咨询",
+    "user_role": "技术专家-气象预报专家",
+    "assistant_role": "监管人员-应急管理局副局长",
+    "messages": [
+      {
+        "role": "user",
+        "content": "请问在昆明官渡区进行物流配送飞行，需要注意哪些安全事项？"
+      },
+      {
+        "role": "assistant",
+        "content": "在昆明官渡区进行物流配送飞行，需注意以下事项：\n1. 提前向空管部门申请飞行计划\n2. 确保飞行器适航，电池电量充足\n3. 避开敏感区域，保持安全高度\n4. 关注气象条件，风速不超过11m/s\n5. 遵守《低空空域使用管理规定》相关规定"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.494772",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00037",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00037",
+    "scenario": "技术讨论",
+    "user_role": "公众-物业管理人员",
+    "assistant_role": "监管人员-交通委低空管理处处长",
+    "messages": [
+      {
+        "role": "user",
+        "content": "针对通讯中断事件，从技术角度分析主要原因是什么？"
+      },
+      {
+        "role": "assistant",
+        "content": "从技术分析，通讯中断事件的主要原因包括：\n1. 飞控系统软件存在bug，导致电池供电不足引发紧急迫降\n2. 传感器数据异常，未能及时识别障碍物\n3. 通讯链路受到干扰，失去地面站控制\n4. 电池老化导致供电不稳定\n建议升级飞控固件，定期维护传感器，加强电磁环境监测。"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.494772",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00038",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00038",
+    "scenario": "技术讨论",
+    "user_role": "公众-物业管理人员",
+    "assistant_role": "操作人员-试飞员",
+    "messages": [
+      {
+        "role": "user",
+        "content": "针对电磁干扰事件事件，从技术角度分析主要原因是什么？"
+      },
+      {
+        "role": "assistant",
+        "content": "从技术分析，电磁干扰事件事件的主要原因包括：\n1. 飞控系统软件存在bug，导致气象条件突变影响飞行安全\n2. 传感器数据异常，未能及时识别障碍物\n3. 通讯链路受到干扰，失去地面站控制\n4. 电池老化导致供电不稳定\n建议升级飞控固件，定期维护传感器，加强电磁环境监测。"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.494772",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00039",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00039",
+    "scenario": "技术讨论",
+    "user_role": "操作人员-无人机飞手",
+    "assistant_role": "监管人员-生态环境局监测中心主任",
+    "messages": [
+      {
+        "role": "user",
+        "content": "针对非法空域进入事件，从技术角度分析主要原因是什么？"
+      },
+      {
+        "role": "assistant",
+        "content": "从技术分析，非法空域进入事件的主要原因包括：\n1. 飞控系统软件存在bug，导致导航系统受干扰偏离航线\n2. 传感器数据异常，未能及时识别障碍物\n3. 通讯链路受到干扰，失去地面站控制\n4. 电池老化导致供电不稳定\n建议升级飞控固件，定期维护传感器，加强电磁环境监测。"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.494772",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00040",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00040",
+    "scenario": "安全培训",
+    "user_role": "技术专家-航空安全评估师",
+    "assistant_role": "公众-物流用户",
+    "messages": [
+      {
+        "role": "user",
+        "content": "作为新手飞手，应该如何避免电磁干扰事件事件？"
+      },
+      {
+        "role": "assistant",
+        "content": "新手飞手避免电磁干扰事件事件的要点：\n1. 系统学习飞行理论知识，取得资质证书\n2. 在开阔场地练习，积累飞行经验\n3. 飞行前检查清单：电池、螺旋桨、GPS信号\n4. 了解当地空域划设，避开禁飞区\n5. 保持视距内飞行，高度不超过120米\n6. 密切关注气象条件，避免恶劣天气飞行\n7. 安装并开启电子围栏功能"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.494772",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00041",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00041",
+    "scenario": "政策解读",
+    "user_role": "公众-媒体记者",
+    "assistant_role": "技术专家-气象预报专家",
+    "messages": [
+      {
+        "role": "user",
+        "content": "《无人驾驶航空器系统标准体系建设指南》对低空飞行有哪些新的要求？"
+      },
+      {
+        "role": "assistant",
+        "content": "《无人驾驶航空器系统标准体系建设指南》对低空飞行的主要要求包括：\n1. 所有无人机飞行必须实名登记\n2. 在管制空域飞行需提前申请\n3. 操作人员需取得相应资质\n4. 禁止在禁飞区、限制区飞行\n5. 商业运营需取得经营许可证\n6. 建立飞行数据记录和报告制度"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.494772",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00042",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00042",
+    "scenario": "政策解读",
+    "user_role": "公众-物业管理人员",
+    "assistant_role": "监管人员-生态环境局监测中心主任",
+    "messages": [
+      {
+        "role": "user",
+        "content": "《无人机物流配送试点管理办法》对低空飞行有哪些新的要求？"
+      },
+      {
+        "role": "assistant",
+        "content": "《无人机物流配送试点管理办法》对低空飞行的主要要求包括：\n1. 所有无人机飞行必须实名登记\n2. 在管制空域飞行需提前申请\n3. 操作人员需取得相应资质\n4. 禁止在禁飞区、限制区飞行\n5. 商业运营需取得经营许可证\n6. 建立飞行数据记录和报告制度"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.494772",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00043",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00043",
+    "scenario": "风险咨询",
+    "user_role": "操作人员-任务载荷操作员",
+    "assistant_role": "监管人员-市低空空域管理局局长",
+    "messages": [
+      {
+        "role": "user",
+        "content": "请问在北京海淀区进行农业植保飞行，需要注意哪些安全事项？"
+      },
+      {
+        "role": "assistant",
+        "content": "在北京海淀区进行农业植保飞行，需注意以下事项：\n1. 提前向空管部门申请飞行计划\n2. 确保飞行器适航，电池电量充足\n3. 避开敏感区域，保持安全高度\n4. 关注气象条件，风速不超过12m/s\n5. 遵守《民用机场净空保护区域管理规定》相关规定"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.494772",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00044",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00044",
+    "scenario": "风险咨询",
+    "user_role": "监管人员-城管执法大队长",
+    "assistant_role": "操作人员-航线规划师",
+    "messages": [
+      {
+        "role": "user",
+        "content": "请问在贵阳南明区进行广告宣传飞行，需要注意哪些安全事项？"
+      },
+      {
+        "role": "assistant",
+        "content": "在贵阳南明区进行广告宣传飞行，需注意以下事项：\n1. 提前向空管部门申请飞行计划\n2. 确保飞行器适航，电池电量充足\n3. 避开敏感区域，保持安全高度\n4. 关注气象条件，风速不超过13m/s\n5. 遵守《低空经济产业发展指导意见》相关规定"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.494772",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00045",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00045",
+    "scenario": "技术讨论",
+    "user_role": "技术专家-适航审定专家",
+    "assistant_role": "操作人员-试飞员",
+    "messages": [
+      {
+        "role": "user",
+        "content": "针对军事设施附近飞行事件，从技术角度分析主要原因是什么？"
+      },
+      {
+        "role": "assistant",
+        "content": "从技术分析，军事设施附近飞行事件的主要原因包括：\n1. 飞控系统软件存在bug，导致通讯信号中断失去控制\n2. 传感器数据异常，未能及时识别障碍物\n3. 通讯链路受到干扰，失去地面站控制\n4. 电池老化导致供电不稳定\n建议升级飞控固件，定期维护传感器，加强电磁环境监测。"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.495772",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00046",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00046",
+    "scenario": "政策解读",
+    "user_role": "操作人员-无人机飞手",
+    "assistant_role": "监管人员-军分区空域协调员",
+    "messages": [
+      {
+        "role": "user",
+        "content": "《无人机物流配送试点管理办法》对低空飞行有哪些新的要求？"
+      },
+      {
+        "role": "assistant",
+        "content": "《无人机物流配送试点管理办法》对低空飞行的主要要求包括：\n1. 所有无人机飞行必须实名登记\n2. 在管制空域飞行需提前申请\n3. 操作人员需取得相应资质\n4. 禁止在禁飞区、限制区飞行\n5. 商业运营需取得经营许可证\n6. 建立飞行数据记录和报告制度"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.495772",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00047",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00047",
+    "scenario": "事件报告",
+    "user_role": "公众-医院管理人员",
+    "assistant_role": "监管人员-空管中心管制员",
+    "messages": [
+      {
+        "role": "user",
+        "content": "报告！北京通州区发生一起导航系统故障事件，请求指示。"
+      },
+      {
+        "role": "assistant",
+        "content": "收到。请立即执行以下操作：\n1. 启动应急响应预案\n2. 疏散周边人员，确保安全\n3. 封锁现场，保留证据\n4. 联系技术专家进行风险评估\n5. 按照《民用无人机驾驶员管理规定》要求上报相关部门"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.495772",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00048",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00048",
+    "scenario": "政策解读",
+    "user_role": "公众-航空爱好者",
+    "assistant_role": "技术专家-无人机系统工程师",
+    "messages": [
+      {
+        "role": "user",
+        "content": "《通用航空飞行管制条例》对低空飞行有哪些新的要求？"
+      },
+      {
+        "role": "assistant",
+        "content": "《通用航空飞行管制条例》对低空飞行的主要要求包括：\n1. 所有无人机飞行必须实名登记\n2. 在管制空域飞行需提前申请\n3. 操作人员需取得相应资质\n4. 禁止在禁飞区、限制区飞行\n5. 商业运营需取得经营许可证\n6. 建立飞行数据记录和报告制度"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.495772",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00049",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00049",
+    "scenario": "安全培训",
+    "user_role": "操作人员-飞行调度员",
+    "assistant_role": "公众-农业合作社代表",
+    "messages": [
+      {
+        "role": "user",
+        "content": "作为新手飞手，应该如何避免未经许可的商业飞行事件？"
+      },
+      {
+        "role": "assistant",
+        "content": "新手飞手避免未经许可的商业飞行事件的要点：\n1. 系统学习飞行理论知识，取得资质证书\n2. 在开阔场地练习，积累飞行经验\n3. 飞行前检查清单：电池、螺旋桨、GPS信号\n4. 了解当地空域划设，避开禁飞区\n5. 保持视距内飞行，高度不超过120米\n6. 密切关注气象条件，避免恶劣天气飞行\n7. 安装并开启电子围栏功能"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.495772",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00050",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00050",
+    "scenario": "技术讨论",
+    "user_role": "公众-学校教师",
+    "assistant_role": "操作人员-物流配送操作员",
+    "messages": [
+      {
+        "role": "user",
+        "content": "针对学校上空飞行事件，从技术角度分析主要原因是什么？"
+      },
+      {
+        "role": "assistant",
+        "content": "从技术分析，学校上空飞行事件的主要原因包括：\n1. 飞控系统软件存在bug，导致飞控系统异常导致航线偏离\n2. 传感器数据异常，未能及时识别障碍物\n3. 通讯链路受到干扰，失去地面站控制\n4. 电池老化导致供电不稳定\n建议升级飞控固件，定期维护传感器，加强电磁环境监测。"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.495772",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00051",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00051",
+    "scenario": "风险咨询",
+    "user_role": "技术专家-飞控系统工程师",
+    "assistant_role": "公众-环保志愿者",
+    "messages": [
+      {
+        "role": "user",
+        "content": "请问在深圳南山区进行航拍巡查飞行，需要注意哪些安全事项？"
+      },
+      {
+        "role": "assistant",
+        "content": "在深圳南山区进行航拍巡查飞行，需注意以下事项：\n1. 提前向空管部门申请飞行计划\n2. 确保飞行器适航，电池电量充足\n3. 避开敏感区域，保持安全高度\n4. 关注气象条件，风速不超过8m/s\n5. 遵守《通用航空飞行管制条例》相关规定"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.495772",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00052",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00052",
+    "scenario": "事件报告",
+    "user_role": "公众-物流用户",
+    "assistant_role": "监管人员-市低空空域管理局局长",
+    "messages": [
+      {
+        "role": "user",
+        "content": "报告！银川金凤区发生一起无人机非法入侵事件，请求指示。"
+      },
+      {
+        "role": "assistant",
+        "content": "收到。请立即执行以下操作：\n1. 启动应急响应预案\n2. 疏散周边人员，确保安全\n3. 封锁现场，保留证据\n4. 联系技术专家进行风险评估\n5. 按照《民用机场净空保护区域管理规定》要求上报相关部门"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.495772",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00053",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00053",
+    "scenario": "安全培训",
+    "user_role": "技术专家-人工智能算法专家",
+    "assistant_role": "公众-医院管理人员",
+    "messages": [
+      {
+        "role": "user",
+        "content": "作为新手飞手，应该如何避免超高度限制飞行事件？"
+      },
+      {
+        "role": "assistant",
+        "content": "新手飞手避免超高度限制飞行事件的要点：\n1. 系统学习飞行理论知识，取得资质证书\n2. 在开阔场地练习，积累飞行经验\n3. 飞行前检查清单：电池、螺旋桨、GPS信号\n4. 了解当地空域划设，避开禁飞区\n5. 保持视距内飞行，高度不超过120米\n6. 密切关注气象条件，避免恶劣天气飞行\n7. 安装并开启电子围栏功能"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.495772",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00054",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00054",
+    "scenario": "安全培训",
+    "user_role": "技术专家-航空安全评估师",
+    "assistant_role": "操作人员-物流配送操作员",
+    "messages": [
+      {
+        "role": "user",
+        "content": "作为新手飞手，应该如何避免能见度突变事件？"
+      },
+      {
+        "role": "assistant",
+        "content": "新手飞手避免能见度突变事件的要点：\n1. 系统学习飞行理论知识，取得资质证书\n2. 在开阔场地练习，积累飞行经验\n3. 飞行前检查清单：电池、螺旋桨、GPS信号\n4. 了解当地空域划设，避开禁飞区\n5. 保持视距内飞行，高度不超过120米\n6. 密切关注气象条件，避免恶劣天气飞行\n7. 安装并开启电子围栏功能"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.495772",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00055",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00055",
+    "scenario": "技术讨论",
+    "user_role": "技术专家-飞控系统工程师",
+    "assistant_role": "监管人员-公安局治安大队队长",
+    "messages": [
+      {
+        "role": "user",
+        "content": "针对机场净空区侵入事件，从技术角度分析主要原因是什么？"
+      },
+      {
+        "role": "assistant",
+        "content": "从技术分析，机场净空区侵入事件的主要原因包括：\n1. 飞控系统软件存在bug，导致避障系统故障造成飞行冲突\n2. 传感器数据异常，未能及时识别障碍物\n3. 通讯链路受到干扰，失去地面站控制\n4. 电池老化导致供电不稳定\n建议升级飞控固件，定期维护传感器，加强电磁环境监测。"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.495772",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00056",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00056",
+    "scenario": "技术讨论",
+    "user_role": "监管人员-军分区空域协调员",
+    "assistant_role": "操作人员-物流配送操作员",
+    "messages": [
+      {
+        "role": "user",
+        "content": "针对体育赛事区域飞行事件，从技术角度分析主要原因是什么？"
+      },
+      {
+        "role": "assistant",
+        "content": "从技术分析，体育赛事区域飞行事件的主要原因包括：\n1. 飞控系统软件存在bug，导致避障系统故障造成飞行冲突\n2. 传感器数据异常，未能及时识别障碍物\n3. 通讯链路受到干扰，失去地面站控制\n4. 电池老化导致供电不稳定\n建议升级飞控固件，定期维护传感器，加强电磁环境监测。"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.495772",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00057",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00057",
+    "scenario": "事件报告",
+    "user_role": "技术专家-通信导航专家",
+    "assistant_role": "公众-医院管理人员",
+    "messages": [
+      {
+        "role": "user",
+        "content": "报告！南京鼓楼区发生一起雷达探测盲区事件，请求指示。"
+      },
+      {
+        "role": "assistant",
+        "content": "收到。请立即执行以下操作：\n1. 启动应急响应预案\n2. 疏散周边人员，确保安全\n3. 封锁现场，保留证据\n4. 联系技术专家进行风险评估\n5. 按照《低空飞行服务保障体系建设方案》要求上报相关部门"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.495772",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00058",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00058",
+    "scenario": "技术讨论",
+    "user_role": "公众-物流用户",
+    "assistant_role": "技术专家-通信导航专家",
+    "messages": [
+      {
+        "role": "user",
+        "content": "针对医院上空飞行事件，从技术角度分析主要原因是什么？"
+      },
+      {
+        "role": "assistant",
+        "content": "从技术分析，医院上空飞行事件的主要原因包括：\n1. 飞控系统软件存在bug，导致通讯信号中断失去控制\n2. 传感器数据异常，未能及时识别障碍物\n3. 通讯链路受到干扰，失去地面站控制\n4. 电池老化导致供电不稳定\n建议升级飞控固件，定期维护传感器，加强电磁环境监测。"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.495772",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00059",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00059",
+    "scenario": "风险咨询",
+    "user_role": "公众-物业管理人员",
+    "assistant_role": "技术专家-飞控系统工程师",
+    "messages": [
+      {
+        "role": "user",
+        "content": "请问在常州新北区进行广告宣传飞行，需要注意哪些安全事项？"
+      },
+      {
+        "role": "assistant",
+        "content": "在常州新北区进行广告宣传飞行，需注意以下事项：\n1. 提前向空管部门申请飞行计划\n2. 确保飞行器适航，电池电量充足\n3. 避开敏感区域，保持安全高度\n4. 关注气象条件，风速不超过11m/s\n5. 遵守《低空空域使用管理规定》相关规定"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.496771",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00060",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00060",
+    "scenario": "技术讨论",
+    "user_role": "公众-航空爱好者",
+    "assistant_role": "操作人员-航线规划师",
+    "messages": [
+      {
+        "role": "user",
+        "content": "针对导航系统故障事件，从技术角度分析主要原因是什么？"
+      },
+      {
+        "role": "assistant",
+        "content": "从技术分析，导航系统故障事件的主要原因包括：\n1. 飞控系统软件存在bug，导致导航系统受干扰偏离航线\n2. 传感器数据异常，未能及时识别障碍物\n3. 通讯链路受到干扰，失去地面站控制\n4. 电池老化导致供电不稳定\n建议升级飞控固件，定期维护传感器，加强电磁环境监测。"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.496771",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00061",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00061",
+    "scenario": "安全培训",
+    "user_role": "公众-农业合作社代表",
+    "assistant_role": "技术专家-低空空域规划专家",
+    "messages": [
+      {
+        "role": "user",
+        "content": "作为新手飞手，应该如何避免未经许可的商业飞行事件？"
+      },
+      {
+        "role": "assistant",
+        "content": "新手飞手避免未经许可的商业飞行事件的要点：\n1. 系统学习飞行理论知识，取得资质证书\n2. 在开阔场地练习，积累飞行经验\n3. 飞行前检查清单：电池、螺旋桨、GPS信号\n4. 了解当地空域划设，避开禁飞区\n5. 保持视距内飞行，高度不超过120米\n6. 密切关注气象条件，避免恶劣天气飞行\n7. 安装并开启电子围栏功能"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.496771",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00062",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00062",
+    "scenario": "安全培训",
+    "user_role": "公众-航空爱好者",
+    "assistant_role": "监管人员-应急管理局副局长",
+    "messages": [
+      {
+        "role": "user",
+        "content": "作为新手飞手，应该如何避免低空飞行冲突事件？"
+      },
+      {
+        "role": "assistant",
+        "content": "新手飞手避免低空飞行冲突事件的要点：\n1. 系统学习飞行理论知识，取得资质证书\n2. 在开阔场地练习，积累飞行经验\n3. 飞行前检查清单：电池、螺旋桨、GPS信号\n4. 了解当地空域划设，避开禁飞区\n5. 保持视距内飞行，高度不超过120米\n6. 密切关注气象条件，避免恶劣天气飞行\n7. 安装并开启电子围栏功能"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.496771",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00063",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00063",
+    "scenario": "风险咨询",
+    "user_role": "操作人员-试飞员",
+    "assistant_role": "监管人员-城管执法大队长",
+    "messages": [
+      {
+        "role": "user",
+        "content": "请问在南京鼓楼区进行消防灭火飞行，需要注意哪些安全事项？"
+      },
+      {
+        "role": "assistant",
+        "content": "在南京鼓楼区进行消防灭火飞行，需注意以下事项：\n1. 提前向空管部门申请飞行计划\n2. 确保飞行器适航，电池电量充足\n3. 避开敏感区域，保持安全高度\n4. 关注气象条件，风速不超过11m/s\n5. 遵守《通用航空飞行管制条例》相关规定"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.496771",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00064",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00064",
+    "scenario": "风险咨询",
+    "user_role": "操作人员-无人机飞手",
+    "assistant_role": "技术专家-传感器技术专家",
+    "messages": [
+      {
+        "role": "user",
+        "content": "请问在北京朝阳区进行电力巡检飞行，需要注意哪些安全事项？"
+      },
+      {
+        "role": "assistant",
+        "content": "在北京朝阳区进行电力巡检飞行，需注意以下事项：\n1. 提前向空管部门申请飞行计划\n2. 确保飞行器适航，电池电量充足\n3. 避开敏感区域，保持安全高度\n4. 关注气象条件，风速不超过11m/s\n5. 遵守《无人机物流配送试点管理办法》相关规定"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.496771",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00065",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00065",
+    "scenario": "政策解读",
+    "user_role": "操作人员-航线规划师",
+    "assistant_role": "公众-学校教师",
+    "messages": [
+      {
+        "role": "user",
+        "content": "《特定类无人机试运行管理规程》对低空飞行有哪些新的要求？"
+      },
+      {
+        "role": "assistant",
+        "content": "《特定类无人机试运行管理规程》对低空飞行的主要要求包括：\n1. 所有无人机飞行必须实名登记\n2. 在管制空域飞行需提前申请\n3. 操作人员需取得相应资质\n4. 禁止在禁飞区、限制区飞行\n5. 商业运营需取得经营许可证\n6. 建立飞行数据记录和报告制度"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.496771",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00066",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00066",
+    "scenario": "风险咨询",
+    "user_role": "公众-环保志愿者",
+    "assistant_role": "技术专家-气象预报专家",
+    "messages": [
+      {
+        "role": "user",
+        "content": "请问在西安雁塔区进行广告宣传飞行，需要注意哪些安全事项？"
+      },
+      {
+        "role": "assistant",
+        "content": "在西安雁塔区进行广告宣传飞行，需注意以下事项：\n1. 提前向空管部门申请飞行计划\n2. 确保飞行器适航，电池电量充足\n3. 避开敏感区域，保持安全高度\n4. 关注气象条件，风速不超过13m/s\n5. 遵守《低空空域使用管理规定》相关规定"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.496771",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00067",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00067",
+    "scenario": "事件报告",
+    "user_role": "监管人员-公安局治安大队队长",
+    "assistant_role": "公众-学校教师",
+    "messages": [
+      {
+        "role": "user",
+        "content": "报告！沈阳和平区发生一起夜间违规飞行事件，请求指示。"
+      },
+      {
+        "role": "assistant",
+        "content": "收到。请立即执行以下操作：\n1. 启动应急响应预案\n2. 疏散周边人员，确保安全\n3. 封锁现场，保留证据\n4. 联系技术专家进行风险评估\n5. 按照《城市低空空域精细化管理办法》要求上报相关部门"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.496771",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00068",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00068",
+    "scenario": "政策解读",
+    "user_role": "公众-物业管理人员",
+    "assistant_role": "技术专家-通信导航专家",
+    "messages": [
+      {
+        "role": "user",
+        "content": "《低空经济产业发展指导意见》对低空飞行有哪些新的要求？"
+      },
+      {
+        "role": "assistant",
+        "content": "《低空经济产业发展指导意见》对低空飞行的主要要求包括：\n1. 所有无人机飞行必须实名登记\n2. 在管制空域飞行需提前申请\n3. 操作人员需取得相应资质\n4. 禁止在禁飞区、限制区飞行\n5. 商业运营需取得经营许可证\n6. 建立飞行数据记录和报告制度"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.496771",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00069",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00069",
+    "scenario": "政策解读",
+    "user_role": "技术专家-适航审定专家",
+    "assistant_role": "操作人员-航线规划师",
+    "messages": [
+      {
+        "role": "user",
+        "content": "《特定类无人机试运行管理规程》对低空飞行有哪些新的要求？"
+      },
+      {
+        "role": "assistant",
+        "content": "《特定类无人机试运行管理规程》对低空飞行的主要要求包括：\n1. 所有无人机飞行必须实名登记\n2. 在管制空域飞行需提前申请\n3. 操作人员需取得相应资质\n4. 禁止在禁飞区、限制区飞行\n5. 商业运营需取得经营许可证\n6. 建立飞行数据记录和报告制度"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.496771",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00070",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00070",
+    "scenario": "安全培训",
+    "user_role": "技术专家-飞控系统工程师",
+    "assistant_role": "操作人员-飞行教员",
+    "messages": [
+      {
+        "role": "user",
+        "content": "作为新手飞手，应该如何避免避障系统失效事件？"
+      },
+      {
+        "role": "assistant",
+        "content": "新手飞手避免避障系统失效事件的要点：\n1. 系统学习飞行理论知识，取得资质证书\n2. 在开阔场地练习，积累飞行经验\n3. 飞行前检查清单：电池、螺旋桨、GPS信号\n4. 了解当地空域划设，避开禁飞区\n5. 保持视距内飞行，高度不超过120米\n6. 密切关注气象条件，避免恶劣天气飞行\n7. 安装并开启电子围栏功能"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.496771",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00071",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00071",
+    "scenario": "政策解读",
+    "user_role": "操作人员-任务载荷操作员",
+    "assistant_role": "监管人员-应急管理局副局长",
+    "messages": [
+      {
+        "role": "user",
+        "content": "《低空经济产业发展指导意见》对低空飞行有哪些新的要求？"
+      },
+      {
+        "role": "assistant",
+        "content": "《低空经济产业发展指导意见》对低空飞行的主要要求包括：\n1. 所有无人机飞行必须实名登记\n2. 在管制空域飞行需提前申请\n3. 操作人员需取得相应资质\n4. 禁止在禁飞区、限制区飞行\n5. 商业运营需取得经营许可证\n6. 建立飞行数据记录和报告制度"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.496771",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00072",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00072",
+    "scenario": "事件报告",
+    "user_role": "公众-媒体记者",
+    "assistant_role": "操作人员-试飞员",
+    "messages": [
+      {
+        "role": "user",
+        "content": "报告！温州鹿城区发生一起雷达探测盲区事件，请求指示。"
+      },
+      {
+        "role": "assistant",
+        "content": "收到。请立即执行以下操作：\n1. 启动应急响应预案\n2. 疏散周边人员，确保安全\n3. 封锁现场，保留证据\n4. 联系技术专家进行风险评估\n5. 按照《民用机场净空保护区域管理规定》要求上报相关部门"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.496771",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00073",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00073",
+    "scenario": "事件报告",
+    "user_role": "操作人员-物流配送操作员",
+    "assistant_role": "监管人员-城管执法大队长",
+    "messages": [
+      {
+        "role": "user",
+        "content": "报告！盐城亭湖区发生一起电磁干扰事件事件，请求指示。"
+      },
+      {
+        "role": "assistant",
+        "content": "收到。请立即执行以下操作：\n1. 启动应急响应预案\n2. 疏散周边人员，确保安全\n3. 封锁现场，保留证据\n4. 联系技术专家进行风险评估\n5. 按照《低空空域使用管理规定》要求上报相关部门"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.496771",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00074",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00074",
+    "scenario": "安全培训",
+    "user_role": "公众-农业合作社代表",
+    "assistant_role": "监管人员-城管执法大队长",
+    "messages": [
+      {
+        "role": "user",
+        "content": "作为新手飞手，应该如何避免低空风切变事件？"
+      },
+      {
+        "role": "assistant",
+        "content": "新手飞手避免低空风切变事件的要点：\n1. 系统学习飞行理论知识，取得资质证书\n2. 在开阔场地练习，积累飞行经验\n3. 飞行前检查清单：电池、螺旋桨、GPS信号\n4. 了解当地空域划设，避开禁飞区\n5. 保持视距内飞行，高度不超过120米\n6. 密切关注气象条件，避免恶劣天气飞行\n7. 安装并开启电子围栏功能"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.496771",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00075",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00075",
+    "scenario": "政策解读",
+    "user_role": "操作人员-飞行调度员",
+    "assistant_role": "技术专家-飞控系统工程师",
+    "messages": [
+      {
+        "role": "user",
+        "content": "《轻小无人机运行规定（试行）》对低空飞行有哪些新的要求？"
+      },
+      {
+        "role": "assistant",
+        "content": "《轻小无人机运行规定（试行）》对低空飞行的主要要求包括：\n1. 所有无人机飞行必须实名登记\n2. 在管制空域飞行需提前申请\n3. 操作人员需取得相应资质\n4. 禁止在禁飞区、限制区飞行\n5. 商业运营需取得经营许可证\n6. 建立飞行数据记录和报告制度"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.496771",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00076",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00076",
+    "scenario": "技术讨论",
+    "user_role": "监管人员-生态环境局监测中心主任",
+    "assistant_role": "公众-医院管理人员",
+    "messages": [
+      {
+        "role": "user",
+        "content": "针对医院上空飞行事件，从技术角度分析主要原因是什么？"
+      },
+      {
+        "role": "assistant",
+        "content": "从技术分析，医院上空飞行事件的主要原因包括：\n1. 飞控系统软件存在bug，导致设备老化引发系统故障\n2. 传感器数据异常，未能及时识别障碍物\n3. 通讯链路受到干扰，失去地面站控制\n4. 电池老化导致供电不稳定\n建议升级飞控固件，定期维护传感器，加强电磁环境监测。"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.496771",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00077",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00077",
+    "scenario": "安全培训",
+    "user_role": "监管人员-空管中心管制员",
+    "assistant_role": "技术专家-低空空域规划专家",
+    "messages": [
+      {
+        "role": "user",
+        "content": "作为新手飞手，应该如何避免敏感区域拍摄事件？"
+      },
+      {
+        "role": "assistant",
+        "content": "新手飞手避免敏感区域拍摄事件的要点：\n1. 系统学习飞行理论知识，取得资质证书\n2. 在开阔场地练习，积累飞行经验\n3. 飞行前检查清单：电池、螺旋桨、GPS信号\n4. 了解当地空域划设，避开禁飞区\n5. 保持视距内飞行，高度不超过120米\n6. 密切关注气象条件，避免恶劣天气飞行\n7. 安装并开启电子围栏功能"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.496771",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00078",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00078",
+    "scenario": "技术讨论",
+    "user_role": "公众-医院管理人员",
+    "assistant_role": "操作人员-设备维护工程师",
+    "messages": [
+      {
+        "role": "user",
+        "content": "针对导航系统故障事件，从技术角度分析主要原因是什么？"
+      },
+      {
+        "role": "assistant",
+        "content": "从技术分析，导航系统故障事件的主要原因包括：\n1. 飞控系统软件存在bug，导致通讯信号中断失去控制\n2. 传感器数据异常，未能及时识别障碍物\n3. 通讯链路受到干扰，失去地面站控制\n4. 电池老化导致供电不稳定\n建议升级飞控固件，定期维护传感器，加强电磁环境监测。"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.496771",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00079",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00079",
+    "scenario": "技术讨论",
+    "user_role": "监管人员-交通委低空管理处处长",
+    "assistant_role": "公众-企业安全负责人",
+    "messages": [
+      {
+        "role": "user",
+        "content": "针对人员密集区飞行事件，从技术角度分析主要原因是什么？"
+      },
+      {
+        "role": "assistant",
+        "content": "从技术分析，人员密集区飞行事件的主要原因包括：\n1. 飞控系统软件存在bug，导致电池供电不足引发紧急迫降\n2. 传感器数据异常，未能及时识别障碍物\n3. 通讯链路受到干扰，失去地面站控制\n4. 电池老化导致供电不稳定\n建议升级飞控固件，定期维护传感器，加强电磁环境监测。"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.496771",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00080",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00080",
+    "scenario": "事件报告",
+    "user_role": "监管人员-军分区空域协调员",
+    "assistant_role": "公众-学校教师",
+    "messages": [
+      {
+        "role": "user",
+        "content": "报告！太原小店区发生一起未经许可的商业飞行事件，请求指示。"
+      },
+      {
+        "role": "assistant",
+        "content": "收到。请立即执行以下操作：\n1. 启动应急响应预案\n2. 疏散周边人员，确保安全\n3. 封锁现场，保留证据\n4. 联系技术专家进行风险评估\n5. 按照《无人机物流配送试点管理办法》要求上报相关部门"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.496771",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00081",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00081",
+    "scenario": "政策解读",
+    "user_role": "监管人员-公安局治安大队队长",
+    "assistant_role": "技术专家-适航审定专家",
+    "messages": [
+      {
+        "role": "user",
+        "content": "《城市低空空域精细化管理办法》对低空飞行有哪些新的要求？"
+      },
+      {
+        "role": "assistant",
+        "content": "《城市低空空域精细化管理办法》对低空飞行的主要要求包括：\n1. 所有无人机飞行必须实名登记\n2. 在管制空域飞行需提前申请\n3. 操作人员需取得相应资质\n4. 禁止在禁飞区、限制区飞行\n5. 商业运营需取得经营许可证\n6. 建立飞行数据记录和报告制度"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.496771",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00082",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00082",
+    "scenario": "技术讨论",
+    "user_role": "技术专家-无人机系统工程师",
+    "assistant_role": "公众-医院管理人员",
+    "messages": [
+      {
+        "role": "user",
+        "content": "针对能见度突变事件，从技术角度分析主要原因是什么？"
+      },
+      {
+        "role": "assistant",
+        "content": "从技术分析，能见度突变事件的主要原因包括：\n1. 飞控系统软件存在bug，导致通讯信号中断失去控制\n2. 传感器数据异常，未能及时识别障碍物\n3. 通讯链路受到干扰，失去地面站控制\n4. 电池老化导致供电不稳定\n建议升级飞控固件，定期维护传感器，加强电磁环境监测。"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.498277",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00083",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00083",
+    "scenario": "技术讨论",
+    "user_role": "技术专家-无人机系统工程师",
+    "assistant_role": "监管人员-城管执法大队长",
+    "messages": [
+      {
+        "role": "user",
+        "content": "针对人员密集区飞行事件，从技术角度分析主要原因是什么？"
+      },
+      {
+        "role": "assistant",
+        "content": "从技术分析，人员密集区飞行事件的主要原因包括：\n1. 飞控系统软件存在bug，导致避障系统故障造成飞行冲突\n2. 传感器数据异常，未能及时识别障碍物\n3. 通讯链路受到干扰，失去地面站控制\n4. 电池老化导致供电不稳定\n建议升级飞控固件，定期维护传感器，加强电磁环境监测。"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.498277",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00084",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00084",
+    "scenario": "事件报告",
+    "user_role": "操作人员-飞行教员",
+    "assistant_role": "公众-媒体记者",
+    "messages": [
+      {
+        "role": "user",
+        "content": "报告！厦门思明区发生一起电磁干扰事件事件，请求指示。"
+      },
+      {
+        "role": "assistant",
+        "content": "收到。请立即执行以下操作：\n1. 启动应急响应预案\n2. 疏散周边人员，确保安全\n3. 封锁现场，保留证据\n4. 联系技术专家进行风险评估\n5. 按照《特定类无人机试运行管理规程》要求上报相关部门"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.498277",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00085",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00085",
+    "scenario": "事件报告",
+    "user_role": "公众-社区居民代表",
+    "assistant_role": "监管人员-消防救援支队队长",
+    "messages": [
+      {
+        "role": "user",
+        "content": "报告！舟山定海区发生一起航线偏离事件事件，请求指示。"
+      },
+      {
+        "role": "assistant",
+        "content": "收到。请立即执行以下操作：\n1. 启动应急响应预案\n2. 疏散周边人员，确保安全\n3. 封锁现场，保留证据\n4. 联系技术专家进行风险评估\n5. 按照《低空空域使用管理规定》要求上报相关部门"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.498277",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00086",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00086",
+    "scenario": "风险咨询",
+    "user_role": "公众-学校教师",
+    "assistant_role": "监管人员-应急管理局副局长",
+    "messages": [
+      {
+        "role": "user",
+        "content": "请问在常州新北区进行医疗物资配送飞行，需要注意哪些安全事项？"
+      },
+      {
+        "role": "assistant",
+        "content": "在常州新北区进行医疗物资配送飞行，需注意以下事项：\n1. 提前向空管部门申请飞行计划\n2. 确保飞行器适航，电池电量充足\n3. 避开敏感区域，保持安全高度\n4. 关注气象条件，风速不超过8m/s\n5. 遵守《低空飞行服务保障体系建设方案》相关规定"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.498277",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00087",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00087",
+    "scenario": "安全培训",
+    "user_role": "操作人员-地面站操作员",
+    "assistant_role": "监管人员-民航地区管理局监管员",
+    "messages": [
+      {
+        "role": "user",
+        "content": "作为新手飞手，应该如何避免人员密集区飞行事件？"
+      },
+      {
+        "role": "assistant",
+        "content": "新手飞手避免人员密集区飞行事件的要点：\n1. 系统学习飞行理论知识，取得资质证书\n2. 在开阔场地练习，积累飞行经验\n3. 飞行前检查清单：电池、螺旋桨、GPS信号\n4. 了解当地空域划设，避开禁飞区\n5. 保持视距内飞行，高度不超过120米\n6. 密切关注气象条件，避免恶劣天气飞行\n7. 安装并开启电子围栏功能"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.498277",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00088",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00088",
+    "scenario": "事件报告",
+    "user_role": "操作人员-航线规划师",
+    "assistant_role": "技术专家-无人机系统工程师",
+    "messages": [
+      {
+        "role": "user",
+        "content": "报告！福州鼓楼区发生一起气象监测异常事件，请求指示。"
+      },
+      {
+        "role": "assistant",
+        "content": "收到。请立即执行以下操作：\n1. 启动应急响应预案\n2. 疏散周边人员，确保安全\n3. 封锁现场，保留证据\n4. 联系技术专家进行风险评估\n5. 按照《民用无人驾驶航空器飞行管理暂行条例》要求上报相关部门"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.498277",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00089",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00089",
+    "scenario": "安全培训",
+    "user_role": "监管人员-交通委低空管理处处长",
+    "assistant_role": "公众-媒体记者",
+    "messages": [
+      {
+        "role": "user",
+        "content": "作为新手飞手，应该如何避免低空飞行冲突事件？"
+      },
+      {
+        "role": "assistant",
+        "content": "新手飞手避免低空飞行冲突事件的要点：\n1. 系统学习飞行理论知识，取得资质证书\n2. 在开阔场地练习，积累飞行经验\n3. 飞行前检查清单：电池、螺旋桨、GPS信号\n4. 了解当地空域划设，避开禁飞区\n5. 保持视距内飞行，高度不超过120米\n6. 密切关注气象条件，避免恶劣天气飞行\n7. 安装并开启电子围栏功能"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.498277",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00090",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00090",
+    "scenario": "安全培训",
+    "user_role": "技术专家-人工智能算法专家",
+    "assistant_role": "监管人员-城管执法大队长",
+    "messages": [
+      {
+        "role": "user",
+        "content": "作为新手飞手，应该如何避免政府机关区域飞行事件？"
+      },
+      {
+        "role": "assistant",
+        "content": "新手飞手避免政府机关区域飞行事件的要点：\n1. 系统学习飞行理论知识，取得资质证书\n2. 在开阔场地练习，积累飞行经验\n3. 飞行前检查清单：电池、螺旋桨、GPS信号\n4. 了解当地空域划设，避开禁飞区\n5. 保持视距内飞行，高度不超过120米\n6. 密切关注气象条件，避免恶劣天气飞行\n7. 安装并开启电子围栏功能"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.498277",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00091",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00091",
+    "scenario": "安全培训",
+    "user_role": "监管人员-城管执法大队长",
+    "assistant_role": "公众-航空爱好者",
+    "messages": [
+      {
+        "role": "user",
+        "content": "作为新手飞手，应该如何避免导航系统故障事件？"
+      },
+      {
+        "role": "assistant",
+        "content": "新手飞手避免导航系统故障事件的要点：\n1. 系统学习飞行理论知识，取得资质证书\n2. 在开阔场地练习，积累飞行经验\n3. 飞行前检查清单：电池、螺旋桨、GPS信号\n4. 了解当地空域划设，避开禁飞区\n5. 保持视距内飞行，高度不超过120米\n6. 密切关注气象条件，避免恶劣天气飞行\n7. 安装并开启电子围栏功能"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.498801",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00092",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00092",
+    "scenario": "安全培训",
+    "user_role": "公众-学校教师",
+    "assistant_role": "操作人员-航线规划师",
+    "messages": [
+      {
+        "role": "user",
+        "content": "作为新手飞手，应该如何避免人员密集区飞行事件？"
+      },
+      {
+        "role": "assistant",
+        "content": "新手飞手避免人员密集区飞行事件的要点：\n1. 系统学习飞行理论知识，取得资质证书\n2. 在开阔场地练习，积累飞行经验\n3. 飞行前检查清单：电池、螺旋桨、GPS信号\n4. 了解当地空域划设，避开禁飞区\n5. 保持视距内飞行，高度不超过120米\n6. 密切关注气象条件，避免恶劣天气飞行\n7. 安装并开启电子围栏功能"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.498801",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00093",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00093",
+    "scenario": "安全培训",
+    "user_role": "操作人员-试飞员",
+    "assistant_role": "监管人员-市低空空域管理局局长",
+    "messages": [
+      {
+        "role": "user",
+        "content": "作为新手飞手，应该如何避免人员密集区飞行事件？"
+      },
+      {
+        "role": "assistant",
+        "content": "新手飞手避免人员密集区飞行事件的要点：\n1. 系统学习飞行理论知识，取得资质证书\n2. 在开阔场地练习，积累飞行经验\n3. 飞行前检查清单：电池、螺旋桨、GPS信号\n4. 了解当地空域划设，避开禁飞区\n5. 保持视距内飞行，高度不超过120米\n6. 密切关注气象条件，避免恶劣天气飞行\n7. 安装并开启电子围栏功能"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.498801",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00094",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00094",
+    "scenario": "事件报告",
+    "user_role": "监管人员-交通委低空管理处处长",
+    "assistant_role": "公众-物流用户",
+    "messages": [
+      {
+        "role": "user",
+        "content": "报告！北京海淀区发生一起人员密集区飞行事件，请求指示。"
+      },
+      {
+        "role": "assistant",
+        "content": "收到。请立即执行以下操作：\n1. 启动应急响应预案\n2. 疏散周边人员，确保安全\n3. 封锁现场，保留证据\n4. 联系技术专家进行风险评估\n5. 按照《无人驾驶航空器飞行管理暂行条例》要求上报相关部门"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.498801",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00095",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00095",
+    "scenario": "技术讨论",
+    "user_role": "公众-企业安全负责人",
+    "assistant_role": "监管人员-应急管理局副局长",
+    "messages": [
+      {
+        "role": "user",
+        "content": "针对低空飞行冲突事件，从技术角度分析主要原因是什么？"
+      },
+      {
+        "role": "assistant",
+        "content": "从技术分析，低空飞行冲突事件的主要原因包括：\n1. 飞控系统软件存在bug，导致飞控系统异常导致航线偏离\n2. 传感器数据异常，未能及时识别障碍物\n3. 通讯链路受到干扰，失去地面站控制\n4. 电池老化导致供电不稳定\n建议升级飞控固件，定期维护传感器，加强电磁环境监测。"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.498801",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00096",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00096",
+    "scenario": "风险咨询",
+    "user_role": "监管人员-交通委低空管理处处长",
+    "assistant_role": "操作人员-飞行调度员",
+    "messages": [
+      {
+        "role": "user",
+        "content": "请问在上海浦东新区进行环境监测飞行，需要注意哪些安全事项？"
+      },
+      {
+        "role": "assistant",
+        "content": "在上海浦东新区进行环境监测飞行，需注意以下事项：\n1. 提前向空管部门申请飞行计划\n2. 确保飞行器适航，电池电量充足\n3. 避开敏感区域，保持安全高度\n4. 关注气象条件，风速不超过14m/s\n5. 遵守《无人机物流配送试点管理办法》相关规定"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.498801",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00097",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00097",
+    "scenario": "政策解读",
+    "user_role": "监管人员-空管中心管制员",
+    "assistant_role": "技术专家-适航审定专家",
+    "messages": [
+      {
+        "role": "user",
+        "content": "《低空飞行服务保障体系建设方案》对低空飞行有哪些新的要求？"
+      },
+      {
+        "role": "assistant",
+        "content": "《低空飞行服务保障体系建设方案》对低空飞行的主要要求包括：\n1. 所有无人机飞行必须实名登记\n2. 在管制空域飞行需提前申请\n3. 操作人员需取得相应资质\n4. 禁止在禁飞区、限制区飞行\n5. 商业运营需取得经营许可证\n6. 建立飞行数据记录和报告制度"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.498801",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00098",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00098",
+    "scenario": "政策解读",
+    "user_role": "监管人员-消防救援支队队长",
+    "assistant_role": "操作人员-航线规划师",
+    "messages": [
+      {
+        "role": "user",
+        "content": "《无人机物流配送试点管理办法》对低空飞行有哪些新的要求？"
+      },
+      {
+        "role": "assistant",
+        "content": "《无人机物流配送试点管理办法》对低空飞行的主要要求包括：\n1. 所有无人机飞行必须实名登记\n2. 在管制空域飞行需提前申请\n3. 操作人员需取得相应资质\n4. 禁止在禁飞区、限制区飞行\n5. 商业运营需取得经营许可证\n6. 建立飞行数据记录和报告制度"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.498801",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00099",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00099",
+    "scenario": "事件报告",
+    "user_role": "技术专家-空管系统架构师",
+    "assistant_role": "监管人员-应急管理局副局长",
+    "messages": [
+      {
+        "role": "user",
+        "content": "报告！温州鹿城区发生一起电磁干扰事件事件，请求指示。"
+      },
+      {
+        "role": "assistant",
+        "content": "收到。请立即执行以下操作：\n1. 启动应急响应预案\n2. 疏散周边人员，确保安全\n3. 封锁现场，保留证据\n4. 联系技术专家进行风险评估\n5. 按照《轻小无人机运行规定（试行）》要求上报相关部门"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.499343",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00100",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00100",
+    "scenario": "技术讨论",
+    "user_role": "监管人员-市低空空域管理局局长",
+    "assistant_role": "公众-媒体记者",
+    "messages": [
+      {
+        "role": "user",
+        "content": "针对无人机非法入侵事件，从技术角度分析主要原因是什么？"
+      },
+      {
+        "role": "assistant",
+        "content": "从技术分析，无人机非法入侵事件的主要原因包括：\n1. 飞控系统软件存在bug，导致操作人员失误导致违规飞行\n2. 传感器数据异常，未能及时识别障碍物\n3. 通讯链路受到干扰，失去地面站控制\n4. 电池老化导致供电不稳定\n建议升级飞控固件，定期维护传感器，加强电磁环境监测。"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.499343",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00101",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00101",
+    "scenario": "政策解读",
+    "user_role": "公众-社区居民代表",
+    "assistant_role": "技术专家-人工智能算法专家",
+    "messages": [
+      {
+        "role": "user",
+        "content": "《特定类无人机试运行管理规程》对低空飞行有哪些新的要求？"
+      },
+      {
+        "role": "assistant",
+        "content": "《特定类无人机试运行管理规程》对低空飞行的主要要求包括：\n1. 所有无人机飞行必须实名登记\n2. 在管制空域飞行需提前申请\n3. 操作人员需取得相应资质\n4. 禁止在禁飞区、限制区飞行\n5. 商业运营需取得经营许可证\n6. 建立飞行数据记录和报告制度"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.499343",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00102",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00102",
+    "scenario": "风险咨询",
+    "user_role": "监管人员-军分区空域协调员",
+    "assistant_role": "公众-农业合作社代表",
+    "messages": [
+      {
+        "role": "user",
+        "content": "请问在合肥蜀山区进行医疗物资配送飞行，需要注意哪些安全事项？"
+      },
+      {
+        "role": "assistant",
+        "content": "在合肥蜀山区进行医疗物资配送飞行，需注意以下事项：\n1. 提前向空管部门申请飞行计划\n2. 确保飞行器适航，电池电量充足\n3. 避开敏感区域，保持安全高度\n4. 关注气象条件，风速不超过15m/s\n5. 遵守《民用无人机驾驶员管理规定》相关规定"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.499343",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00103",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00103",
+    "scenario": "政策解读",
+    "user_role": "操作人员-农业植保操作员",
+    "assistant_role": "技术专家-适航审定专家",
+    "messages": [
+      {
+        "role": "user",
+        "content": "《无人驾驶航空器系统标准体系建设指南》对低空飞行有哪些新的要求？"
+      },
+      {
+        "role": "assistant",
+        "content": "《无人驾驶航空器系统标准体系建设指南》对低空飞行的主要要求包括：\n1. 所有无人机飞行必须实名登记\n2. 在管制空域飞行需提前申请\n3. 操作人员需取得相应资质\n4. 禁止在禁飞区、限制区飞行\n5. 商业运营需取得经营许可证\n6. 建立飞行数据记录和报告制度"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.499343",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00104",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00104",
+    "scenario": "政策解读",
+    "user_role": "技术专家-飞控系统工程师",
+    "assistant_role": "操作人员-设备维护工程师",
+    "messages": [
+      {
+        "role": "user",
+        "content": "《民用无人驾驶航空器飞行管理暂行条例》对低空飞行有哪些新的要求？"
+      },
+      {
+        "role": "assistant",
+        "content": "《民用无人驾驶航空器飞行管理暂行条例》对低空飞行的主要要求包括：\n1. 所有无人机飞行必须实名登记\n2. 在管制空域飞行需提前申请\n3. 操作人员需取得相应资质\n4. 禁止在禁飞区、限制区飞行\n5. 商业运营需取得经营许可证\n6. 建立飞行数据记录和报告制度"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.499343",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00105",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00105",
+    "scenario": "政策解读",
+    "user_role": "操作人员-无人机飞手",
+    "assistant_role": "技术专家-适航审定专家",
+    "messages": [
+      {
+        "role": "user",
+        "content": "《民用无人机驾驶员管理规定》对低空飞行有哪些新的要求？"
+      },
+      {
+        "role": "assistant",
+        "content": "《民用无人机驾驶员管理规定》对低空飞行的主要要求包括：\n1. 所有无人机飞行必须实名登记\n2. 在管制空域飞行需提前申请\n3. 操作人员需取得相应资质\n4. 禁止在禁飞区、限制区飞行\n5. 商业运营需取得经营许可证\n6. 建立飞行数据记录和报告制度"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.499343",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00106",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00106",
+    "scenario": "风险咨询",
+    "user_role": "操作人员-航线规划师",
+    "assistant_role": "公众-物业管理人员",
+    "messages": [
+      {
+        "role": "user",
+        "content": "请问在徐州鼓楼区进行农业植保飞行，需要注意哪些安全事项？"
+      },
+      {
+        "role": "assistant",
+        "content": "在徐州鼓楼区进行农业植保飞行，需注意以下事项：\n1. 提前向空管部门申请飞行计划\n2. 确保飞行器适航，电池电量充足\n3. 避开敏感区域，保持安全高度\n4. 关注气象条件，风速不超过15m/s\n5. 遵守《低空经济产业发展指导意见》相关规定"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.499343",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00107",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00107",
+    "scenario": "政策解读",
+    "user_role": "公众-企业安全负责人",
+    "assistant_role": "操作人员-试飞员",
+    "messages": [
+      {
+        "role": "user",
+        "content": "《通用航空飞行管制条例》对低空飞行有哪些新的要求？"
+      },
+      {
+        "role": "assistant",
+        "content": "《通用航空飞行管制条例》对低空飞行的主要要求包括：\n1. 所有无人机飞行必须实名登记\n2. 在管制空域飞行需提前申请\n3. 操作人员需取得相应资质\n4. 禁止在禁飞区、限制区飞行\n5. 商业运营需取得经营许可证\n6. 建立飞行数据记录和报告制度"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.499343",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00108",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00108",
+    "scenario": "政策解读",
+    "user_role": "公众-媒体记者",
+    "assistant_role": "技术专家-适航审定专家",
+    "messages": [
+      {
+        "role": "user",
+        "content": "《轻小无人机运行规定（试行）》对低空飞行有哪些新的要求？"
+      },
+      {
+        "role": "assistant",
+        "content": "《轻小无人机运行规定（试行）》对低空飞行的主要要求包括：\n1. 所有无人机飞行必须实名登记\n2. 在管制空域飞行需提前申请\n3. 操作人员需取得相应资质\n4. 禁止在禁飞区、限制区飞行\n5. 商业运营需取得经营许可证\n6. 建立飞行数据记录和报告制度"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.499343",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00109",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00109",
+    "scenario": "政策解读",
+    "user_role": "技术专家-无人机系统工程师",
+    "assistant_role": "操作人员-无人机飞手",
+    "messages": [
+      {
+        "role": "user",
+        "content": "《低空飞行服务保障体系建设方案》对低空飞行有哪些新的要求？"
+      },
+      {
+        "role": "assistant",
+        "content": "《低空飞行服务保障体系建设方案》对低空飞行的主要要求包括：\n1. 所有无人机飞行必须实名登记\n2. 在管制空域飞行需提前申请\n3. 操作人员需取得相应资质\n4. 禁止在禁飞区、限制区飞行\n5. 商业运营需取得经营许可证\n6. 建立飞行数据记录和报告制度"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.499343",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00110",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00110",
+    "scenario": "安全培训",
+    "user_role": "监管人员-市低空空域管理局局长",
+    "assistant_role": "操作人员-试飞员",
+    "messages": [
+      {
+        "role": "user",
+        "content": "作为新手飞手，应该如何避免雷达探测盲区事件？"
+      },
+      {
+        "role": "assistant",
+        "content": "新手飞手避免雷达探测盲区事件的要点：\n1. 系统学习飞行理论知识，取得资质证书\n2. 在开阔场地练习，积累飞行经验\n3. 飞行前检查清单：电池、螺旋桨、GPS信号\n4. 了解当地空域划设，避开禁飞区\n5. 保持视距内飞行，高度不超过120米\n6. 密切关注气象条件，避免恶劣天气飞行\n7. 安装并开启电子围栏功能"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.499343",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00111",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00111",
+    "scenario": "安全培训",
+    "user_role": "操作人员-农业植保操作员",
+    "assistant_role": "监管人员-空管中心管制员",
+    "messages": [
+      {
+        "role": "user",
+        "content": "作为新手飞手，应该如何避免超高度限制飞行事件？"
+      },
+      {
+        "role": "assistant",
+        "content": "新手飞手避免超高度限制飞行事件的要点：\n1. 系统学习飞行理论知识，取得资质证书\n2. 在开阔场地练习，积累飞行经验\n3. 飞行前检查清单：电池、螺旋桨、GPS信号\n4. 了解当地空域划设，避开禁飞区\n5. 保持视距内飞行，高度不超过120米\n6. 密切关注气象条件，避免恶劣天气飞行\n7. 安装并开启电子围栏功能"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.499343",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00112",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00112",
+    "scenario": "事件报告",
+    "user_role": "监管人员-城管执法大队长",
+    "assistant_role": "公众-环保志愿者",
+    "messages": [
+      {
+        "role": "user",
+        "content": "报告！南宁青秀区发生一起夜间违规飞行事件，请求指示。"
+      },
+      {
+        "role": "assistant",
+        "content": "收到。请立即执行以下操作：\n1. 启动应急响应预案\n2. 疏散周边人员，确保安全\n3. 封锁现场，保留证据\n4. 联系技术专家进行风险评估\n5. 按照《低空经济产业发展指导意见》要求上报相关部门"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.499343",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00113",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00113",
+    "scenario": "安全培训",
+    "user_role": "操作人员-物流配送操作员",
+    "assistant_role": "公众-企业安全负责人",
+    "messages": [
+      {
+        "role": "user",
+        "content": "作为新手飞手，应该如何避免夜间违规飞行事件？"
+      },
+      {
+        "role": "assistant",
+        "content": "新手飞手避免夜间违规飞行事件的要点：\n1. 系统学习飞行理论知识，取得资质证书\n2. 在开阔场地练习，积累飞行经验\n3. 飞行前检查清单：电池、螺旋桨、GPS信号\n4. 了解当地空域划设，避开禁飞区\n5. 保持视距内飞行，高度不超过120米\n6. 密切关注气象条件，避免恶劣天气飞行\n7. 安装并开启电子围栏功能"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.499343",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00114",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00114",
+    "scenario": "风险咨询",
+    "user_role": "公众-学校教师",
+    "assistant_role": "监管人员-空管中心管制员",
+    "messages": [
+      {
+        "role": "user",
+        "content": "请问在南宁青秀区进行物流配送飞行，需要注意哪些安全事项？"
+      },
+      {
+        "role": "assistant",
+        "content": "在南宁青秀区进行物流配送飞行，需注意以下事项：\n1. 提前向空管部门申请飞行计划\n2. 确保飞行器适航，电池电量充足\n3. 避开敏感区域，保持安全高度\n4. 关注气象条件，风速不超过13m/s\n5. 遵守《eVTOL航空器适航审定程序》相关规定"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.500348",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00115",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00115",
+    "scenario": "安全培训",
+    "user_role": "监管人员-城管执法大队长",
+    "assistant_role": "技术专家-气象预报专家",
+    "messages": [
+      {
+        "role": "user",
+        "content": "作为新手飞手，应该如何避免低空飞行冲突事件？"
+      },
+      {
+        "role": "assistant",
+        "content": "新手飞手避免低空飞行冲突事件的要点：\n1. 系统学习飞行理论知识，取得资质证书\n2. 在开阔场地练习，积累飞行经验\n3. 飞行前检查清单：电池、螺旋桨、GPS信号\n4. 了解当地空域划设，避开禁飞区\n5. 保持视距内飞行，高度不超过120米\n6. 密切关注气象条件，避免恶劣天气飞行\n7. 安装并开启电子围栏功能"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.500348",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00116",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00116",
+    "scenario": "风险咨询",
+    "user_role": "公众-物业管理人员",
+    "assistant_role": "技术专家-航空安全评估师",
+    "messages": [
+      {
+        "role": "user",
+        "content": "请问在无锡梁溪区进行农业植保飞行，需要注意哪些安全事项？"
+      },
+      {
+        "role": "assistant",
+        "content": "在无锡梁溪区进行农业植保飞行，需注意以下事项：\n1. 提前向空管部门申请飞行计划\n2. 确保飞行器适航，电池电量充足\n3. 避开敏感区域，保持安全高度\n4. 关注气象条件，风速不超过11m/s\n5. 遵守《城市低空空域精细化管理办法》相关规定"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.500348",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00117",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00117",
+    "scenario": "安全培训",
+    "user_role": "技术专家-飞控系统工程师",
+    "assistant_role": "操作人员-飞行教员",
+    "messages": [
+      {
+        "role": "user",
+        "content": "作为新手飞手，应该如何避免超高度限制飞行事件？"
+      },
+      {
+        "role": "assistant",
+        "content": "新手飞手避免超高度限制飞行事件的要点：\n1. 系统学习飞行理论知识，取得资质证书\n2. 在开阔场地练习，积累飞行经验\n3. 飞行前检查清单：电池、螺旋桨、GPS信号\n4. 了解当地空域划设，避开禁飞区\n5. 保持视距内飞行，高度不超过120米\n6. 密切关注气象条件，避免恶劣天气飞行\n7. 安装并开启电子围栏功能"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.500348",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00118",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00118",
+    "scenario": "事件报告",
+    "user_role": "操作人员-农业植保操作员",
+    "assistant_role": "技术专家-气象预报专家",
+    "messages": [
+      {
+        "role": "user",
+        "content": "报告！乌鲁木齐沙依巴克区发生一起天气突变影响事件，请求指示。"
+      },
+      {
+        "role": "assistant",
+        "content": "收到。请立即执行以下操作：\n1. 启动应急响应预案\n2. 疏散周边人员，确保安全\n3. 封锁现场，保留证据\n4. 联系技术专家进行风险评估\n5. 按照《民用无人机驾驶员管理规定》要求上报相关部门"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.500348",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00119",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00119",
+    "scenario": "技术讨论",
+    "user_role": "操作人员-无人机飞手",
+    "assistant_role": "技术专家-气象预报专家",
+    "messages": [
+      {
+        "role": "user",
+        "content": "针对夜间违规飞行事件，从技术角度分析主要原因是什么？"
+      },
+      {
+        "role": "assistant",
+        "content": "从技术分析，夜间违规飞行事件的主要原因包括：\n1. 飞控系统软件存在bug，导致电池供电不足引发紧急迫降\n2. 传感器数据异常，未能及时识别障碍物\n3. 通讯链路受到干扰，失去地面站控制\n4. 电池老化导致供电不稳定\n建议升级飞控固件，定期维护传感器，加强电磁环境监测。"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.500348",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00120",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00120",
+    "scenario": "安全培训",
+    "user_role": "操作人员-无人机飞手",
+    "assistant_role": "公众-企业安全负责人",
+    "messages": [
+      {
+        "role": "user",
+        "content": "作为新手飞手，应该如何避免敏感区域拍摄事件？"
+      },
+      {
+        "role": "assistant",
+        "content": "新手飞手避免敏感区域拍摄事件的要点：\n1. 系统学习飞行理论知识，取得资质证书\n2. 在开阔场地练习，积累飞行经验\n3. 飞行前检查清单：电池、螺旋桨、GPS信号\n4. 了解当地空域划设，避开禁飞区\n5. 保持视距内飞行，高度不超过120米\n6. 密切关注气象条件，避免恶劣天气飞行\n7. 安装并开启电子围栏功能"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.500348",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00121",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00121",
+    "scenario": "风险咨询",
+    "user_role": "技术专家-气象预报专家",
+    "assistant_role": "监管人员-公安局治安大队队长",
+    "messages": [
+      {
+        "role": "user",
+        "content": "请问在银川金凤区进行通信中继飞行，需要注意哪些安全事项？"
+      },
+      {
+        "role": "assistant",
+        "content": "在银川金凤区进行通信中继飞行，需注意以下事项：\n1. 提前向空管部门申请飞行计划\n2. 确保飞行器适航，电池电量充足\n3. 避开敏感区域，保持安全高度\n4. 关注气象条件，风速不超过12m/s\n5. 遵守《eVTOL航空器适航审定程序》相关规定"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.500348",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00122",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00122",
+    "scenario": "风险咨询",
+    "user_role": "操作人员-飞行调度员",
+    "assistant_role": "监管人员-空管中心管制员",
+    "messages": [
+      {
+        "role": "user",
+        "content": "请问在金华婺城区进行医疗物资配送飞行，需要注意哪些安全事项？"
+      },
+      {
+        "role": "assistant",
+        "content": "在金华婺城区进行医疗物资配送飞行，需注意以下事项：\n1. 提前向空管部门申请飞行计划\n2. 确保飞行器适航，电池电量充足\n3. 避开敏感区域，保持安全高度\n4. 关注气象条件，风速不超过12m/s\n5. 遵守《通用航空飞行管制条例》相关规定"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.500348",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00123",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00123",
+    "scenario": "技术讨论",
+    "user_role": "操作人员-试飞员",
+    "assistant_role": "公众-环保志愿者",
+    "messages": [
+      {
+        "role": "user",
+        "content": "针对超高度限制飞行事件，从技术角度分析主要原因是什么？"
+      },
+      {
+        "role": "assistant",
+        "content": "从技术分析，超高度限制飞行事件的主要原因包括：\n1. 飞控系统软件存在bug，导致避障系统故障造成飞行冲突\n2. 传感器数据异常，未能及时识别障碍物\n3. 通讯链路受到干扰，失去地面站控制\n4. 电池老化导致供电不稳定\n建议升级飞控固件，定期维护传感器，加强电磁环境监测。"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.500348",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00124",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00124",
+    "scenario": "安全培训",
+    "user_role": "监管人员-生态环境局监测中心主任",
+    "assistant_role": "公众-学校教师",
+    "messages": [
+      {
+        "role": "user",
+        "content": "作为新手飞手，应该如何避免信号干扰事件？"
+      },
+      {
+        "role": "assistant",
+        "content": "新手飞手避免信号干扰事件的要点：\n1. 系统学习飞行理论知识，取得资质证书\n2. 在开阔场地练习，积累飞行经验\n3. 飞行前检查清单：电池、螺旋桨、GPS信号\n4. 了解当地空域划设，避开禁飞区\n5. 保持视距内飞行，高度不超过120米\n6. 密切关注气象条件，避免恶劣天气飞行\n7. 安装并开启电子围栏功能"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.500348",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00125",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00125",
+    "scenario": "安全培训",
+    "user_role": "公众-医院管理人员",
+    "assistant_role": "技术专家-空管系统架构师",
+    "messages": [
+      {
+        "role": "user",
+        "content": "作为新手飞手，应该如何避免学校上空飞行事件？"
+      },
+      {
+        "role": "assistant",
+        "content": "新手飞手避免学校上空飞行事件的要点：\n1. 系统学习飞行理论知识，取得资质证书\n2. 在开阔场地练习，积累飞行经验\n3. 飞行前检查清单：电池、螺旋桨、GPS信号\n4. 了解当地空域划设，避开禁飞区\n5. 保持视距内飞行，高度不超过120米\n6. 密切关注气象条件，避免恶劣天气飞行\n7. 安装并开启电子围栏功能"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.500348",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00126",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00126",
+    "scenario": "风险咨询",
+    "user_role": "公众-媒体记者",
+    "assistant_role": "技术专家-人工智能算法专家",
+    "messages": [
+      {
+        "role": "user",
+        "content": "请问在昆明官渡区进行影视拍摄飞行，需要注意哪些安全事项？"
+      },
+      {
+        "role": "assistant",
+        "content": "在昆明官渡区进行影视拍摄飞行，需注意以下事项：\n1. 提前向空管部门申请飞行计划\n2. 确保飞行器适航，电池电量充足\n3. 避开敏感区域，保持安全高度\n4. 关注气象条件，风速不超过11m/s\n5. 遵守《民用机场净空保护区域管理规定》相关规定"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.500348",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00127",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00127",
+    "scenario": "事件报告",
+    "user_role": "操作人员-农业植保操作员",
+    "assistant_role": "监管人员-市低空空域管理局局长",
+    "messages": [
+      {
+        "role": "user",
+        "content": "报告！杭州西湖区发生一起气象监测异常事件，请求指示。"
+      },
+      {
+        "role": "assistant",
+        "content": "收到。请立即执行以下操作：\n1. 启动应急响应预案\n2. 疏散周边人员，确保安全\n3. 封锁现场，保留证据\n4. 联系技术专家进行风险评估\n5. 按照《民用无人驾驶航空器飞行管理暂行条例》要求上报相关部门"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.500348",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00128",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00128",
+    "scenario": "安全培训",
+    "user_role": "技术专家-空管系统架构师",
+    "assistant_role": "监管人员-消防救援支队队长",
+    "messages": [
+      {
+        "role": "user",
+        "content": "作为新手飞手，应该如何避免未经许可的商业飞行事件？"
+      },
+      {
+        "role": "assistant",
+        "content": "新手飞手避免未经许可的商业飞行事件的要点：\n1. 系统学习飞行理论知识，取得资质证书\n2. 在开阔场地练习，积累飞行经验\n3. 飞行前检查清单：电池、螺旋桨、GPS信号\n4. 了解当地空域划设，避开禁飞区\n5. 保持视距内飞行，高度不超过120米\n6. 密切关注气象条件，避免恶劣天气飞行\n7. 安装并开启电子围栏功能"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.500348",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00129",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00129",
+    "scenario": "风险咨询",
+    "user_role": "公众-媒体记者",
+    "assistant_role": "操作人员-设备维护工程师",
+    "messages": [
+      {
+        "role": "user",
+        "content": "请问在银川金凤区进行通信中继飞行，需要注意哪些安全事项？"
+      },
+      {
+        "role": "assistant",
+        "content": "在银川金凤区进行通信中继飞行，需注意以下事项：\n1. 提前向空管部门申请飞行计划\n2. 确保飞行器适航，电池电量充足\n3. 避开敏感区域，保持安全高度\n4. 关注气象条件，风速不超过10m/s\n5. 遵守《低空经济产业发展指导意见》相关规定"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.500348",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00130",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00130",
+    "scenario": "事件报告",
+    "user_role": "公众-医院管理人员",
+    "assistant_role": "技术专家-航空安全评估师",
+    "messages": [
+      {
+        "role": "user",
+        "content": "报告！厦门思明区发生一起天气突变影响事件，请求指示。"
+      },
+      {
+        "role": "assistant",
+        "content": "收到。请立即执行以下操作：\n1. 启动应急响应预案\n2. 疏散周边人员，确保安全\n3. 封锁现场，保留证据\n4. 联系技术专家进行风险评估\n5. 按照《城市低空空域精细化管理办法》要求上报相关部门"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.500348",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00131",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00131",
+    "scenario": "技术讨论",
+    "user_role": "公众-航空爱好者",
+    "assistant_role": "监管人员-交通委低空管理处处长",
+    "messages": [
+      {
+        "role": "user",
+        "content": "针对政府机关区域飞行事件，从技术角度分析主要原因是什么？"
+      },
+      {
+        "role": "assistant",
+        "content": "从技术分析，政府机关区域飞行事件的主要原因包括：\n1. 飞控系统软件存在bug，导致电池供电不足引发紧急迫降\n2. 传感器数据异常，未能及时识别障碍物\n3. 通讯链路受到干扰，失去地面站控制\n4. 电池老化导致供电不稳定\n建议升级飞控固件，定期维护传感器，加强电磁环境监测。"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.500348",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00132",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00132",
+    "scenario": "政策解读",
+    "user_role": "操作人员-无人机飞手",
+    "assistant_role": "监管人员-应急管理局副局长",
+    "messages": [
+      {
+        "role": "user",
+        "content": "《特定类无人机试运行管理规程》对低空飞行有哪些新的要求？"
+      },
+      {
+        "role": "assistant",
+        "content": "《特定类无人机试运行管理规程》对低空飞行的主要要求包括：\n1. 所有无人机飞行必须实名登记\n2. 在管制空域飞行需提前申请\n3. 操作人员需取得相应资质\n4. 禁止在禁飞区、限制区飞行\n5. 商业运营需取得经营许可证\n6. 建立飞行数据记录和报告制度"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.500348",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00133",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00133",
+    "scenario": "政策解读",
+    "user_role": "监管人员-民航地区管理局监管员",
+    "assistant_role": "操作人员-地面站操作员",
+    "messages": [
+      {
+        "role": "user",
+        "content": "《通用航空飞行管制条例》对低空飞行有哪些新的要求？"
+      },
+      {
+        "role": "assistant",
+        "content": "《通用航空飞行管制条例》对低空飞行的主要要求包括：\n1. 所有无人机飞行必须实名登记\n2. 在管制空域飞行需提前申请\n3. 操作人员需取得相应资质\n4. 禁止在禁飞区、限制区飞行\n5. 商业运营需取得经营许可证\n6. 建立飞行数据记录和报告制度"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.500348",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00134",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00134",
+    "scenario": "风险咨询",
+    "user_role": "操作人员-航线规划师",
+    "assistant_role": "公众-航空爱好者",
+    "messages": [
+      {
+        "role": "user",
+        "content": "请问在天津滨海新区进行广告宣传飞行，需要注意哪些安全事项？"
+      },
+      {
+        "role": "assistant",
+        "content": "在天津滨海新区进行广告宣传飞行，需注意以下事项：\n1. 提前向空管部门申请飞行计划\n2. 确保飞行器适航，电池电量充足\n3. 避开敏感区域，保持安全高度\n4. 关注气象条件，风速不超过12m/s\n5. 遵守《特定类无人机试运行管理规程》相关规定"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.500348",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00135",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00135",
+    "scenario": "风险咨询",
+    "user_role": "技术专家-空管系统架构师",
+    "assistant_role": "操作人员-任务载荷操作员",
+    "messages": [
+      {
+        "role": "user",
+        "content": "请问在郑州金水区进行影视拍摄飞行，需要注意哪些安全事项？"
+      },
+      {
+        "role": "assistant",
+        "content": "在郑州金水区进行影视拍摄飞行，需注意以下事项：\n1. 提前向空管部门申请飞行计划\n2. 确保飞行器适航，电池电量充足\n3. 避开敏感区域，保持安全高度\n4. 关注气象条件，风速不超过15m/s\n5. 遵守《特定类无人机试运行管理规程》相关规定"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.500348",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00136",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00136",
+    "scenario": "风险咨询",
+    "user_role": "操作人员-物流配送操作员",
+    "assistant_role": "公众-企业安全负责人",
+    "messages": [
+      {
+        "role": "user",
+        "content": "请问在沈阳和平区进行应急救援飞行，需要注意哪些安全事项？"
+      },
+      {
+        "role": "assistant",
+        "content": "在沈阳和平区进行应急救援飞行，需注意以下事项：\n1. 提前向空管部门申请飞行计划\n2. 确保飞行器适航，电池电量充足\n3. 避开敏感区域，保持安全高度\n4. 关注气象条件，风速不超过14m/s\n5. 遵守《无人驾驶航空器系统标准体系建设指南》相关规定"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.500348",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00137",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00137",
+    "scenario": "政策解读",
+    "user_role": "技术专家-适航审定专家",
+    "assistant_role": "操作人员-试飞员",
+    "messages": [
+      {
+        "role": "user",
+        "content": "《eVTOL航空器适航审定程序》对低空飞行有哪些新的要求？"
+      },
+      {
+        "role": "assistant",
+        "content": "《eVTOL航空器适航审定程序》对低空飞行的主要要求包括：\n1. 所有无人机飞行必须实名登记\n2. 在管制空域飞行需提前申请\n3. 操作人员需取得相应资质\n4. 禁止在禁飞区、限制区飞行\n5. 商业运营需取得经营许可证\n6. 建立飞行数据记录和报告制度"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.500348",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00138",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00138",
+    "scenario": "事件报告",
+    "user_role": "监管人员-应急管理局副局长",
+    "assistant_role": "技术专家-通信导航专家",
+    "messages": [
+      {
+        "role": "user",
+        "content": "报告！兰州城关区发生一起超高度限制飞行事件，请求指示。"
+      },
+      {
+        "role": "assistant",
+        "content": "收到。请立即执行以下操作：\n1. 启动应急响应预案\n2. 疏散周边人员，确保安全\n3. 封锁现场，保留证据\n4. 联系技术专家进行风险评估\n5. 按照《民用无人驾驶航空器飞行管理暂行条例》要求上报相关部门"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.500348",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00139",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00139",
+    "scenario": "技术讨论",
+    "user_role": "监管人员-空管中心管制员",
+    "assistant_role": "技术专家-气象预报专家",
+    "messages": [
+      {
+        "role": "user",
+        "content": "针对大型活动区域飞行事件，从技术角度分析主要原因是什么？"
+      },
+      {
+        "role": "assistant",
+        "content": "从技术分析，大型活动区域飞行事件的主要原因包括：\n1. 飞控系统软件存在bug，导致导航系统受干扰偏离航线\n2. 传感器数据异常，未能及时识别障碍物\n3. 通讯链路受到干扰，失去地面站控制\n4. 电池老化导致供电不稳定\n建议升级飞控固件，定期维护传感器，加强电磁环境监测。"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.501855",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00140",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00140",
+    "scenario": "政策解读",
+    "user_role": "技术专家-传感器技术专家",
+    "assistant_role": "操作人员-试飞员",
+    "messages": [
+      {
+        "role": "user",
+        "content": "《eVTOL航空器适航审定程序》对低空飞行有哪些新的要求？"
+      },
+      {
+        "role": "assistant",
+        "content": "《eVTOL航空器适航审定程序》对低空飞行的主要要求包括：\n1. 所有无人机飞行必须实名登记\n2. 在管制空域飞行需提前申请\n3. 操作人员需取得相应资质\n4. 禁止在禁飞区、限制区飞行\n5. 商业运营需取得经营许可证\n6. 建立飞行数据记录和报告制度"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.501855",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00141",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00141",
+    "scenario": "风险咨询",
+    "user_role": "公众-物流用户",
+    "assistant_role": "技术专家-人工智能算法专家",
+    "messages": [
+      {
+        "role": "user",
+        "content": "请问在湖州吴兴区进行环境监测飞行，需要注意哪些安全事项？"
+      },
+      {
+        "role": "assistant",
+        "content": "在湖州吴兴区进行环境监测飞行，需注意以下事项：\n1. 提前向空管部门申请飞行计划\n2. 确保飞行器适航，电池电量充足\n3. 避开敏感区域，保持安全高度\n4. 关注气象条件，风速不超过14m/s\n5. 遵守《民用机场净空保护区域管理规定》相关规定"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.501855",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00142",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00142",
+    "scenario": "安全培训",
+    "user_role": "公众-物业管理人员",
+    "assistant_role": "技术专家-人工智能算法专家",
+    "messages": [
+      {
+        "role": "user",
+        "content": "作为新手飞手，应该如何避免机场净空区侵入事件？"
+      },
+      {
+        "role": "assistant",
+        "content": "新手飞手避免机场净空区侵入事件的要点：\n1. 系统学习飞行理论知识，取得资质证书\n2. 在开阔场地练习，积累飞行经验\n3. 飞行前检查清单：电池、螺旋桨、GPS信号\n4. 了解当地空域划设，避开禁飞区\n5. 保持视距内飞行，高度不超过120米\n6. 密切关注气象条件，避免恶劣天气飞行\n7. 安装并开启电子围栏功能"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.501855",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00143",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00143",
+    "scenario": "风险咨询",
+    "user_role": "技术专家-人工智能算法专家",
+    "assistant_role": "监管人员-消防救援支队队长",
+    "messages": [
+      {
+        "role": "user",
+        "content": "请问在扬州广陵区进行航拍巡查飞行，需要注意哪些安全事项？"
+      },
+      {
+        "role": "assistant",
+        "content": "在扬州广陵区进行航拍巡查飞行，需注意以下事项：\n1. 提前向空管部门申请飞行计划\n2. 确保飞行器适航，电池电量充足\n3. 避开敏感区域，保持安全高度\n4. 关注气象条件，风速不超过8m/s\n5. 遵守《城市低空空域精细化管理办法》相关规定"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.501855",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00144",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00144",
+    "scenario": "政策解读",
+    "user_role": "技术专家-低空空域规划专家",
+    "assistant_role": "公众-农业合作社代表",
+    "messages": [
+      {
+        "role": "user",
+        "content": "《民用无人机驾驶员管理规定》对低空飞行有哪些新的要求？"
+      },
+      {
+        "role": "assistant",
+        "content": "《民用无人机驾驶员管理规定》对低空飞行的主要要求包括：\n1. 所有无人机飞行必须实名登记\n2. 在管制空域飞行需提前申请\n3. 操作人员需取得相应资质\n4. 禁止在禁飞区、限制区飞行\n5. 商业运营需取得经营许可证\n6. 建立飞行数据记录和报告制度"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.501855",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00145",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00145",
+    "scenario": "政策解读",
+    "user_role": "操作人员-地面站操作员",
+    "assistant_role": "监管人员-生态环境局监测中心主任",
+    "messages": [
+      {
+        "role": "user",
+        "content": "《低空飞行服务保障体系建设方案》对低空飞行有哪些新的要求？"
+      },
+      {
+        "role": "assistant",
+        "content": "《低空飞行服务保障体系建设方案》对低空飞行的主要要求包括：\n1. 所有无人机飞行必须实名登记\n2. 在管制空域飞行需提前申请\n3. 操作人员需取得相应资质\n4. 禁止在禁飞区、限制区飞行\n5. 商业运营需取得经营许可证\n6. 建立飞行数据记录和报告制度"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.501855",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00146",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00146",
+    "scenario": "技术讨论",
+    "user_role": "技术专家-人工智能算法专家",
+    "assistant_role": "操作人员-农业植保操作员",
+    "messages": [
+      {
+        "role": "user",
+        "content": "针对低空飞行冲突事件，从技术角度分析主要原因是什么？"
+      },
+      {
+        "role": "assistant",
+        "content": "从技术分析，低空飞行冲突事件的主要原因包括：\n1. 飞控系统软件存在bug，导致设备老化引发系统故障\n2. 传感器数据异常，未能及时识别障碍物\n3. 通讯链路受到干扰，失去地面站控制\n4. 电池老化导致供电不稳定\n建议升级飞控固件，定期维护传感器，加强电磁环境监测。"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.501855",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00147",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00147",
+    "scenario": "政策解读",
+    "user_role": "技术专家-航空安全评估师",
+    "assistant_role": "监管人员-应急管理局副局长",
+    "messages": [
+      {
+        "role": "user",
+        "content": "《民用无人机驾驶员管理规定》对低空飞行有哪些新的要求？"
+      },
+      {
+        "role": "assistant",
+        "content": "《民用无人机驾驶员管理规定》对低空飞行的主要要求包括：\n1. 所有无人机飞行必须实名登记\n2. 在管制空域飞行需提前申请\n3. 操作人员需取得相应资质\n4. 禁止在禁飞区、限制区飞行\n5. 商业运营需取得经营许可证\n6. 建立飞行数据记录和报告制度"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.501855",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00148",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00148",
+    "scenario": "事件报告",
+    "user_role": "技术专家-飞控系统工程师",
+    "assistant_role": "操作人员-飞行调度员",
+    "messages": [
+      {
+        "role": "user",
+        "content": "报告！金华婺城区发生一起超高度限制飞行事件，请求指示。"
+      },
+      {
+        "role": "assistant",
+        "content": "收到。请立即执行以下操作：\n1. 启动应急响应预案\n2. 疏散周边人员，确保安全\n3. 封锁现场，保留证据\n4. 联系技术专家进行风险评估\n5. 按照《特定类无人机试运行管理规程》要求上报相关部门"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.501855",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00149",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00149",
+    "scenario": "政策解读",
+    "user_role": "操作人员-飞行调度员",
+    "assistant_role": "公众-物流用户",
+    "messages": [
+      {
+        "role": "user",
+        "content": "《低空空域使用管理规定》对低空飞行有哪些新的要求？"
+      },
+      {
+        "role": "assistant",
+        "content": "《低空空域使用管理规定》对低空飞行的主要要求包括：\n1. 所有无人机飞行必须实名登记\n2. 在管制空域飞行需提前申请\n3. 操作人员需取得相应资质\n4. 禁止在禁飞区、限制区飞行\n5. 商业运营需取得经营许可证\n6. 建立飞行数据记录和报告制度"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.502501",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00150",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00150",
+    "scenario": "安全培训",
+    "user_role": "操作人员-设备维护工程师",
+    "assistant_role": "公众-社区居民代表",
+    "messages": [
+      {
+        "role": "user",
+        "content": "作为新手飞手，应该如何避免紧急迫降事件？"
+      },
+      {
+        "role": "assistant",
+        "content": "新手飞手避免紧急迫降事件的要点：\n1. 系统学习飞行理论知识，取得资质证书\n2. 在开阔场地练习，积累飞行经验\n3. 飞行前检查清单：电池、螺旋桨、GPS信号\n4. 了解当地空域划设，避开禁飞区\n5. 保持视距内飞行，高度不超过120米\n6. 密切关注气象条件，避免恶劣天气飞行\n7. 安装并开启电子围栏功能"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.502501",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00151",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00151",
+    "scenario": "技术讨论",
+    "user_role": "操作人员-飞行教员",
+    "assistant_role": "技术专家-低空空域规划专家",
+    "messages": [
+      {
+        "role": "user",
+        "content": "针对超高度限制飞行事件，从技术角度分析主要原因是什么？"
+      },
+      {
+        "role": "assistant",
+        "content": "从技术分析，超高度限制飞行事件的主要原因包括：\n1. 飞控系统软件存在bug，导致设备老化引发系统故障\n2. 传感器数据异常，未能及时识别障碍物\n3. 通讯链路受到干扰，失去地面站控制\n4. 电池老化导致供电不稳定\n建议升级飞控固件，定期维护传感器，加强电磁环境监测。"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.502501",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00152",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00152",
+    "scenario": "安全培训",
+    "user_role": "公众-环保志愿者",
+    "assistant_role": "监管人员-消防救援支队队长",
+    "messages": [
+      {
+        "role": "user",
+        "content": "作为新手飞手，应该如何避免学校上空飞行事件？"
+      },
+      {
+        "role": "assistant",
+        "content": "新手飞手避免学校上空飞行事件的要点：\n1. 系统学习飞行理论知识，取得资质证书\n2. 在开阔场地练习，积累飞行经验\n3. 飞行前检查清单：电池、螺旋桨、GPS信号\n4. 了解当地空域划设，避开禁飞区\n5. 保持视距内飞行，高度不超过120米\n6. 密切关注气象条件，避免恶劣天气飞行\n7. 安装并开启电子围栏功能"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.502501",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00153",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00153",
+    "scenario": "风险咨询",
+    "user_role": "技术专家-人工智能算法专家",
+    "assistant_role": "公众-学校教师",
+    "messages": [
+      {
+        "role": "user",
+        "content": "请问在南京鼓楼区进行测绘建模飞行，需要注意哪些安全事项？"
+      },
+      {
+        "role": "assistant",
+        "content": "在南京鼓楼区进行测绘建模飞行，需注意以下事项：\n1. 提前向空管部门申请飞行计划\n2. 确保飞行器适航，电池电量充足\n3. 避开敏感区域，保持安全高度\n4. 关注气象条件，风速不超过10m/s\n5. 遵守《低空飞行服务保障体系建设方案》相关规定"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.502501",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00154",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00154",
+    "scenario": "事件报告",
+    "user_role": "操作人员-无人机飞手",
+    "assistant_role": "监管人员-空管中心管制员",
+    "messages": [
+      {
+        "role": "user",
+        "content": "报告！重庆渝北区发生一起天气突变影响事件，请求指示。"
+      },
+      {
+        "role": "assistant",
+        "content": "收到。请立即执行以下操作：\n1. 启动应急响应预案\n2. 疏散周边人员，确保安全\n3. 封锁现场，保留证据\n4. 联系技术专家进行风险评估\n5. 按照《无人机物流配送试点管理办法》要求上报相关部门"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.502501",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00155",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00155",
+    "scenario": "政策解读",
+    "user_role": "监管人员-应急管理局副局长",
+    "assistant_role": "技术专家-传感器技术专家",
+    "messages": [
+      {
+        "role": "user",
+        "content": "《轻小无人机运行规定（试行）》对低空飞行有哪些新的要求？"
+      },
+      {
+        "role": "assistant",
+        "content": "《轻小无人机运行规定（试行）》对低空飞行的主要要求包括：\n1. 所有无人机飞行必须实名登记\n2. 在管制空域飞行需提前申请\n3. 操作人员需取得相应资质\n4. 禁止在禁飞区、限制区飞行\n5. 商业运营需取得经营许可证\n6. 建立飞行数据记录和报告制度"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.502501",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00156",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00156",
+    "scenario": "政策解读",
+    "user_role": "操作人员-农业植保操作员",
+    "assistant_role": "技术专家-适航审定专家",
+    "messages": [
+      {
+        "role": "user",
+        "content": "《民用无人机驾驶员管理规定》对低空飞行有哪些新的要求？"
+      },
+      {
+        "role": "assistant",
+        "content": "《民用无人机驾驶员管理规定》对低空飞行的主要要求包括：\n1. 所有无人机飞行必须实名登记\n2. 在管制空域飞行需提前申请\n3. 操作人员需取得相应资质\n4. 禁止在禁飞区、限制区飞行\n5. 商业运营需取得经营许可证\n6. 建立飞行数据记录和报告制度"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.502501",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00157",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00157",
+    "scenario": "事件报告",
+    "user_role": "操作人员-试飞员",
+    "assistant_role": "公众-媒体记者",
+    "messages": [
+      {
+        "role": "user",
+        "content": "报告！合肥蜀山区发生一起机场净空区侵入事件，请求指示。"
+      },
+      {
+        "role": "assistant",
+        "content": "收到。请立即执行以下操作：\n1. 启动应急响应预案\n2. 疏散周边人员，确保安全\n3. 封锁现场，保留证据\n4. 联系技术专家进行风险评估\n5. 按照《eVTOL航空器适航审定程序》要求上报相关部门"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.502501",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00158",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00158",
+    "scenario": "风险咨询",
+    "user_role": "操作人员-地面站操作员",
+    "assistant_role": "技术专家-通信导航专家",
+    "messages": [
+      {
+        "role": "user",
+        "content": "请问在金华婺城区进行通信中继飞行，需要注意哪些安全事项？"
+      },
+      {
+        "role": "assistant",
+        "content": "在金华婺城区进行通信中继飞行，需注意以下事项：\n1. 提前向空管部门申请飞行计划\n2. 确保飞行器适航，电池电量充足\n3. 避开敏感区域，保持安全高度\n4. 关注气象条件，风速不超过15m/s\n5. 遵守《低空飞行服务保障体系建设方案》相关规定"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.502501",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00159",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00159",
+    "scenario": "技术讨论",
+    "user_role": "监管人员-民航地区管理局监管员",
+    "assistant_role": "公众-企业安全负责人",
+    "messages": [
+      {
+        "role": "user",
+        "content": "针对紧急迫降事件，从技术角度分析主要原因是什么？"
+      },
+      {
+        "role": "assistant",
+        "content": "从技术分析，紧急迫降事件的主要原因包括：\n1. 飞控系统软件存在bug，导致通讯信号中断失去控制\n2. 传感器数据异常，未能及时识别障碍物\n3. 通讯链路受到干扰，失去地面站控制\n4. 电池老化导致供电不稳定\n建议升级飞控固件，定期维护传感器，加强电磁环境监测。"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.502501",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00160",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00160",
+    "scenario": "技术讨论",
+    "user_role": "公众-社区居民代表",
+    "assistant_role": "监管人员-市低空空域管理局局长",
+    "messages": [
+      {
+        "role": "user",
+        "content": "针对军事设施附近飞行事件，从技术角度分析主要原因是什么？"
+      },
+      {
+        "role": "assistant",
+        "content": "从技术分析，军事设施附近飞行事件的主要原因包括：\n1. 飞控系统软件存在bug，导致电池供电不足引发紧急迫降\n2. 传感器数据异常，未能及时识别障碍物\n3. 通讯链路受到干扰，失去地面站控制\n4. 电池老化导致供电不稳定\n建议升级飞控固件，定期维护传感器，加强电磁环境监测。"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.502501",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00161",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00161",
+    "scenario": "政策解读",
+    "user_role": "技术专家-空管系统架构师",
+    "assistant_role": "操作人员-试飞员",
+    "messages": [
+      {
+        "role": "user",
+        "content": "《民用机场净空保护区域管理规定》对低空飞行有哪些新的要求？"
+      },
+      {
+        "role": "assistant",
+        "content": "《民用机场净空保护区域管理规定》对低空飞行的主要要求包括：\n1. 所有无人机飞行必须实名登记\n2. 在管制空域飞行需提前申请\n3. 操作人员需取得相应资质\n4. 禁止在禁飞区、限制区飞行\n5. 商业运营需取得经营许可证\n6. 建立飞行数据记录和报告制度"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.502501",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00162",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00162",
+    "scenario": "政策解读",
+    "user_role": "操作人员-飞行调度员",
+    "assistant_role": "公众-物业管理人员",
+    "messages": [
+      {
+        "role": "user",
+        "content": "《低空空域使用管理规定》对低空飞行有哪些新的要求？"
+      },
+      {
+        "role": "assistant",
+        "content": "《低空空域使用管理规定》对低空飞行的主要要求包括：\n1. 所有无人机飞行必须实名登记\n2. 在管制空域飞行需提前申请\n3. 操作人员需取得相应资质\n4. 禁止在禁飞区、限制区飞行\n5. 商业运营需取得经营许可证\n6. 建立飞行数据记录和报告制度"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.502501",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00163",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00163",
+    "scenario": "安全培训",
+    "user_role": "操作人员-设备维护工程师",
+    "assistant_role": "公众-媒体记者",
+    "messages": [
+      {
+        "role": "user",
+        "content": "作为新手飞手，应该如何避免能见度突变事件？"
+      },
+      {
+        "role": "assistant",
+        "content": "新手飞手避免能见度突变事件的要点：\n1. 系统学习飞行理论知识，取得资质证书\n2. 在开阔场地练习，积累飞行经验\n3. 飞行前检查清单：电池、螺旋桨、GPS信号\n4. 了解当地空域划设，避开禁飞区\n5. 保持视距内飞行，高度不超过120米\n6. 密切关注气象条件，避免恶劣天气飞行\n7. 安装并开启电子围栏功能"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.502501",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00164",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00164",
+    "scenario": "事件报告",
+    "user_role": "操作人员-设备维护工程师",
+    "assistant_role": "公众-航空爱好者",
+    "messages": [
+      {
+        "role": "user",
+        "content": "报告！长春朝阳区发生一起政府机关区域飞行事件，请求指示。"
+      },
+      {
+        "role": "assistant",
+        "content": "收到。请立即执行以下操作：\n1. 启动应急响应预案\n2. 疏散周边人员，确保安全\n3. 封锁现场，保留证据\n4. 联系技术专家进行风险评估\n5. 按照《特定类无人机试运行管理规程》要求上报相关部门"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.502501",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00165",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00165",
+    "scenario": "安全培训",
+    "user_role": "公众-医院管理人员",
+    "assistant_role": "技术专家-传感器技术专家",
+    "messages": [
+      {
+        "role": "user",
+        "content": "作为新手飞手，应该如何避免雷达探测盲区事件？"
+      },
+      {
+        "role": "assistant",
+        "content": "新手飞手避免雷达探测盲区事件的要点：\n1. 系统学习飞行理论知识，取得资质证书\n2. 在开阔场地练习，积累飞行经验\n3. 飞行前检查清单：电池、螺旋桨、GPS信号\n4. 了解当地空域划设，避开禁飞区\n5. 保持视距内飞行，高度不超过120米\n6. 密切关注气象条件，避免恶劣天气飞行\n7. 安装并开启电子围栏功能"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.502501",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00166",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00166",
+    "scenario": "技术讨论",
+    "user_role": "公众-环保志愿者",
+    "assistant_role": "技术专家-飞控系统工程师",
+    "messages": [
+      {
+        "role": "user",
+        "content": "针对体育赛事区域飞行事件，从技术角度分析主要原因是什么？"
+      },
+      {
+        "role": "assistant",
+        "content": "从技术分析，体育赛事区域飞行事件的主要原因包括：\n1. 飞控系统软件存在bug，导致通讯信号中断失去控制\n2. 传感器数据异常，未能及时识别障碍物\n3. 通讯链路受到干扰，失去地面站控制\n4. 电池老化导致供电不稳定\n建议升级飞控固件，定期维护传感器，加强电磁环境监测。"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.502501",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00167",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00167",
+    "scenario": "技术讨论",
+    "user_role": "监管人员-军分区空域协调员",
+    "assistant_role": "操作人员-农业植保操作员",
+    "messages": [
+      {
+        "role": "user",
+        "content": "针对人员密集区飞行事件，从技术角度分析主要原因是什么？"
+      },
+      {
+        "role": "assistant",
+        "content": "从技术分析，人员密集区飞行事件的主要原因包括：\n1. 飞控系统软件存在bug，导致飞控系统异常导致航线偏离\n2. 传感器数据异常，未能及时识别障碍物\n3. 通讯链路受到干扰，失去地面站控制\n4. 电池老化导致供电不稳定\n建议升级飞控固件，定期维护传感器，加强电磁环境监测。"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.502501",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00168",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00168",
+    "scenario": "技术讨论",
+    "user_role": "操作人员-飞行教员",
+    "assistant_role": "公众-航空爱好者",
+    "messages": [
+      {
+        "role": "user",
+        "content": "针对低空风切变事件，从技术角度分析主要原因是什么？"
+      },
+      {
+        "role": "assistant",
+        "content": "从技术分析，低空风切变事件的主要原因包括：\n1. 飞控系统软件存在bug，导致通讯信号中断失去控制\n2. 传感器数据异常，未能及时识别障碍物\n3. 通讯链路受到干扰，失去地面站控制\n4. 电池老化导致供电不稳定\n建议升级飞控固件，定期维护传感器，加强电磁环境监测。"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.502501",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00169",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00169",
+    "scenario": "技术讨论",
+    "user_role": "监管人员-民航地区管理局监管员",
+    "assistant_role": "操作人员-飞行教员",
+    "messages": [
+      {
+        "role": "user",
+        "content": "针对导航系统故障事件，从技术角度分析主要原因是什么？"
+      },
+      {
+        "role": "assistant",
+        "content": "从技术分析，导航系统故障事件的主要原因包括：\n1. 飞控系统软件存在bug，导致电池供电不足引发紧急迫降\n2. 传感器数据异常，未能及时识别障碍物\n3. 通讯链路受到干扰，失去地面站控制\n4. 电池老化导致供电不稳定\n建议升级飞控固件，定期维护传感器，加强电磁环境监测。"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.502501",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00170",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00170",
+    "scenario": "技术讨论",
+    "user_role": "操作人员-航线规划师",
+    "assistant_role": "技术专家-低空空域规划专家",
+    "messages": [
+      {
+        "role": "user",
+        "content": "针对通讯中断事件，从技术角度分析主要原因是什么？"
+      },
+      {
+        "role": "assistant",
+        "content": "从技术分析，通讯中断事件的主要原因包括：\n1. 飞控系统软件存在bug，导致避障系统故障造成飞行冲突\n2. 传感器数据异常，未能及时识别障碍物\n3. 通讯链路受到干扰，失去地面站控制\n4. 电池老化导致供电不稳定\n建议升级飞控固件，定期维护传感器，加强电磁环境监测。"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.503861",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00171",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00171",
+    "scenario": "风险咨询",
+    "user_role": "技术专家-航空安全评估师",
+    "assistant_role": "公众-媒体记者",
+    "messages": [
+      {
+        "role": "user",
+        "content": "请问在南宁青秀区进行广告宣传飞行，需要注意哪些安全事项？"
+      },
+      {
+        "role": "assistant",
+        "content": "在南宁青秀区进行广告宣传飞行，需注意以下事项：\n1. 提前向空管部门申请飞行计划\n2. 确保飞行器适航，电池电量充足\n3. 避开敏感区域，保持安全高度\n4. 关注气象条件，风速不超过14m/s\n5. 遵守《特定类无人机试运行管理规程》相关规定"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.503861",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00172",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00172",
+    "scenario": "政策解读",
+    "user_role": "技术专家-适航审定专家",
+    "assistant_role": "监管人员-城管执法大队长",
+    "messages": [
+      {
+        "role": "user",
+        "content": "《无人机物流配送试点管理办法》对低空飞行有哪些新的要求？"
+      },
+      {
+        "role": "assistant",
+        "content": "《无人机物流配送试点管理办法》对低空飞行的主要要求包括：\n1. 所有无人机飞行必须实名登记\n2. 在管制空域飞行需提前申请\n3. 操作人员需取得相应资质\n4. 禁止在禁飞区、限制区飞行\n5. 商业运营需取得经营许可证\n6. 建立飞行数据记录和报告制度"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.503861",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00173",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00173",
+    "scenario": "风险咨询",
+    "user_role": "操作人员-试飞员",
+    "assistant_role": "公众-社区居民代表",
+    "messages": [
+      {
+        "role": "user",
+        "content": "请问在广州天河区进行电力巡检飞行，需要注意哪些安全事项？"
+      },
+      {
+        "role": "assistant",
+        "content": "在广州天河区进行电力巡检飞行，需注意以下事项：\n1. 提前向空管部门申请飞行计划\n2. 确保飞行器适航，电池电量充足\n3. 避开敏感区域，保持安全高度\n4. 关注气象条件，风速不超过8m/s\n5. 遵守《通用航空飞行管制条例》相关规定"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.503861",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00174",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00174",
+    "scenario": "安全培训",
+    "user_role": "技术专家-无人机系统工程师",
+    "assistant_role": "监管人员-应急管理局副局长",
+    "messages": [
+      {
+        "role": "user",
+        "content": "作为新手飞手，应该如何避免低空飞行冲突事件？"
+      },
+      {
+        "role": "assistant",
+        "content": "新手飞手避免低空飞行冲突事件的要点：\n1. 系统学习飞行理论知识，取得资质证书\n2. 在开阔场地练习，积累飞行经验\n3. 飞行前检查清单：电池、螺旋桨、GPS信号\n4. 了解当地空域划设，避开禁飞区\n5. 保持视距内飞行，高度不超过120米\n6. 密切关注气象条件，避免恶劣天气飞行\n7. 安装并开启电子围栏功能"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.503861",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00175",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00175",
+    "scenario": "政策解读",
+    "user_role": "操作人员-农业植保操作员",
+    "assistant_role": "公众-社区居民代表",
+    "messages": [
+      {
+        "role": "user",
+        "content": "《无人机物流配送试点管理办法》对低空飞行有哪些新的要求？"
+      },
+      {
+        "role": "assistant",
+        "content": "《无人机物流配送试点管理办法》对低空飞行的主要要求包括：\n1. 所有无人机飞行必须实名登记\n2. 在管制空域飞行需提前申请\n3. 操作人员需取得相应资质\n4. 禁止在禁飞区、限制区飞行\n5. 商业运营需取得经营许可证\n6. 建立飞行数据记录和报告制度"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.503861",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00176",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00176",
+    "scenario": "技术讨论",
+    "user_role": "公众-企业安全负责人",
+    "assistant_role": "操作人员-农业植保操作员",
+    "messages": [
+      {
+        "role": "user",
+        "content": "针对超高度限制飞行事件，从技术角度分析主要原因是什么？"
+      },
+      {
+        "role": "assistant",
+        "content": "从技术分析，超高度限制飞行事件的主要原因包括：\n1. 飞控系统软件存在bug，导致电池供电不足引发紧急迫降\n2. 传感器数据异常，未能及时识别障碍物\n3. 通讯链路受到干扰，失去地面站控制\n4. 电池老化导致供电不稳定\n建议升级飞控固件，定期维护传感器，加强电磁环境监测。"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.503861",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00177",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00177",
+    "scenario": "安全培训",
+    "user_role": "监管人员-交通委低空管理处处长",
+    "assistant_role": "操作人员-设备维护工程师",
+    "messages": [
+      {
+        "role": "user",
+        "content": "作为新手飞手，应该如何避免通讯中断事件？"
+      },
+      {
+        "role": "assistant",
+        "content": "新手飞手避免通讯中断事件的要点：\n1. 系统学习飞行理论知识，取得资质证书\n2. 在开阔场地练习，积累飞行经验\n3. 飞行前检查清单：电池、螺旋桨、GPS信号\n4. 了解当地空域划设，避开禁飞区\n5. 保持视距内飞行，高度不超过120米\n6. 密切关注气象条件，避免恶劣天气飞行\n7. 安装并开启电子围栏功能"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.503861",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00178",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00178",
+    "scenario": "政策解读",
+    "user_role": "操作人员-农业植保操作员",
+    "assistant_role": "技术专家-飞控系统工程师",
+    "messages": [
+      {
+        "role": "user",
+        "content": "《低空空域使用管理规定》对低空飞行有哪些新的要求？"
+      },
+      {
+        "role": "assistant",
+        "content": "《低空空域使用管理规定》对低空飞行的主要要求包括：\n1. 所有无人机飞行必须实名登记\n2. 在管制空域飞行需提前申请\n3. 操作人员需取得相应资质\n4. 禁止在禁飞区、限制区飞行\n5. 商业运营需取得经营许可证\n6. 建立飞行数据记录和报告制度"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.503861",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00179",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00179",
+    "scenario": "风险咨询",
+    "user_role": "公众-企业安全负责人",
+    "assistant_role": "监管人员-生态环境局监测中心主任",
+    "messages": [
+      {
+        "role": "user",
+        "content": "请问在北京朝阳区进行测绘建模飞行，需要注意哪些安全事项？"
+      },
+      {
+        "role": "assistant",
+        "content": "在北京朝阳区进行测绘建模飞行，需注意以下事项：\n1. 提前向空管部门申请飞行计划\n2. 确保飞行器适航，电池电量充足\n3. 避开敏感区域，保持安全高度\n4. 关注气象条件，风速不超过8m/s\n5. 遵守《无人机物流配送试点管理办法》相关规定"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.503861",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00180",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00180",
+    "scenario": "政策解读",
+    "user_role": "公众-农业合作社代表",
+    "assistant_role": "监管人员-城管执法大队长",
+    "messages": [
+      {
+        "role": "user",
+        "content": "《通用航空飞行管制条例》对低空飞行有哪些新的要求？"
+      },
+      {
+        "role": "assistant",
+        "content": "《通用航空飞行管制条例》对低空飞行的主要要求包括：\n1. 所有无人机飞行必须实名登记\n2. 在管制空域飞行需提前申请\n3. 操作人员需取得相应资质\n4. 禁止在禁飞区、限制区飞行\n5. 商业运营需取得经营许可证\n6. 建立飞行数据记录和报告制度"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.503861",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00181",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00181",
+    "scenario": "政策解读",
+    "user_role": "监管人员-公安局治安大队队长",
+    "assistant_role": "技术专家-无人机系统工程师",
+    "messages": [
+      {
+        "role": "user",
+        "content": "《无人机物流配送试点管理办法》对低空飞行有哪些新的要求？"
+      },
+      {
+        "role": "assistant",
+        "content": "《无人机物流配送试点管理办法》对低空飞行的主要要求包括：\n1. 所有无人机飞行必须实名登记\n2. 在管制空域飞行需提前申请\n3. 操作人员需取得相应资质\n4. 禁止在禁飞区、限制区飞行\n5. 商业运营需取得经营许可证\n6. 建立飞行数据记录和报告制度"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.503861",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00182",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00182",
+    "scenario": "政策解读",
+    "user_role": "技术专家-飞控系统工程师",
+    "assistant_role": "公众-物流用户",
+    "messages": [
+      {
+        "role": "user",
+        "content": "《特定类无人机试运行管理规程》对低空飞行有哪些新的要求？"
+      },
+      {
+        "role": "assistant",
+        "content": "《特定类无人机试运行管理规程》对低空飞行的主要要求包括：\n1. 所有无人机飞行必须实名登记\n2. 在管制空域飞行需提前申请\n3. 操作人员需取得相应资质\n4. 禁止在禁飞区、限制区飞行\n5. 商业运营需取得经营许可证\n6. 建立飞行数据记录和报告制度"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.503861",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00183",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00183",
+    "scenario": "事件报告",
+    "user_role": "技术专家-空管系统架构师",
+    "assistant_role": "监管人员-城管执法大队长",
+    "messages": [
+      {
+        "role": "user",
+        "content": "报告！石家庄长安区发生一起低空风切变事件，请求指示。"
+      },
+      {
+        "role": "assistant",
+        "content": "收到。请立即执行以下操作：\n1. 启动应急响应预案\n2. 疏散周边人员，确保安全\n3. 封锁现场，保留证据\n4. 联系技术专家进行风险评估\n5. 按照《低空经济产业发展指导意见》要求上报相关部门"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.503861",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00184",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00184",
+    "scenario": "技术讨论",
+    "user_role": "公众-农业合作社代表",
+    "assistant_role": "监管人员-生态环境局监测中心主任",
+    "messages": [
+      {
+        "role": "user",
+        "content": "针对天气突变影响事件，从技术角度分析主要原因是什么？"
+      },
+      {
+        "role": "assistant",
+        "content": "从技术分析，天气突变影响事件的主要原因包括：\n1. 飞控系统软件存在bug，导致飞控系统异常导致航线偏离\n2. 传感器数据异常，未能及时识别障碍物\n3. 通讯链路受到干扰，失去地面站控制\n4. 电池老化导致供电不稳定\n建议升级飞控固件，定期维护传感器，加强电磁环境监测。"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.503861",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00185",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00185",
+    "scenario": "技术讨论",
+    "user_role": "监管人员-公安局治安大队队长",
+    "assistant_role": "公众-环保志愿者",
+    "messages": [
+      {
+        "role": "user",
+        "content": "针对人员密集区飞行事件，从技术角度分析主要原因是什么？"
+      },
+      {
+        "role": "assistant",
+        "content": "从技术分析，人员密集区飞行事件的主要原因包括：\n1. 飞控系统软件存在bug，导致电池供电不足引发紧急迫降\n2. 传感器数据异常，未能及时识别障碍物\n3. 通讯链路受到干扰，失去地面站控制\n4. 电池老化导致供电不稳定\n建议升级飞控固件，定期维护传感器，加强电磁环境监测。"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.504866",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00186",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00186",
+    "scenario": "安全培训",
+    "user_role": "监管人员-应急管理局副局长",
+    "assistant_role": "公众-企业安全负责人",
+    "messages": [
+      {
+        "role": "user",
+        "content": "作为新手飞手，应该如何避免低空风切变事件？"
+      },
+      {
+        "role": "assistant",
+        "content": "新手飞手避免低空风切变事件的要点：\n1. 系统学习飞行理论知识，取得资质证书\n2. 在开阔场地练习，积累飞行经验\n3. 飞行前检查清单：电池、螺旋桨、GPS信号\n4. 了解当地空域划设，避开禁飞区\n5. 保持视距内飞行，高度不超过120米\n6. 密切关注气象条件，避免恶劣天气飞行\n7. 安装并开启电子围栏功能"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.504866",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00187",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00187",
+    "scenario": "技术讨论",
+    "user_role": "监管人员-空管中心管制员",
+    "assistant_role": "技术专家-飞控系统工程师",
+    "messages": [
+      {
+        "role": "user",
+        "content": "针对敏感区域拍摄事件，从技术角度分析主要原因是什么？"
+      },
+      {
+        "role": "assistant",
+        "content": "从技术分析，敏感区域拍摄事件的主要原因包括：\n1. 飞控系统软件存在bug，导致导航系统受干扰偏离航线\n2. 传感器数据异常，未能及时识别障碍物\n3. 通讯链路受到干扰，失去地面站控制\n4. 电池老化导致供电不稳定\n建议升级飞控固件，定期维护传感器，加强电磁环境监测。"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.504866",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00188",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00188",
+    "scenario": "技术讨论",
+    "user_role": "监管人员-公安局治安大队队长",
+    "assistant_role": "操作人员-物流配送操作员",
+    "messages": [
+      {
+        "role": "user",
+        "content": "针对天气突变影响事件，从技术角度分析主要原因是什么？"
+      },
+      {
+        "role": "assistant",
+        "content": "从技术分析，天气突变影响事件的主要原因包括：\n1. 飞控系统软件存在bug，导致通讯信号中断失去控制\n2. 传感器数据异常，未能及时识别障碍物\n3. 通讯链路受到干扰，失去地面站控制\n4. 电池老化导致供电不稳定\n建议升级飞控固件，定期维护传感器，加强电磁环境监测。"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.504866",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00189",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00189",
+    "scenario": "事件报告",
+    "user_role": "技术专家-航空安全评估师",
+    "assistant_role": "监管人员-空管中心管制员",
+    "messages": [
+      {
+        "role": "user",
+        "content": "报告！丽水莲都区发生一起电池失效事件，请求指示。"
+      },
+      {
+        "role": "assistant",
+        "content": "收到。请立即执行以下操作：\n1. 启动应急响应预案\n2. 疏散周边人员，确保安全\n3. 封锁现场，保留证据\n4. 联系技术专家进行风险评估\n5. 按照《低空飞行服务保障体系建设方案》要求上报相关部门"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.504866",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00190",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00190",
+    "scenario": "风险咨询",
+    "user_role": "技术专家-人工智能算法专家",
+    "assistant_role": "操作人员-地面站操作员",
+    "messages": [
+      {
+        "role": "user",
+        "content": "请问在太原小店区进行广告宣传飞行，需要注意哪些安全事项？"
+      },
+      {
+        "role": "assistant",
+        "content": "在太原小店区进行广告宣传飞行，需注意以下事项：\n1. 提前向空管部门申请飞行计划\n2. 确保飞行器适航，电池电量充足\n3. 避开敏感区域，保持安全高度\n4. 关注气象条件，风速不超过10m/s\n5. 遵守《eVTOL航空器适航审定程序》相关规定"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.504866",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00191",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00191",
+    "scenario": "政策解读",
+    "user_role": "技术专家-无人机系统工程师",
+    "assistant_role": "操作人员-航线规划师",
+    "messages": [
+      {
+        "role": "user",
+        "content": "《无人机物流配送试点管理办法》对低空飞行有哪些新的要求？"
+      },
+      {
+        "role": "assistant",
+        "content": "《无人机物流配送试点管理办法》对低空飞行的主要要求包括：\n1. 所有无人机飞行必须实名登记\n2. 在管制空域飞行需提前申请\n3. 操作人员需取得相应资质\n4. 禁止在禁飞区、限制区飞行\n5. 商业运营需取得经营许可证\n6. 建立飞行数据记录和报告制度"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.504866",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00192",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00192",
+    "scenario": "安全培训",
+    "user_role": "监管人员-空管中心管制员",
+    "assistant_role": "技术专家-适航审定专家",
+    "messages": [
+      {
+        "role": "user",
+        "content": "作为新手飞手，应该如何避免能见度突变事件？"
+      },
+      {
+        "role": "assistant",
+        "content": "新手飞手避免能见度突变事件的要点：\n1. 系统学习飞行理论知识，取得资质证书\n2. 在开阔场地练习，积累飞行经验\n3. 飞行前检查清单：电池、螺旋桨、GPS信号\n4. 了解当地空域划设，避开禁飞区\n5. 保持视距内飞行，高度不超过120米\n6. 密切关注气象条件，避免恶劣天气飞行\n7. 安装并开启电子围栏功能"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.504866",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00193",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00193",
+    "scenario": "风险咨询",
+    "user_role": "监管人员-民航地区管理局监管员",
+    "assistant_role": "技术专家-低空空域规划专家",
+    "messages": [
+      {
+        "role": "user",
+        "content": "请问在深圳南山区进行电力巡检飞行，需要注意哪些安全事项？"
+      },
+      {
+        "role": "assistant",
+        "content": "在深圳南山区进行电力巡检飞行，需注意以下事项：\n1. 提前向空管部门申请飞行计划\n2. 确保飞行器适航，电池电量充足\n3. 避开敏感区域，保持安全高度\n4. 关注气象条件，风速不超过9m/s\n5. 遵守《无人驾驶航空器飞行管理暂行条例》相关规定"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.504866",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00194",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00194",
+    "scenario": "安全培训",
+    "user_role": "操作人员-试飞员",
+    "assistant_role": "技术专家-航空安全评估师",
+    "messages": [
+      {
+        "role": "user",
+        "content": "作为新手飞手，应该如何避免超载飞行事件？"
+      },
+      {
+        "role": "assistant",
+        "content": "新手飞手避免超载飞行事件的要点：\n1. 系统学习飞行理论知识，取得资质证书\n2. 在开阔场地练习，积累飞行经验\n3. 飞行前检查清单：电池、螺旋桨、GPS信号\n4. 了解当地空域划设，避开禁飞区\n5. 保持视距内飞行，高度不超过120米\n6. 密切关注气象条件，避免恶劣天气飞行\n7. 安装并开启电子围栏功能"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.504866",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00195",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00195",
+    "scenario": "技术讨论",
+    "user_role": "监管人员-交通委低空管理处处长",
+    "assistant_role": "技术专家-空管系统架构师",
+    "messages": [
+      {
+        "role": "user",
+        "content": "针对气象监测异常事件，从技术角度分析主要原因是什么？"
+      },
+      {
+        "role": "assistant",
+        "content": "从技术分析，气象监测异常事件的主要原因包括：\n1. 飞控系统软件存在bug，导致通讯信号中断失去控制\n2. 传感器数据异常，未能及时识别障碍物\n3. 通讯链路受到干扰，失去地面站控制\n4. 电池老化导致供电不稳定\n建议升级飞控固件，定期维护传感器，加强电磁环境监测。"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.504866",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00196",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00196",
+    "scenario": "安全培训",
+    "user_role": "公众-物业管理人员",
+    "assistant_role": "技术专家-气象预报专家",
+    "messages": [
+      {
+        "role": "user",
+        "content": "作为新手飞手，应该如何避免低空飞行冲突事件？"
+      },
+      {
+        "role": "assistant",
+        "content": "新手飞手避免低空飞行冲突事件的要点：\n1. 系统学习飞行理论知识，取得资质证书\n2. 在开阔场地练习，积累飞行经验\n3. 飞行前检查清单：电池、螺旋桨、GPS信号\n4. 了解当地空域划设，避开禁飞区\n5. 保持视距内飞行，高度不超过120米\n6. 密切关注气象条件，避免恶劣天气飞行\n7. 安装并开启电子围栏功能"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.504866",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00197",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00197",
+    "scenario": "政策解读",
+    "user_role": "技术专家-无人机系统工程师",
+    "assistant_role": "公众-企业安全负责人",
+    "messages": [
+      {
+        "role": "user",
+        "content": "《eVTOL航空器适航审定程序》对低空飞行有哪些新的要求？"
+      },
+      {
+        "role": "assistant",
+        "content": "《eVTOL航空器适航审定程序》对低空飞行的主要要求包括：\n1. 所有无人机飞行必须实名登记\n2. 在管制空域飞行需提前申请\n3. 操作人员需取得相应资质\n4. 禁止在禁飞区、限制区飞行\n5. 商业运营需取得经营许可证\n6. 建立飞行数据记录和报告制度"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.504866",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00198",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00198",
+    "scenario": "事件报告",
+    "user_role": "操作人员-任务载荷操作员",
+    "assistant_role": "技术专家-适航审定专家",
+    "messages": [
+      {
+        "role": "user",
+        "content": "报告！台州椒江区发生一起紧急迫降事件，请求指示。"
+      },
+      {
+        "role": "assistant",
+        "content": "收到。请立即执行以下操作：\n1. 启动应急响应预案\n2. 疏散周边人员，确保安全\n3. 封锁现场，保留证据\n4. 联系技术专家进行风险评估\n5. 按照《城市低空空域精细化管理办法》要求上报相关部门"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.504866",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00199",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00199",
+    "scenario": "风险咨询",
+    "user_role": "监管人员-市低空空域管理局局长",
+    "assistant_role": "操作人员-地面站操作员",
+    "messages": [
+      {
+        "role": "user",
+        "content": "请问在丽水莲都区进行应急救援飞行，需要注意哪些安全事项？"
+      },
+      {
+        "role": "assistant",
+        "content": "在丽水莲都区进行应急救援飞行，需注意以下事项：\n1. 提前向空管部门申请飞行计划\n2. 确保飞行器适航，电池电量充足\n3. 避开敏感区域，保持安全高度\n4. 关注气象条件，风速不超过15m/s\n5. 遵守《城市低空空域精细化管理办法》相关规定"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.504866",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00200",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00200",
+    "scenario": "事件报告",
+    "user_role": "公众-航空爱好者",
+    "assistant_role": "操作人员-农业植保操作员",
+    "messages": [
+      {
+        "role": "user",
+        "content": "报告！沈阳和平区发生一起医院上空飞行事件，请求指示。"
+      },
+      {
+        "role": "assistant",
+        "content": "收到。请立即执行以下操作：\n1. 启动应急响应预案\n2. 疏散周边人员，确保安全\n3. 封锁现场，保留证据\n4. 联系技术专家进行风险评估\n5. 按照《低空飞行服务保障体系建设方案》要求上报相关部门"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.504866",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00201",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00201",
+    "scenario": "政策解读",
+    "user_role": "监管人员-交通委低空管理处处长",
+    "assistant_role": "技术专家-通信导航专家",
+    "messages": [
+      {
+        "role": "user",
+        "content": "《无人机物流配送试点管理办法》对低空飞行有哪些新的要求？"
+      },
+      {
+        "role": "assistant",
+        "content": "《无人机物流配送试点管理办法》对低空飞行的主要要求包括：\n1. 所有无人机飞行必须实名登记\n2. 在管制空域飞行需提前申请\n3. 操作人员需取得相应资质\n4. 禁止在禁飞区、限制区飞行\n5. 商业运营需取得经营许可证\n6. 建立飞行数据记录和报告制度"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.505866",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00202",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00202",
+    "scenario": "事件报告",
+    "user_role": "操作人员-无人机飞手",
+    "assistant_role": "技术专家-气象预报专家",
+    "messages": [
+      {
+        "role": "user",
+        "content": "报告！舟山定海区发生一起军事设施附近飞行事件，请求指示。"
+      },
+      {
+        "role": "assistant",
+        "content": "收到。请立即执行以下操作：\n1. 启动应急响应预案\n2. 疏散周边人员，确保安全\n3. 封锁现场，保留证据\n4. 联系技术专家进行风险评估\n5. 按照《特定类无人机试运行管理规程》要求上报相关部门"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.505866",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00203",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00203",
+    "scenario": "风险咨询",
+    "user_role": "操作人员-任务载荷操作员",
+    "assistant_role": "公众-学校教师",
+    "messages": [
+      {
+        "role": "user",
+        "content": "请问在天津滨海新区进行医疗物资配送飞行，需要注意哪些安全事项？"
+      },
+      {
+        "role": "assistant",
+        "content": "在天津滨海新区进行医疗物资配送飞行，需注意以下事项：\n1. 提前向空管部门申请飞行计划\n2. 确保飞行器适航，电池电量充足\n3. 避开敏感区域，保持安全高度\n4. 关注气象条件，风速不超过15m/s\n5. 遵守《无人驾驶航空器飞行管理暂行条例》相关规定"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.505866",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00204",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00204",
+    "scenario": "风险咨询",
+    "user_role": "技术专家-气象预报专家",
+    "assistant_role": "公众-环保志愿者",
+    "messages": [
+      {
+        "role": "user",
+        "content": "请问在哈尔滨道里区进行航拍巡查飞行，需要注意哪些安全事项？"
+      },
+      {
+        "role": "assistant",
+        "content": "在哈尔滨道里区进行航拍巡查飞行，需注意以下事项：\n1. 提前向空管部门申请飞行计划\n2. 确保飞行器适航，电池电量充足\n3. 避开敏感区域，保持安全高度\n4. 关注气象条件，风速不超过12m/s\n5. 遵守《低空经济产业发展指导意见》相关规定"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.505866",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00205",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00205",
+    "scenario": "技术讨论",
+    "user_role": "技术专家-航空安全评估师",
+    "assistant_role": "公众-社区居民代表",
+    "messages": [
+      {
+        "role": "user",
+        "content": "针对避障系统失效事件，从技术角度分析主要原因是什么？"
+      },
+      {
+        "role": "assistant",
+        "content": "从技术分析，避障系统失效事件的主要原因包括：\n1. 飞控系统软件存在bug，导致操作人员失误导致违规飞行\n2. 传感器数据异常，未能及时识别障碍物\n3. 通讯链路受到干扰，失去地面站控制\n4. 电池老化导致供电不稳定\n建议升级飞控固件，定期维护传感器，加强电磁环境监测。"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.505866",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00206",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00206",
+    "scenario": "安全培训",
+    "user_role": "监管人员-公安局治安大队队长",
+    "assistant_role": "操作人员-无人机飞手",
+    "messages": [
+      {
+        "role": "user",
+        "content": "作为新手飞手，应该如何避免非法空域进入事件？"
+      },
+      {
+        "role": "assistant",
+        "content": "新手飞手避免非法空域进入事件的要点：\n1. 系统学习飞行理论知识，取得资质证书\n2. 在开阔场地练习，积累飞行经验\n3. 飞行前检查清单：电池、螺旋桨、GPS信号\n4. 了解当地空域划设，避开禁飞区\n5. 保持视距内飞行，高度不超过120米\n6. 密切关注气象条件，避免恶劣天气飞行\n7. 安装并开启电子围栏功能"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.505866",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00207",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00207",
+    "scenario": "政策解读",
+    "user_role": "操作人员-试飞员",
+    "assistant_role": "公众-物业管理人员",
+    "messages": [
+      {
+        "role": "user",
+        "content": "《特定类无人机试运行管理规程》对低空飞行有哪些新的要求？"
+      },
+      {
+        "role": "assistant",
+        "content": "《特定类无人机试运行管理规程》对低空飞行的主要要求包括：\n1. 所有无人机飞行必须实名登记\n2. 在管制空域飞行需提前申请\n3. 操作人员需取得相应资质\n4. 禁止在禁飞区、限制区飞行\n5. 商业运营需取得经营许可证\n6. 建立飞行数据记录和报告制度"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.505866",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00208",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00208",
+    "scenario": "风险咨询",
+    "user_role": "技术专家-航空安全评估师",
+    "assistant_role": "监管人员-交通委低空管理处处长",
+    "messages": [
+      {
+        "role": "user",
+        "content": "请问在北京海淀区进行农业植保飞行，需要注意哪些安全事项？"
+      },
+      {
+        "role": "assistant",
+        "content": "在北京海淀区进行农业植保飞行，需注意以下事项：\n1. 提前向空管部门申请飞行计划\n2. 确保飞行器适航，电池电量充足\n3. 避开敏感区域，保持安全高度\n4. 关注气象条件，风速不超过14m/s\n5. 遵守《城市低空空域精细化管理办法》相关规定"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.505866",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00209",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00209",
+    "scenario": "政策解读",
+    "user_role": "监管人员-市低空空域管理局局长",
+    "assistant_role": "公众-媒体记者",
+    "messages": [
+      {
+        "role": "user",
+        "content": "《轻小无人机运行规定（试行）》对低空飞行有哪些新的要求？"
+      },
+      {
+        "role": "assistant",
+        "content": "《轻小无人机运行规定（试行）》对低空飞行的主要要求包括：\n1. 所有无人机飞行必须实名登记\n2. 在管制空域飞行需提前申请\n3. 操作人员需取得相应资质\n4. 禁止在禁飞区、限制区飞行\n5. 商业运营需取得经营许可证\n6. 建立飞行数据记录和报告制度"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.505866",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00210",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00210",
+    "scenario": "政策解读",
+    "user_role": "技术专家-通信导航专家",
+    "assistant_role": "公众-物业管理人员",
+    "messages": [
+      {
+        "role": "user",
+        "content": "《城市低空空域精细化管理办法》对低空飞行有哪些新的要求？"
+      },
+      {
+        "role": "assistant",
+        "content": "《城市低空空域精细化管理办法》对低空飞行的主要要求包括：\n1. 所有无人机飞行必须实名登记\n2. 在管制空域飞行需提前申请\n3. 操作人员需取得相应资质\n4. 禁止在禁飞区、限制区飞行\n5. 商业运营需取得经营许可证\n6. 建立飞行数据记录和报告制度"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.505866",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00211",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00211",
+    "scenario": "事件报告",
+    "user_role": "公众-航空爱好者",
+    "assistant_role": "技术专家-人工智能算法专家",
+    "messages": [
+      {
+        "role": "user",
+        "content": "报告！北京海淀区发生一起通讯中断事件，请求指示。"
+      },
+      {
+        "role": "assistant",
+        "content": "收到。请立即执行以下操作：\n1. 启动应急响应预案\n2. 疏散周边人员，确保安全\n3. 封锁现场，保留证据\n4. 联系技术专家进行风险评估\n5. 按照《城市低空空域精细化管理办法》要求上报相关部门"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.505866",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00212",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00212",
+    "scenario": "事件报告",
+    "user_role": "公众-环保志愿者",
+    "assistant_role": "操作人员-无人机飞手",
+    "messages": [
+      {
+        "role": "user",
+        "content": "报告！沈阳和平区发生一起超载飞行事件，请求指示。"
+      },
+      {
+        "role": "assistant",
+        "content": "收到。请立即执行以下操作：\n1. 启动应急响应预案\n2. 疏散周边人员，确保安全\n3. 封锁现场，保留证据\n4. 联系技术专家进行风险评估\n5. 按照《低空空域使用管理规定》要求上报相关部门"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.505866",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00213",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00213",
+    "scenario": "安全培训",
+    "user_role": "技术专家-适航审定专家",
+    "assistant_role": "操作人员-航线规划师",
+    "messages": [
+      {
+        "role": "user",
+        "content": "作为新手飞手，应该如何避免信号干扰事件？"
+      },
+      {
+        "role": "assistant",
+        "content": "新手飞手避免信号干扰事件的要点：\n1. 系统学习飞行理论知识，取得资质证书\n2. 在开阔场地练习，积累飞行经验\n3. 飞行前检查清单：电池、螺旋桨、GPS信号\n4. 了解当地空域划设，避开禁飞区\n5. 保持视距内飞行，高度不超过120米\n6. 密切关注气象条件，避免恶劣天气飞行\n7. 安装并开启电子围栏功能"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.505866",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00214",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00214",
+    "scenario": "事件报告",
+    "user_role": "操作人员-飞行调度员",
+    "assistant_role": "公众-环保志愿者",
+    "messages": [
+      {
+        "role": "user",
+        "content": "报告！无锡梁溪区发生一起未经许可的商业飞行事件，请求指示。"
+      },
+      {
+        "role": "assistant",
+        "content": "收到。请立即执行以下操作：\n1. 启动应急响应预案\n2. 疏散周边人员，确保安全\n3. 封锁现场，保留证据\n4. 联系技术专家进行风险评估\n5. 按照《通用航空飞行管制条例》要求上报相关部门"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.505866",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00215",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00215",
+    "scenario": "风险咨询",
+    "user_role": "监管人员-消防救援支队队长",
+    "assistant_role": "操作人员-物流配送操作员",
+    "messages": [
+      {
+        "role": "user",
+        "content": "请问在金华婺城区进行环境监测飞行，需要注意哪些安全事项？"
+      },
+      {
+        "role": "assistant",
+        "content": "在金华婺城区进行环境监测飞行，需注意以下事项：\n1. 提前向空管部门申请飞行计划\n2. 确保飞行器适航，电池电量充足\n3. 避开敏感区域，保持安全高度\n4. 关注气象条件，风速不超过9m/s\n5. 遵守《特定类无人机试运行管理规程》相关规定"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.505866",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00216",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00216",
+    "scenario": "政策解读",
+    "user_role": "操作人员-飞行调度员",
+    "assistant_role": "公众-航空爱好者",
+    "messages": [
+      {
+        "role": "user",
+        "content": "《无人机驾驶员培训考核管理办法》对低空飞行有哪些新的要求？"
+      },
+      {
+        "role": "assistant",
+        "content": "《无人机驾驶员培训考核管理办法》对低空飞行的主要要求包括：\n1. 所有无人机飞行必须实名登记\n2. 在管制空域飞行需提前申请\n3. 操作人员需取得相应资质\n4. 禁止在禁飞区、限制区飞行\n5. 商业运营需取得经营许可证\n6. 建立飞行数据记录和报告制度"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.506865",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00217",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00217",
+    "scenario": "技术讨论",
+    "user_role": "监管人员-应急管理局副局长",
+    "assistant_role": "公众-农业合作社代表",
+    "messages": [
+      {
+        "role": "user",
+        "content": "针对政府机关区域飞行事件，从技术角度分析主要原因是什么？"
+      },
+      {
+        "role": "assistant",
+        "content": "从技术分析，政府机关区域飞行事件的主要原因包括：\n1. 飞控系统软件存在bug，导致飞控系统异常导致航线偏离\n2. 传感器数据异常，未能及时识别障碍物\n3. 通讯链路受到干扰，失去地面站控制\n4. 电池老化导致供电不稳定\n建议升级飞控固件，定期维护传感器，加强电磁环境监测。"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.506865",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00218",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00218",
+    "scenario": "风险咨询",
+    "user_role": "技术专家-传感器技术专家",
+    "assistant_role": "操作人员-航线规划师",
+    "messages": [
+      {
+        "role": "user",
+        "content": "请问在盐城亭湖区进行环境监测飞行，需要注意哪些安全事项？"
+      },
+      {
+        "role": "assistant",
+        "content": "在盐城亭湖区进行环境监测飞行，需注意以下事项：\n1. 提前向空管部门申请飞行计划\n2. 确保飞行器适航，电池电量充足\n3. 避开敏感区域，保持安全高度\n4. 关注气象条件，风速不超过13m/s\n5. 遵守《城市低空空域精细化管理办法》相关规定"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.506865",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00219",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00219",
+    "scenario": "风险咨询",
+    "user_role": "公众-学校教师",
+    "assistant_role": "操作人员-设备维护工程师",
+    "messages": [
+      {
+        "role": "user",
+        "content": "请问在绍兴柯桥区进行环境监测飞行，需要注意哪些安全事项？"
+      },
+      {
+        "role": "assistant",
+        "content": "在绍兴柯桥区进行环境监测飞行，需注意以下事项：\n1. 提前向空管部门申请飞行计划\n2. 确保飞行器适航，电池电量充足\n3. 避开敏感区域，保持安全高度\n4. 关注气象条件，风速不超过8m/s\n5. 遵守《通用航空飞行管制条例》相关规定"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.506865",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00220",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00220",
+    "scenario": "风险咨询",
+    "user_role": "监管人员-民航地区管理局监管员",
+    "assistant_role": "技术专家-人工智能算法专家",
+    "messages": [
+      {
+        "role": "user",
+        "content": "请问在上海闵行区进行测绘建模飞行，需要注意哪些安全事项？"
+      },
+      {
+        "role": "assistant",
+        "content": "在上海闵行区进行测绘建模飞行，需注意以下事项：\n1. 提前向空管部门申请飞行计划\n2. 确保飞行器适航，电池电量充足\n3. 避开敏感区域，保持安全高度\n4. 关注气象条件，风速不超过14m/s\n5. 遵守《无人驾驶航空器系统标准体系建设指南》相关规定"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.506865",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00221",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00221",
+    "scenario": "事件报告",
+    "user_role": "公众-环保志愿者",
+    "assistant_role": "监管人员-城管执法大队长",
+    "messages": [
+      {
+        "role": "user",
+        "content": "报告！北京通州区发生一起电磁干扰事件事件，请求指示。"
+      },
+      {
+        "role": "assistant",
+        "content": "收到。请立即执行以下操作：\n1. 启动应急响应预案\n2. 疏散周边人员，确保安全\n3. 封锁现场，保留证据\n4. 联系技术专家进行风险评估\n5. 按照《无人驾驶航空器飞行管理暂行条例》要求上报相关部门"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.506865",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00222",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00222",
+    "scenario": "风险咨询",
+    "user_role": "监管人员-应急管理局副局长",
+    "assistant_role": "操作人员-设备维护工程师",
+    "messages": [
+      {
+        "role": "user",
+        "content": "请问在台州椒江区进行测绘建模飞行，需要注意哪些安全事项？"
+      },
+      {
+        "role": "assistant",
+        "content": "在台州椒江区进行测绘建模飞行，需注意以下事项：\n1. 提前向空管部门申请飞行计划\n2. 确保飞行器适航，电池电量充足\n3. 避开敏感区域，保持安全高度\n4. 关注气象条件，风速不超过10m/s\n5. 遵守《低空经济产业发展指导意见》相关规定"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.506865",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00223",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00223",
+    "scenario": "风险咨询",
+    "user_role": "操作人员-无人机飞手",
+    "assistant_role": "公众-社区居民代表",
+    "messages": [
+      {
+        "role": "user",
+        "content": "请问在石家庄长安区进行物流配送飞行，需要注意哪些安全事项？"
+      },
+      {
+        "role": "assistant",
+        "content": "在石家庄长安区进行物流配送飞行，需注意以下事项：\n1. 提前向空管部门申请飞行计划\n2. 确保飞行器适航，电池电量充足\n3. 避开敏感区域，保持安全高度\n4. 关注气象条件，风速不超过13m/s\n5. 遵守《无人驾驶航空器系统标准体系建设指南》相关规定"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.506865",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00224",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00224",
+    "scenario": "事件报告",
+    "user_role": "技术专家-人工智能算法专家",
+    "assistant_role": "操作人员-试飞员",
+    "messages": [
+      {
+        "role": "user",
+        "content": "报告！南宁青秀区发生一起通讯中断事件，请求指示。"
+      },
+      {
+        "role": "assistant",
+        "content": "收到。请立即执行以下操作：\n1. 启动应急响应预案\n2. 疏散周边人员，确保安全\n3. 封锁现场，保留证据\n4. 联系技术专家进行风险评估\n5. 按照《轻小无人机运行规定（试行）》要求上报相关部门"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.506865",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00225",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00225",
+    "scenario": "技术讨论",
+    "user_role": "公众-物业管理人员",
+    "assistant_role": "监管人员-消防救援支队队长",
+    "messages": [
+      {
+        "role": "user",
+        "content": "针对未经许可的商业飞行事件，从技术角度分析主要原因是什么？"
+      },
+      {
+        "role": "assistant",
+        "content": "从技术分析，未经许可的商业飞行事件的主要原因包括：\n1. 飞控系统软件存在bug，导致飞控系统异常导致航线偏离\n2. 传感器数据异常，未能及时识别障碍物\n3. 通讯链路受到干扰，失去地面站控制\n4. 电池老化导致供电不稳定\n建议升级飞控固件，定期维护传感器，加强电磁环境监测。"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.506865",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00226",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00226",
+    "scenario": "安全培训",
+    "user_role": "公众-物流用户",
+    "assistant_role": "监管人员-民航地区管理局监管员",
+    "messages": [
+      {
+        "role": "user",
+        "content": "作为新手飞手，应该如何避免电池失效事件？"
+      },
+      {
+        "role": "assistant",
+        "content": "新手飞手避免电池失效事件的要点：\n1. 系统学习飞行理论知识，取得资质证书\n2. 在开阔场地练习，积累飞行经验\n3. 飞行前检查清单：电池、螺旋桨、GPS信号\n4. 了解当地空域划设，避开禁飞区\n5. 保持视距内飞行，高度不超过120米\n6. 密切关注气象条件，避免恶劣天气飞行\n7. 安装并开启电子围栏功能"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.506865",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00227",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00227",
+    "scenario": "政策解读",
+    "user_role": "监管人员-公安局治安大队队长",
+    "assistant_role": "公众-航空爱好者",
+    "messages": [
+      {
+        "role": "user",
+        "content": "《通用航空飞行管制条例》对低空飞行有哪些新的要求？"
+      },
+      {
+        "role": "assistant",
+        "content": "《通用航空飞行管制条例》对低空飞行的主要要求包括：\n1. 所有无人机飞行必须实名登记\n2. 在管制空域飞行需提前申请\n3. 操作人员需取得相应资质\n4. 禁止在禁飞区、限制区飞行\n5. 商业运营需取得经营许可证\n6. 建立飞行数据记录和报告制度"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.506865",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00228",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00228",
+    "scenario": "技术讨论",
+    "user_role": "公众-企业安全负责人",
+    "assistant_role": "监管人员-消防救援支队队长",
+    "messages": [
+      {
+        "role": "user",
+        "content": "针对避障系统失效事件，从技术角度分析主要原因是什么？"
+      },
+      {
+        "role": "assistant",
+        "content": "从技术分析，避障系统失效事件的主要原因包括：\n1. 飞控系统软件存在bug，导致通讯信号中断失去控制\n2. 传感器数据异常，未能及时识别障碍物\n3. 通讯链路受到干扰，失去地面站控制\n4. 电池老化导致供电不稳定\n建议升级飞控固件，定期维护传感器，加强电磁环境监测。"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.506865",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00229",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00229",
+    "scenario": "安全培训",
+    "user_role": "技术专家-气象预报专家",
+    "assistant_role": "监管人员-生态环境局监测中心主任",
+    "messages": [
+      {
+        "role": "user",
+        "content": "作为新手飞手，应该如何避免机场净空区侵入事件？"
+      },
+      {
+        "role": "assistant",
+        "content": "新手飞手避免机场净空区侵入事件的要点：\n1. 系统学习飞行理论知识，取得资质证书\n2. 在开阔场地练习，积累飞行经验\n3. 飞行前检查清单：电池、螺旋桨、GPS信号\n4. 了解当地空域划设，避开禁飞区\n5. 保持视距内飞行，高度不超过120米\n6. 密切关注气象条件，避免恶劣天气飞行\n7. 安装并开启电子围栏功能"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.506865",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00230",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00230",
+    "scenario": "政策解读",
+    "user_role": "公众-医院管理人员",
+    "assistant_role": "技术专家-人工智能算法专家",
+    "messages": [
+      {
+        "role": "user",
+        "content": "《无人机驾驶员培训考核管理办法》对低空飞行有哪些新的要求？"
+      },
+      {
+        "role": "assistant",
+        "content": "《无人机驾驶员培训考核管理办法》对低空飞行的主要要求包括：\n1. 所有无人机飞行必须实名登记\n2. 在管制空域飞行需提前申请\n3. 操作人员需取得相应资质\n4. 禁止在禁飞区、限制区飞行\n5. 商业运营需取得经营许可证\n6. 建立飞行数据记录和报告制度"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.506865",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00231",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00231",
+    "scenario": "技术讨论",
+    "user_role": "技术专家-通信导航专家",
+    "assistant_role": "公众-物流用户",
+    "messages": [
+      {
+        "role": "user",
+        "content": "针对气象监测异常事件，从技术角度分析主要原因是什么？"
+      },
+      {
+        "role": "assistant",
+        "content": "从技术分析，气象监测异常事件的主要原因包括：\n1. 飞控系统软件存在bug，导致电池供电不足引发紧急迫降\n2. 传感器数据异常，未能及时识别障碍物\n3. 通讯链路受到干扰，失去地面站控制\n4. 电池老化导致供电不稳定\n建议升级飞控固件，定期维护传感器，加强电磁环境监测。"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.506865",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00232",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00232",
+    "scenario": "事件报告",
+    "user_role": "公众-社区居民代表",
+    "assistant_role": "操作人员-设备维护工程师",
+    "messages": [
+      {
+        "role": "user",
+        "content": "报告！重庆渝北区发生一起能见度突变事件，请求指示。"
+      },
+      {
+        "role": "assistant",
+        "content": "收到。请立即执行以下操作：\n1. 启动应急响应预案\n2. 疏散周边人员，确保安全\n3. 封锁现场，保留证据\n4. 联系技术专家进行风险评估\n5. 按照《低空经济产业发展指导意见》要求上报相关部门"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.506865",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00233",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00233",
+    "scenario": "技术讨论",
+    "user_role": "技术专家-传感器技术专家",
+    "assistant_role": "监管人员-空管中心管制员",
+    "messages": [
+      {
+        "role": "user",
+        "content": "针对信号干扰事件，从技术角度分析主要原因是什么？"
+      },
+      {
+        "role": "assistant",
+        "content": "从技术分析，信号干扰事件的主要原因包括：\n1. 飞控系统软件存在bug，导致操作人员失误导致违规飞行\n2. 传感器数据异常，未能及时识别障碍物\n3. 通讯链路受到干扰，失去地面站控制\n4. 电池老化导致供电不稳定\n建议升级飞控固件，定期维护传感器，加强电磁环境监测。"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.506865",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00234",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00234",
+    "scenario": "风险咨询",
+    "user_role": "技术专家-航空安全评估师",
+    "assistant_role": "操作人员-设备维护工程师",
+    "messages": [
+      {
+        "role": "user",
+        "content": "请问在北京海淀区进行医疗物资配送飞行，需要注意哪些安全事项？"
+      },
+      {
+        "role": "assistant",
+        "content": "在北京海淀区进行医疗物资配送飞行，需注意以下事项：\n1. 提前向空管部门申请飞行计划\n2. 确保飞行器适航，电池电量充足\n3. 避开敏感区域，保持安全高度\n4. 关注气象条件，风速不超过11m/s\n5. 遵守《低空飞行服务保障体系建设方案》相关规定"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.506865",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00235",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00235",
+    "scenario": "事件报告",
+    "user_role": "操作人员-试飞员",
+    "assistant_role": "监管人员-交通委低空管理处处长",
+    "messages": [
+      {
+        "role": "user",
+        "content": "报告！常州新北区发生一起政府机关区域飞行事件，请求指示。"
+      },
+      {
+        "role": "assistant",
+        "content": "收到。请立即执行以下操作：\n1. 启动应急响应预案\n2. 疏散周边人员，确保安全\n3. 封锁现场，保留证据\n4. 联系技术专家进行风险评估\n5. 按照《无人机驾驶员培训考核管理办法》要求上报相关部门"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.506865",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00236",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00236",
+    "scenario": "技术讨论",
+    "user_role": "技术专家-无人机系统工程师",
+    "assistant_role": "操作人员-物流配送操作员",
+    "messages": [
+      {
+        "role": "user",
+        "content": "针对雷达探测盲区事件，从技术角度分析主要原因是什么？"
+      },
+      {
+        "role": "assistant",
+        "content": "从技术分析，雷达探测盲区事件的主要原因包括：\n1. 飞控系统软件存在bug，导致设备老化引发系统故障\n2. 传感器数据异常，未能及时识别障碍物\n3. 通讯链路受到干扰，失去地面站控制\n4. 电池老化导致供电不稳定\n建议升级飞控固件，定期维护传感器，加强电磁环境监测。"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.506865",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00237",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00237",
+    "scenario": "安全培训",
+    "user_role": "公众-物流用户",
+    "assistant_role": "监管人员-交通委低空管理处处长",
+    "messages": [
+      {
+        "role": "user",
+        "content": "作为新手飞手，应该如何避免未经许可的商业飞行事件？"
+      },
+      {
+        "role": "assistant",
+        "content": "新手飞手避免未经许可的商业飞行事件的要点：\n1. 系统学习飞行理论知识，取得资质证书\n2. 在开阔场地练习，积累飞行经验\n3. 飞行前检查清单：电池、螺旋桨、GPS信号\n4. 了解当地空域划设，避开禁飞区\n5. 保持视距内飞行，高度不超过120米\n6. 密切关注气象条件，避免恶劣天气飞行\n7. 安装并开启电子围栏功能"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.506865",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00238",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00238",
+    "scenario": "安全培训",
+    "user_role": "技术专家-人工智能算法专家",
+    "assistant_role": "监管人员-军分区空域协调员",
+    "messages": [
+      {
+        "role": "user",
+        "content": "作为新手飞手，应该如何避免敏感区域拍摄事件？"
+      },
+      {
+        "role": "assistant",
+        "content": "新手飞手避免敏感区域拍摄事件的要点：\n1. 系统学习飞行理论知识，取得资质证书\n2. 在开阔场地练习，积累飞行经验\n3. 飞行前检查清单：电池、螺旋桨、GPS信号\n4. 了解当地空域划设，避开禁飞区\n5. 保持视距内飞行，高度不超过120米\n6. 密切关注气象条件，避免恶劣天气飞行\n7. 安装并开启电子围栏功能"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.506865",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00239",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00239",
+    "scenario": "安全培训",
+    "user_role": "公众-社区居民代表",
+    "assistant_role": "操作人员-物流配送操作员",
+    "messages": [
+      {
+        "role": "user",
+        "content": "作为新手飞手，应该如何避免导航系统故障事件？"
+      },
+      {
+        "role": "assistant",
+        "content": "新手飞手避免导航系统故障事件的要点：\n1. 系统学习飞行理论知识，取得资质证书\n2. 在开阔场地练习，积累飞行经验\n3. 飞行前检查清单：电池、螺旋桨、GPS信号\n4. 了解当地空域划设，避开禁飞区\n5. 保持视距内飞行，高度不超过120米\n6. 密切关注气象条件，避免恶劣天气飞行\n7. 安装并开启电子围栏功能"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.506865",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00240",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00240",
+    "scenario": "安全培训",
+    "user_role": "技术专家-人工智能算法专家",
+    "assistant_role": "操作人员-试飞员",
+    "messages": [
+      {
+        "role": "user",
+        "content": "作为新手飞手，应该如何避免人员密集区飞行事件？"
+      },
+      {
+        "role": "assistant",
+        "content": "新手飞手避免人员密集区飞行事件的要点：\n1. 系统学习飞行理论知识，取得资质证书\n2. 在开阔场地练习，积累飞行经验\n3. 飞行前检查清单：电池、螺旋桨、GPS信号\n4. 了解当地空域划设，避开禁飞区\n5. 保持视距内飞行，高度不超过120米\n6. 密切关注气象条件，避免恶劣天气飞行\n7. 安装并开启电子围栏功能"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.508371",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00241",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00241",
+    "scenario": "政策解读",
+    "user_role": "监管人员-城管执法大队长",
+    "assistant_role": "操作人员-航线规划师",
+    "messages": [
+      {
+        "role": "user",
+        "content": "《无人驾驶航空器飞行管理暂行条例》对低空飞行有哪些新的要求？"
+      },
+      {
+        "role": "assistant",
+        "content": "《无人驾驶航空器飞行管理暂行条例》对低空飞行的主要要求包括：\n1. 所有无人机飞行必须实名登记\n2. 在管制空域飞行需提前申请\n3. 操作人员需取得相应资质\n4. 禁止在禁飞区、限制区飞行\n5. 商业运营需取得经营许可证\n6. 建立飞行数据记录和报告制度"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.508371",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00242",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00242",
+    "scenario": "政策解读",
+    "user_role": "公众-企业安全负责人",
+    "assistant_role": "监管人员-空管中心管制员",
+    "messages": [
+      {
+        "role": "user",
+        "content": "《民用机场净空保护区域管理规定》对低空飞行有哪些新的要求？"
+      },
+      {
+        "role": "assistant",
+        "content": "《民用机场净空保护区域管理规定》对低空飞行的主要要求包括：\n1. 所有无人机飞行必须实名登记\n2. 在管制空域飞行需提前申请\n3. 操作人员需取得相应资质\n4. 禁止在禁飞区、限制区飞行\n5. 商业运营需取得经营许可证\n6. 建立飞行数据记录和报告制度"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.508371",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00243",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00243",
+    "scenario": "技术讨论",
+    "user_role": "操作人员-航线规划师",
+    "assistant_role": "监管人员-交通委低空管理处处长",
+    "messages": [
+      {
+        "role": "user",
+        "content": "针对通讯中断事件，从技术角度分析主要原因是什么？"
+      },
+      {
+        "role": "assistant",
+        "content": "从技术分析，通讯中断事件的主要原因包括：\n1. 飞控系统软件存在bug，导致设备老化引发系统故障\n2. 传感器数据异常，未能及时识别障碍物\n3. 通讯链路受到干扰，失去地面站控制\n4. 电池老化导致供电不稳定\n建议升级飞控固件，定期维护传感器，加强电磁环境监测。"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.508371",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00244",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00244",
+    "scenario": "风险咨询",
+    "user_role": "操作人员-试飞员",
+    "assistant_role": "监管人员-民航地区管理局监管员",
+    "messages": [
+      {
+        "role": "user",
+        "content": "请问在北京朝阳区进行农业植保飞行，需要注意哪些安全事项？"
+      },
+      {
+        "role": "assistant",
+        "content": "在北京朝阳区进行农业植保飞行，需注意以下事项：\n1. 提前向空管部门申请飞行计划\n2. 确保飞行器适航，电池电量充足\n3. 避开敏感区域，保持安全高度\n4. 关注气象条件，风速不超过14m/s\n5. 遵守《城市低空空域精细化管理办法》相关规定"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.508371",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00245",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00245",
+    "scenario": "事件报告",
+    "user_role": "监管人员-应急管理局副局长",
+    "assistant_role": "操作人员-飞行教员",
+    "messages": [
+      {
+        "role": "user",
+        "content": "报告！南通崇川区发生一起超载飞行事件，请求指示。"
+      },
+      {
+        "role": "assistant",
+        "content": "收到。请立即执行以下操作：\n1. 启动应急响应预案\n2. 疏散周边人员，确保安全\n3. 封锁现场，保留证据\n4. 联系技术专家进行风险评估\n5. 按照《民用无人驾驶航空器飞行管理暂行条例》要求上报相关部门"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.508371",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00246",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00246",
+    "scenario": "事件报告",
+    "user_role": "技术专家-航空安全评估师",
+    "assistant_role": "操作人员-无人机飞手",
+    "messages": [
+      {
+        "role": "user",
+        "content": "报告！无锡梁溪区发生一起航线偏离事件事件，请求指示。"
+      },
+      {
+        "role": "assistant",
+        "content": "收到。请立即执行以下操作：\n1. 启动应急响应预案\n2. 疏散周边人员，确保安全\n3. 封锁现场，保留证据\n4. 联系技术专家进行风险评估\n5. 按照《轻小无人机运行规定（试行）》要求上报相关部门"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.508371",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00247",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00247",
+    "scenario": "政策解读",
+    "user_role": "操作人员-试飞员",
+    "assistant_role": "技术专家-适航审定专家",
+    "messages": [
+      {
+        "role": "user",
+        "content": "《民用无人驾驶航空器飞行管理暂行条例》对低空飞行有哪些新的要求？"
+      },
+      {
+        "role": "assistant",
+        "content": "《民用无人驾驶航空器飞行管理暂行条例》对低空飞行的主要要求包括：\n1. 所有无人机飞行必须实名登记\n2. 在管制空域飞行需提前申请\n3. 操作人员需取得相应资质\n4. 禁止在禁飞区、限制区飞行\n5. 商业运营需取得经营许可证\n6. 建立飞行数据记录和报告制度"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.508371",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00248",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00248",
+    "scenario": "政策解读",
+    "user_role": "公众-航空爱好者",
+    "assistant_role": "技术专家-空管系统架构师",
+    "messages": [
+      {
+        "role": "user",
+        "content": "《eVTOL航空器适航审定程序》对低空飞行有哪些新的要求？"
+      },
+      {
+        "role": "assistant",
+        "content": "《eVTOL航空器适航审定程序》对低空飞行的主要要求包括：\n1. 所有无人机飞行必须实名登记\n2. 在管制空域飞行需提前申请\n3. 操作人员需取得相应资质\n4. 禁止在禁飞区、限制区飞行\n5. 商业运营需取得经营许可证\n6. 建立飞行数据记录和报告制度"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.508891",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00249",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00249",
+    "scenario": "技术讨论",
+    "user_role": "操作人员-无人机飞手",
+    "assistant_role": "监管人员-民航地区管理局监管员",
+    "messages": [
+      {
+        "role": "user",
+        "content": "针对紧急迫降事件，从技术角度分析主要原因是什么？"
+      },
+      {
+        "role": "assistant",
+        "content": "从技术分析，紧急迫降事件的主要原因包括：\n1. 飞控系统软件存在bug，导致导航系统受干扰偏离航线\n2. 传感器数据异常，未能及时识别障碍物\n3. 通讯链路受到干扰，失去地面站控制\n4. 电池老化导致供电不稳定\n建议升级飞控固件，定期维护传感器，加强电磁环境监测。"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.508891",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00250",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00250",
+    "scenario": "安全培训",
+    "user_role": "技术专家-适航审定专家",
+    "assistant_role": "监管人员-空管中心管制员",
+    "messages": [
+      {
+        "role": "user",
+        "content": "作为新手飞手，应该如何避免超高度限制飞行事件？"
+      },
+      {
+        "role": "assistant",
+        "content": "新手飞手避免超高度限制飞行事件的要点：\n1. 系统学习飞行理论知识，取得资质证书\n2. 在开阔场地练习，积累飞行经验\n3. 飞行前检查清单：电池、螺旋桨、GPS信号\n4. 了解当地空域划设，避开禁飞区\n5. 保持视距内飞行，高度不超过120米\n6. 密切关注气象条件，避免恶劣天气飞行\n7. 安装并开启电子围栏功能"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.508891",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00251",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00251",
+    "scenario": "政策解读",
+    "user_role": "监管人员-市低空空域管理局局长",
+    "assistant_role": "操作人员-任务载荷操作员",
+    "messages": [
+      {
+        "role": "user",
+        "content": "《民用无人机驾驶员管理规定》对低空飞行有哪些新的要求？"
+      },
+      {
+        "role": "assistant",
+        "content": "《民用无人机驾驶员管理规定》对低空飞行的主要要求包括：\n1. 所有无人机飞行必须实名登记\n2. 在管制空域飞行需提前申请\n3. 操作人员需取得相应资质\n4. 禁止在禁飞区、限制区飞行\n5. 商业运营需取得经营许可证\n6. 建立飞行数据记录和报告制度"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.508891",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00252",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00252",
+    "scenario": "事件报告",
+    "user_role": "监管人员-消防救援支队队长",
+    "assistant_role": "技术专家-气象预报专家",
+    "messages": [
+      {
+        "role": "user",
+        "content": "报告！徐州鼓楼区发生一起避障系统失效事件，请求指示。"
+      },
+      {
+        "role": "assistant",
+        "content": "收到。请立即执行以下操作：\n1. 启动应急响应预案\n2. 疏散周边人员，确保安全\n3. 封锁现场，保留证据\n4. 联系技术专家进行风险评估\n5. 按照《民用无人驾驶航空器飞行管理暂行条例》要求上报相关部门"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.508891",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00253",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00253",
+    "scenario": "安全培训",
+    "user_role": "操作人员-试飞员",
+    "assistant_role": "监管人员-应急管理局副局长",
+    "messages": [
+      {
+        "role": "user",
+        "content": "作为新手飞手，应该如何避免超载飞行事件？"
+      },
+      {
+        "role": "assistant",
+        "content": "新手飞手避免超载飞行事件的要点：\n1. 系统学习飞行理论知识，取得资质证书\n2. 在开阔场地练习，积累飞行经验\n3. 飞行前检查清单：电池、螺旋桨、GPS信号\n4. 了解当地空域划设，避开禁飞区\n5. 保持视距内飞行，高度不超过120米\n6. 密切关注气象条件，避免恶劣天气飞行\n7. 安装并开启电子围栏功能"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.508891",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00254",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00254",
+    "scenario": "政策解读",
+    "user_role": "公众-医院管理人员",
+    "assistant_role": "监管人员-应急管理局副局长",
+    "messages": [
+      {
+        "role": "user",
+        "content": "《无人驾驶航空器飞行管理暂行条例》对低空飞行有哪些新的要求？"
+      },
+      {
+        "role": "assistant",
+        "content": "《无人驾驶航空器飞行管理暂行条例》对低空飞行的主要要求包括：\n1. 所有无人机飞行必须实名登记\n2. 在管制空域飞行需提前申请\n3. 操作人员需取得相应资质\n4. 禁止在禁飞区、限制区飞行\n5. 商业运营需取得经营许可证\n6. 建立飞行数据记录和报告制度"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.508891",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00255",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00255",
+    "scenario": "技术讨论",
+    "user_role": "技术专家-气象预报专家",
+    "assistant_role": "操作人员-试飞员",
+    "messages": [
+      {
+        "role": "user",
+        "content": "针对航线偏离事件事件，从技术角度分析主要原因是什么？"
+      },
+      {
+        "role": "assistant",
+        "content": "从技术分析，航线偏离事件事件的主要原因包括：\n1. 飞控系统软件存在bug，导致操作人员失误导致违规飞行\n2. 传感器数据异常，未能及时识别障碍物\n3. 通讯链路受到干扰，失去地面站控制\n4. 电池老化导致供电不稳定\n建议升级飞控固件，定期维护传感器，加强电磁环境监测。"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.508891",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00256",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00256",
+    "scenario": "风险咨询",
+    "user_role": "技术专家-适航审定专家",
+    "assistant_role": "公众-环保志愿者",
+    "messages": [
+      {
+        "role": "user",
+        "content": "请问在苏州吴中区进行环境监测飞行，需要注意哪些安全事项？"
+      },
+      {
+        "role": "assistant",
+        "content": "在苏州吴中区进行环境监测飞行，需注意以下事项：\n1. 提前向空管部门申请飞行计划\n2. 确保飞行器适航，电池电量充足\n3. 避开敏感区域，保持安全高度\n4. 关注气象条件，风速不超过14m/s\n5. 遵守《无人机物流配送试点管理办法》相关规定"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.508891",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00257",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00257",
+    "scenario": "安全培训",
+    "user_role": "操作人员-飞行教员",
+    "assistant_role": "技术专家-航空安全评估师",
+    "messages": [
+      {
+        "role": "user",
+        "content": "作为新手飞手，应该如何避免气象监测异常事件？"
+      },
+      {
+        "role": "assistant",
+        "content": "新手飞手避免气象监测异常事件的要点：\n1. 系统学习飞行理论知识，取得资质证书\n2. 在开阔场地练习，积累飞行经验\n3. 飞行前检查清单：电池、螺旋桨、GPS信号\n4. 了解当地空域划设，避开禁飞区\n5. 保持视距内飞行，高度不超过120米\n6. 密切关注气象条件，避免恶劣天气飞行\n7. 安装并开启电子围栏功能"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.508891",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00258",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00258",
+    "scenario": "技术讨论",
+    "user_role": "监管人员-民航地区管理局监管员",
+    "assistant_role": "操作人员-航线规划师",
+    "messages": [
+      {
+        "role": "user",
+        "content": "针对机场净空区侵入事件，从技术角度分析主要原因是什么？"
+      },
+      {
+        "role": "assistant",
+        "content": "从技术分析，机场净空区侵入事件的主要原因包括：\n1. 飞控系统软件存在bug，导致操作人员失误导致违规飞行\n2. 传感器数据异常，未能及时识别障碍物\n3. 通讯链路受到干扰，失去地面站控制\n4. 电池老化导致供电不稳定\n建议升级飞控固件，定期维护传感器，加强电磁环境监测。"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.508891",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00259",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00259",
+    "scenario": "风险咨询",
+    "user_role": "操作人员-无人机飞手",
+    "assistant_role": "公众-环保志愿者",
+    "messages": [
+      {
+        "role": "user",
+        "content": "请问在南通崇川区进行消防灭火飞行，需要注意哪些安全事项？"
+      },
+      {
+        "role": "assistant",
+        "content": "在南通崇川区进行消防灭火飞行，需注意以下事项：\n1. 提前向空管部门申请飞行计划\n2. 确保飞行器适航，电池电量充足\n3. 避开敏感区域，保持安全高度\n4. 关注气象条件，风速不超过10m/s\n5. 遵守《民用无人机驾驶员管理规定》相关规定"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.508891",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00260",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00260",
+    "scenario": "安全培训",
+    "user_role": "监管人员-市低空空域管理局局长",
+    "assistant_role": "操作人员-无人机飞手",
+    "messages": [
+      {
+        "role": "user",
+        "content": "作为新手飞手，应该如何避免低空飞行冲突事件？"
+      },
+      {
+        "role": "assistant",
+        "content": "新手飞手避免低空飞行冲突事件的要点：\n1. 系统学习飞行理论知识，取得资质证书\n2. 在开阔场地练习，积累飞行经验\n3. 飞行前检查清单：电池、螺旋桨、GPS信号\n4. 了解当地空域划设，避开禁飞区\n5. 保持视距内飞行，高度不超过120米\n6. 密切关注气象条件，避免恶劣天气飞行\n7. 安装并开启电子围栏功能"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.508891",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00261",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00261",
+    "scenario": "政策解读",
+    "user_role": "技术专家-适航审定专家",
+    "assistant_role": "操作人员-无人机飞手",
+    "messages": [
+      {
+        "role": "user",
+        "content": "《轻小无人机运行规定（试行）》对低空飞行有哪些新的要求？"
+      },
+      {
+        "role": "assistant",
+        "content": "《轻小无人机运行规定（试行）》对低空飞行的主要要求包括：\n1. 所有无人机飞行必须实名登记\n2. 在管制空域飞行需提前申请\n3. 操作人员需取得相应资质\n4. 禁止在禁飞区、限制区飞行\n5. 商业运营需取得经营许可证\n6. 建立飞行数据记录和报告制度"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.509896",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00262",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00262",
+    "scenario": "安全培训",
+    "user_role": "监管人员-空管中心管制员",
+    "assistant_role": "技术专家-适航审定专家",
+    "messages": [
+      {
+        "role": "user",
+        "content": "作为新手飞手，应该如何避免航线偏离事件事件？"
+      },
+      {
+        "role": "assistant",
+        "content": "新手飞手避免航线偏离事件事件的要点：\n1. 系统学习飞行理论知识，取得资质证书\n2. 在开阔场地练习，积累飞行经验\n3. 飞行前检查清单：电池、螺旋桨、GPS信号\n4. 了解当地空域划设，避开禁飞区\n5. 保持视距内飞行，高度不超过120米\n6. 密切关注气象条件，避免恶劣天气飞行\n7. 安装并开启电子围栏功能"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.509896",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00263",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00263",
+    "scenario": "技术讨论",
+    "user_role": "技术专家-通信导航专家",
+    "assistant_role": "操作人员-物流配送操作员",
+    "messages": [
+      {
+        "role": "user",
+        "content": "针对政府机关区域飞行事件，从技术角度分析主要原因是什么？"
+      },
+      {
+        "role": "assistant",
+        "content": "从技术分析，政府机关区域飞行事件的主要原因包括：\n1. 飞控系统软件存在bug，导致飞控系统异常导致航线偏离\n2. 传感器数据异常，未能及时识别障碍物\n3. 通讯链路受到干扰，失去地面站控制\n4. 电池老化导致供电不稳定\n建议升级飞控固件，定期维护传感器，加强电磁环境监测。"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.509896",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00264",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00264",
+    "scenario": "安全培训",
+    "user_role": "操作人员-物流配送操作员",
+    "assistant_role": "公众-农业合作社代表",
+    "messages": [
+      {
+        "role": "user",
+        "content": "作为新手飞手，应该如何避免未经许可的商业飞行事件？"
+      },
+      {
+        "role": "assistant",
+        "content": "新手飞手避免未经许可的商业飞行事件的要点：\n1. 系统学习飞行理论知识，取得资质证书\n2. 在开阔场地练习，积累飞行经验\n3. 飞行前检查清单：电池、螺旋桨、GPS信号\n4. 了解当地空域划设，避开禁飞区\n5. 保持视距内飞行，高度不超过120米\n6. 密切关注气象条件，避免恶劣天气飞行\n7. 安装并开启电子围栏功能"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.509896",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00265",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00265",
+    "scenario": "事件报告",
+    "user_role": "监管人员-生态环境局监测中心主任",
+    "assistant_role": "公众-环保志愿者",
+    "messages": [
+      {
+        "role": "user",
+        "content": "报告！苏州吴中区发生一起低空风切变事件，请求指示。"
+      },
+      {
+        "role": "assistant",
+        "content": "收到。请立即执行以下操作：\n1. 启动应急响应预案\n2. 疏散周边人员，确保安全\n3. 封锁现场，保留证据\n4. 联系技术专家进行风险评估\n5. 按照《城市低空空域精细化管理办法》要求上报相关部门"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.509896",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00266",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00266",
+    "scenario": "事件报告",
+    "user_role": "监管人员-生态环境局监测中心主任",
+    "assistant_role": "公众-环保志愿者",
+    "messages": [
+      {
+        "role": "user",
+        "content": "报告！福州鼓楼区发生一起无人机非法入侵事件，请求指示。"
+      },
+      {
+        "role": "assistant",
+        "content": "收到。请立即执行以下操作：\n1. 启动应急响应预案\n2. 疏散周边人员，确保安全\n3. 封锁现场，保留证据\n4. 联系技术专家进行风险评估\n5. 按照《通用航空飞行管制条例》要求上报相关部门"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.509896",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00267",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00267",
+    "scenario": "风险咨询",
+    "user_role": "监管人员-空管中心管制员",
+    "assistant_role": "操作人员-地面站操作员",
+    "messages": [
+      {
+        "role": "user",
+        "content": "请问在成都武侯区进行电力巡检飞行，需要注意哪些安全事项？"
+      },
+      {
+        "role": "assistant",
+        "content": "在成都武侯区进行电力巡检飞行，需注意以下事项：\n1. 提前向空管部门申请飞行计划\n2. 确保飞行器适航，电池电量充足\n3. 避开敏感区域，保持安全高度\n4. 关注气象条件，风速不超过9m/s\n5. 遵守《民用机场净空保护区域管理规定》相关规定"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.509896",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00268",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00268",
+    "scenario": "事件报告",
+    "user_role": "操作人员-航线规划师",
+    "assistant_role": "监管人员-交通委低空管理处处长",
+    "messages": [
+      {
+        "role": "user",
+        "content": "报告！北京朝阳区发生一起军事设施附近飞行事件，请求指示。"
+      },
+      {
+        "role": "assistant",
+        "content": "收到。请立即执行以下操作：\n1. 启动应急响应预案\n2. 疏散周边人员，确保安全\n3. 封锁现场，保留证据\n4. 联系技术专家进行风险评估\n5. 按照《民用无人机驾驶员管理规定》要求上报相关部门"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.509896",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00269",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00269",
+    "scenario": "技术讨论",
+    "user_role": "技术专家-飞控系统工程师",
+    "assistant_role": "操作人员-农业植保操作员",
+    "messages": [
+      {
+        "role": "user",
+        "content": "针对电池失效事件，从技术角度分析主要原因是什么？"
+      },
+      {
+        "role": "assistant",
+        "content": "从技术分析，电池失效事件的主要原因包括：\n1. 飞控系统软件存在bug，导致避障系统故障造成飞行冲突\n2. 传感器数据异常，未能及时识别障碍物\n3. 通讯链路受到干扰，失去地面站控制\n4. 电池老化导致供电不稳定\n建议升级飞控固件，定期维护传感器，加强电磁环境监测。"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.509896",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00270",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00270",
+    "scenario": "风险咨询",
+    "user_role": "技术专家-飞控系统工程师",
+    "assistant_role": "监管人员-消防救援支队队长",
+    "messages": [
+      {
+        "role": "user",
+        "content": "请问在太原小店区进行农业植保飞行，需要注意哪些安全事项？"
+      },
+      {
+        "role": "assistant",
+        "content": "在太原小店区进行农业植保飞行，需注意以下事项：\n1. 提前向空管部门申请飞行计划\n2. 确保飞行器适航，电池电量充足\n3. 避开敏感区域，保持安全高度\n4. 关注气象条件，风速不超过13m/s\n5. 遵守《通用航空飞行管制条例》相关规定"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.509896",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00271",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00271",
+    "scenario": "安全培训",
+    "user_role": "公众-农业合作社代表",
+    "assistant_role": "操作人员-设备维护工程师",
+    "messages": [
+      {
+        "role": "user",
+        "content": "作为新手飞手，应该如何避免导航系统故障事件？"
+      },
+      {
+        "role": "assistant",
+        "content": "新手飞手避免导航系统故障事件的要点：\n1. 系统学习飞行理论知识，取得资质证书\n2. 在开阔场地练习，积累飞行经验\n3. 飞行前检查清单：电池、螺旋桨、GPS信号\n4. 了解当地空域划设，避开禁飞区\n5. 保持视距内飞行，高度不超过120米\n6. 密切关注气象条件，避免恶劣天气飞行\n7. 安装并开启电子围栏功能"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.509896",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00272",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00272",
+    "scenario": "风险咨询",
+    "user_role": "技术专家-空管系统架构师",
+    "assistant_role": "监管人员-消防救援支队队长",
+    "messages": [
+      {
+        "role": "user",
+        "content": "请问在北京朝阳区进行影视拍摄飞行，需要注意哪些安全事项？"
+      },
+      {
+        "role": "assistant",
+        "content": "在北京朝阳区进行影视拍摄飞行，需注意以下事项：\n1. 提前向空管部门申请飞行计划\n2. 确保飞行器适航，电池电量充足\n3. 避开敏感区域，保持安全高度\n4. 关注气象条件，风速不超过13m/s\n5. 遵守《民用无人机驾驶员管理规定》相关规定"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.509896",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00273",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00273",
+    "scenario": "技术讨论",
+    "user_role": "公众-物业管理人员",
+    "assistant_role": "操作人员-飞行调度员",
+    "messages": [
+      {
+        "role": "user",
+        "content": "针对导航系统故障事件，从技术角度分析主要原因是什么？"
+      },
+      {
+        "role": "assistant",
+        "content": "从技术分析，导航系统故障事件的主要原因包括：\n1. 飞控系统软件存在bug，导致通讯信号中断失去控制\n2. 传感器数据异常，未能及时识别障碍物\n3. 通讯链路受到干扰，失去地面站控制\n4. 电池老化导致供电不稳定\n建议升级飞控固件，定期维护传感器，加强电磁环境监测。"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.509896",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00274",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00274",
+    "scenario": "风险咨询",
+    "user_role": "操作人员-设备维护工程师",
+    "assistant_role": "监管人员-应急管理局副局长",
+    "messages": [
+      {
+        "role": "user",
+        "content": "请问在南京鼓楼区进行应急救援飞行，需要注意哪些安全事项？"
+      },
+      {
+        "role": "assistant",
+        "content": "在南京鼓楼区进行应急救援飞行，需注意以下事项：\n1. 提前向空管部门申请飞行计划\n2. 确保飞行器适航，电池电量充足\n3. 避开敏感区域，保持安全高度\n4. 关注气象条件，风速不超过8m/s\n5. 遵守《民用无人机驾驶员管理规定》相关规定"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.509896",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00275",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00275",
+    "scenario": "事件报告",
+    "user_role": "操作人员-无人机飞手",
+    "assistant_role": "监管人员-交通委低空管理处处长",
+    "messages": [
+      {
+        "role": "user",
+        "content": "报告！常州新北区发生一起超载飞行事件，请求指示。"
+      },
+      {
+        "role": "assistant",
+        "content": "收到。请立即执行以下操作：\n1. 启动应急响应预案\n2. 疏散周边人员，确保安全\n3. 封锁现场，保留证据\n4. 联系技术专家进行风险评估\n5. 按照《eVTOL航空器适航审定程序》要求上报相关部门"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.509896",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00276",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00276",
+    "scenario": "安全培训",
+    "user_role": "技术专家-无人机系统工程师",
+    "assistant_role": "操作人员-试飞员",
+    "messages": [
+      {
+        "role": "user",
+        "content": "作为新手飞手，应该如何避免机场净空区侵入事件？"
+      },
+      {
+        "role": "assistant",
+        "content": "新手飞手避免机场净空区侵入事件的要点：\n1. 系统学习飞行理论知识，取得资质证书\n2. 在开阔场地练习，积累飞行经验\n3. 飞行前检查清单：电池、螺旋桨、GPS信号\n4. 了解当地空域划设，避开禁飞区\n5. 保持视距内飞行，高度不超过120米\n6. 密切关注气象条件，避免恶劣天气飞行\n7. 安装并开启电子围栏功能"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.509896",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00277",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00277",
+    "scenario": "事件报告",
+    "user_role": "公众-航空爱好者",
+    "assistant_role": "技术专家-飞控系统工程师",
+    "messages": [
+      {
+        "role": "user",
+        "content": "报告！青岛崂山区发生一起政府机关区域飞行事件，请求指示。"
+      },
+      {
+        "role": "assistant",
+        "content": "收到。请立即执行以下操作：\n1. 启动应急响应预案\n2. 疏散周边人员，确保安全\n3. 封锁现场，保留证据\n4. 联系技术专家进行风险评估\n5. 按照《eVTOL航空器适航审定程序》要求上报相关部门"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.509896",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00278",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00278",
+    "scenario": "事件报告",
+    "user_role": "监管人员-空管中心管制员",
+    "assistant_role": "操作人员-飞行调度员",
+    "messages": [
+      {
+        "role": "user",
+        "content": "报告！银川金凤区发生一起能见度突变事件，请求指示。"
+      },
+      {
+        "role": "assistant",
+        "content": "收到。请立即执行以下操作：\n1. 启动应急响应预案\n2. 疏散周边人员，确保安全\n3. 封锁现场，保留证据\n4. 联系技术专家进行风险评估\n5. 按照《无人驾驶航空器系统标准体系建设指南》要求上报相关部门"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.509896",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00279",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00279",
+    "scenario": "技术讨论",
+    "user_role": "操作人员-无人机飞手",
+    "assistant_role": "公众-社区居民代表",
+    "messages": [
+      {
+        "role": "user",
+        "content": "针对无人机非法入侵事件，从技术角度分析主要原因是什么？"
+      },
+      {
+        "role": "assistant",
+        "content": "从技术分析，无人机非法入侵事件的主要原因包括：\n1. 飞控系统软件存在bug，导致通讯信号中断失去控制\n2. 传感器数据异常，未能及时识别障碍物\n3. 通讯链路受到干扰，失去地面站控制\n4. 电池老化导致供电不稳定\n建议升级飞控固件，定期维护传感器，加强电磁环境监测。"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.511093",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00280",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00280",
+    "scenario": "政策解读",
+    "user_role": "监管人员-城管执法大队长",
+    "assistant_role": "公众-航空爱好者",
+    "messages": [
+      {
+        "role": "user",
+        "content": "《轻小无人机运行规定（试行）》对低空飞行有哪些新的要求？"
+      },
+      {
+        "role": "assistant",
+        "content": "《轻小无人机运行规定（试行）》对低空飞行的主要要求包括：\n1. 所有无人机飞行必须实名登记\n2. 在管制空域飞行需提前申请\n3. 操作人员需取得相应资质\n4. 禁止在禁飞区、限制区飞行\n5. 商业运营需取得经营许可证\n6. 建立飞行数据记录和报告制度"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.511093",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00281",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00281",
+    "scenario": "技术讨论",
+    "user_role": "操作人员-地面站操作员",
+    "assistant_role": "技术专家-空管系统架构师",
+    "messages": [
+      {
+        "role": "user",
+        "content": "针对通讯中断事件，从技术角度分析主要原因是什么？"
+      },
+      {
+        "role": "assistant",
+        "content": "从技术分析，通讯中断事件的主要原因包括：\n1. 飞控系统软件存在bug，导致避障系统故障造成飞行冲突\n2. 传感器数据异常，未能及时识别障碍物\n3. 通讯链路受到干扰，失去地面站控制\n4. 电池老化导致供电不稳定\n建议升级飞控固件，定期维护传感器，加强电磁环境监测。"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.511093",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00282",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00282",
+    "scenario": "风险咨询",
+    "user_role": "操作人员-设备维护工程师",
+    "assistant_role": "公众-农业合作社代表",
+    "messages": [
+      {
+        "role": "user",
+        "content": "请问在盐城亭湖区进行影视拍摄飞行，需要注意哪些安全事项？"
+      },
+      {
+        "role": "assistant",
+        "content": "在盐城亭湖区进行影视拍摄飞行，需注意以下事项：\n1. 提前向空管部门申请飞行计划\n2. 确保飞行器适航，电池电量充足\n3. 避开敏感区域，保持安全高度\n4. 关注气象条件，风速不超过14m/s\n5. 遵守《低空空域使用管理规定》相关规定"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.511093",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00283",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00283",
+    "scenario": "风险咨询",
+    "user_role": "监管人员-城管执法大队长",
+    "assistant_role": "技术专家-适航审定专家",
+    "messages": [
+      {
+        "role": "user",
+        "content": "请问在重庆渝北区进行应急救援飞行，需要注意哪些安全事项？"
+      },
+      {
+        "role": "assistant",
+        "content": "在重庆渝北区进行应急救援飞行，需注意以下事项：\n1. 提前向空管部门申请飞行计划\n2. 确保飞行器适航，电池电量充足\n3. 避开敏感区域，保持安全高度\n4. 关注气象条件，风速不超过15m/s\n5. 遵守《通用航空飞行管制条例》相关规定"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.511093",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00284",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00284",
+    "scenario": "技术讨论",
+    "user_role": "公众-物流用户",
+    "assistant_role": "操作人员-航线规划师",
+    "messages": [
+      {
+        "role": "user",
+        "content": "针对超载飞行事件，从技术角度分析主要原因是什么？"
+      },
+      {
+        "role": "assistant",
+        "content": "从技术分析，超载飞行事件的主要原因包括：\n1. 飞控系统软件存在bug，导致设备老化引发系统故障\n2. 传感器数据异常，未能及时识别障碍物\n3. 通讯链路受到干扰，失去地面站控制\n4. 电池老化导致供电不稳定\n建议升级飞控固件，定期维护传感器，加强电磁环境监测。"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.511093",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00285",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00285",
+    "scenario": "政策解读",
+    "user_role": "操作人员-无人机飞手",
+    "assistant_role": "监管人员-市低空空域管理局局长",
+    "messages": [
+      {
+        "role": "user",
+        "content": "《低空飞行服务保障体系建设方案》对低空飞行有哪些新的要求？"
+      },
+      {
+        "role": "assistant",
+        "content": "《低空飞行服务保障体系建设方案》对低空飞行的主要要求包括：\n1. 所有无人机飞行必须实名登记\n2. 在管制空域飞行需提前申请\n3. 操作人员需取得相应资质\n4. 禁止在禁飞区、限制区飞行\n5. 商业运营需取得经营许可证\n6. 建立飞行数据记录和报告制度"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.511093",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00286",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00286",
+    "scenario": "安全培训",
+    "user_role": "监管人员-军分区空域协调员",
+    "assistant_role": "公众-学校教师",
+    "messages": [
+      {
+        "role": "user",
+        "content": "作为新手飞手，应该如何避免非法空域进入事件？"
+      },
+      {
+        "role": "assistant",
+        "content": "新手飞手避免非法空域进入事件的要点：\n1. 系统学习飞行理论知识，取得资质证书\n2. 在开阔场地练习，积累飞行经验\n3. 飞行前检查清单：电池、螺旋桨、GPS信号\n4. 了解当地空域划设，避开禁飞区\n5. 保持视距内飞行，高度不超过120米\n6. 密切关注气象条件，避免恶劣天气飞行\n7. 安装并开启电子围栏功能"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.511093",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00287",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00287",
+    "scenario": "事件报告",
+    "user_role": "监管人员-城管执法大队长",
+    "assistant_role": "技术专家-低空空域规划专家",
+    "messages": [
+      {
+        "role": "user",
+        "content": "报告！徐州鼓楼区发生一起学校上空飞行事件，请求指示。"
+      },
+      {
+        "role": "assistant",
+        "content": "收到。请立即执行以下操作：\n1. 启动应急响应预案\n2. 疏散周边人员，确保安全\n3. 封锁现场，保留证据\n4. 联系技术专家进行风险评估\n5. 按照《无人机物流配送试点管理办法》要求上报相关部门"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.511093",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00288",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00288",
+    "scenario": "安全培训",
+    "user_role": "监管人员-生态环境局监测中心主任",
+    "assistant_role": "公众-农业合作社代表",
+    "messages": [
+      {
+        "role": "user",
+        "content": "作为新手飞手，应该如何避免电磁干扰事件事件？"
+      },
+      {
+        "role": "assistant",
+        "content": "新手飞手避免电磁干扰事件事件的要点：\n1. 系统学习飞行理论知识，取得资质证书\n2. 在开阔场地练习，积累飞行经验\n3. 飞行前检查清单：电池、螺旋桨、GPS信号\n4. 了解当地空域划设，避开禁飞区\n5. 保持视距内飞行，高度不超过120米\n6. 密切关注气象条件，避免恶劣天气飞行\n7. 安装并开启电子围栏功能"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.511093",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00289",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00289",
+    "scenario": "风险咨询",
+    "user_role": "监管人员-市低空空域管理局局长",
+    "assistant_role": "操作人员-飞行调度员",
+    "messages": [
+      {
+        "role": "user",
+        "content": "请问在深圳南山区进行应急救援飞行，需要注意哪些安全事项？"
+      },
+      {
+        "role": "assistant",
+        "content": "在深圳南山区进行应急救援飞行，需注意以下事项：\n1. 提前向空管部门申请飞行计划\n2. 确保飞行器适航，电池电量充足\n3. 避开敏感区域，保持安全高度\n4. 关注气象条件，风速不超过14m/s\n5. 遵守《无人驾驶航空器系统标准体系建设指南》相关规定"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.511093",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00290",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00290",
+    "scenario": "技术讨论",
+    "user_role": "技术专家-气象预报专家",
+    "assistant_role": "监管人员-民航地区管理局监管员",
+    "messages": [
+      {
+        "role": "user",
+        "content": "针对学校上空飞行事件，从技术角度分析主要原因是什么？"
+      },
+      {
+        "role": "assistant",
+        "content": "从技术分析，学校上空飞行事件的主要原因包括：\n1. 飞控系统软件存在bug，导致避障系统故障造成飞行冲突\n2. 传感器数据异常，未能及时识别障碍物\n3. 通讯链路受到干扰，失去地面站控制\n4. 电池老化导致供电不稳定\n建议升级飞控固件，定期维护传感器，加强电磁环境监测。"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.511093",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00291",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00291",
+    "scenario": "安全培训",
+    "user_role": "监管人员-生态环境局监测中心主任",
+    "assistant_role": "公众-物业管理人员",
+    "messages": [
+      {
+        "role": "user",
+        "content": "作为新手飞手，应该如何避免无人机非法入侵事件？"
+      },
+      {
+        "role": "assistant",
+        "content": "新手飞手避免无人机非法入侵事件的要点：\n1. 系统学习飞行理论知识，取得资质证书\n2. 在开阔场地练习，积累飞行经验\n3. 飞行前检查清单：电池、螺旋桨、GPS信号\n4. 了解当地空域划设，避开禁飞区\n5. 保持视距内飞行，高度不超过120米\n6. 密切关注气象条件，避免恶劣天气飞行\n7. 安装并开启电子围栏功能"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.511093",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00292",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00292",
+    "scenario": "安全培训",
+    "user_role": "操作人员-物流配送操作员",
+    "assistant_role": "公众-企业安全负责人",
+    "messages": [
+      {
+        "role": "user",
+        "content": "作为新手飞手，应该如何避免紧急迫降事件？"
+      },
+      {
+        "role": "assistant",
+        "content": "新手飞手避免紧急迫降事件的要点：\n1. 系统学习飞行理论知识，取得资质证书\n2. 在开阔场地练习，积累飞行经验\n3. 飞行前检查清单：电池、螺旋桨、GPS信号\n4. 了解当地空域划设，避开禁飞区\n5. 保持视距内飞行，高度不超过120米\n6. 密切关注气象条件，避免恶劣天气飞行\n7. 安装并开启电子围栏功能"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.511093",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00293",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00293",
+    "scenario": "事件报告",
+    "user_role": "技术专家-适航审定专家",
+    "assistant_role": "监管人员-军分区空域协调员",
+    "messages": [
+      {
+        "role": "user",
+        "content": "报告！武汉武昌区发生一起超载飞行事件，请求指示。"
+      },
+      {
+        "role": "assistant",
+        "content": "收到。请立即执行以下操作：\n1. 启动应急响应预案\n2. 疏散周边人员，确保安全\n3. 封锁现场，保留证据\n4. 联系技术专家进行风险评估\n5. 按照《无人驾驶航空器系统标准体系建设指南》要求上报相关部门"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.511093",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00294",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00294",
+    "scenario": "事件报告",
+    "user_role": "公众-学校教师",
+    "assistant_role": "操作人员-设备维护工程师",
+    "messages": [
+      {
+        "role": "user",
+        "content": "报告！沈阳和平区发生一起天气突变影响事件，请求指示。"
+      },
+      {
+        "role": "assistant",
+        "content": "收到。请立即执行以下操作：\n1. 启动应急响应预案\n2. 疏散周边人员，确保安全\n3. 封锁现场，保留证据\n4. 联系技术专家进行风险评估\n5. 按照《民用无人机驾驶员管理规定》要求上报相关部门"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.512091",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00295",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00295",
+    "scenario": "事件报告",
+    "user_role": "监管人员-生态环境局监测中心主任",
+    "assistant_role": "技术专家-低空空域规划专家",
+    "messages": [
+      {
+        "role": "user",
+        "content": "报告！西安雁塔区发生一起夜间违规飞行事件，请求指示。"
+      },
+      {
+        "role": "assistant",
+        "content": "收到。请立即执行以下操作：\n1. 启动应急响应预案\n2. 疏散周边人员，确保安全\n3. 封锁现场，保留证据\n4. 联系技术专家进行风险评估\n5. 按照《低空空域使用管理规定》要求上报相关部门"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.512091",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00296",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00296",
+    "scenario": "技术讨论",
+    "user_role": "公众-物业管理人员",
+    "assistant_role": "技术专家-空管系统架构师",
+    "messages": [
+      {
+        "role": "user",
+        "content": "针对通讯中断事件，从技术角度分析主要原因是什么？"
+      },
+      {
+        "role": "assistant",
+        "content": "从技术分析，通讯中断事件的主要原因包括：\n1. 飞控系统软件存在bug，导致飞控系统异常导致航线偏离\n2. 传感器数据异常，未能及时识别障碍物\n3. 通讯链路受到干扰，失去地面站控制\n4. 电池老化导致供电不稳定\n建议升级飞控固件，定期维护传感器，加强电磁环境监测。"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.512091",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00297",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00297",
+    "scenario": "风险咨询",
+    "user_role": "技术专家-无人机系统工程师",
+    "assistant_role": "操作人员-地面站操作员",
+    "messages": [
+      {
+        "role": "user",
+        "content": "请问在无锡梁溪区进行医疗物资配送飞行，需要注意哪些安全事项？"
+      },
+      {
+        "role": "assistant",
+        "content": "在无锡梁溪区进行医疗物资配送飞行，需注意以下事项：\n1. 提前向空管部门申请飞行计划\n2. 确保飞行器适航，电池电量充足\n3. 避开敏感区域，保持安全高度\n4. 关注气象条件，风速不超过8m/s\n5. 遵守《特定类无人机试运行管理规程》相关规定"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.512091",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00298",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00298",
+    "scenario": "风险咨询",
+    "user_role": "公众-社区居民代表",
+    "assistant_role": "监管人员-市低空空域管理局局长",
+    "messages": [
+      {
+        "role": "user",
+        "content": "请问在金华婺城区进行广告宣传飞行，需要注意哪些安全事项？"
+      },
+      {
+        "role": "assistant",
+        "content": "在金华婺城区进行广告宣传飞行，需注意以下事项：\n1. 提前向空管部门申请飞行计划\n2. 确保飞行器适航，电池电量充足\n3. 避开敏感区域，保持安全高度\n4. 关注气象条件，风速不超过9m/s\n5. 遵守《特定类无人机试运行管理规程》相关规定"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.512091",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00299",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00299",
+    "scenario": "安全培训",
+    "user_role": "操作人员-试飞员",
+    "assistant_role": "监管人员-民航地区管理局监管员",
+    "messages": [
+      {
+        "role": "user",
+        "content": "作为新手飞手，应该如何避免学校上空飞行事件？"
+      },
+      {
+        "role": "assistant",
+        "content": "新手飞手避免学校上空飞行事件的要点：\n1. 系统学习飞行理论知识，取得资质证书\n2. 在开阔场地练习，积累飞行经验\n3. 飞行前检查清单：电池、螺旋桨、GPS信号\n4. 了解当地空域划设，避开禁飞区\n5. 保持视距内飞行，高度不超过120米\n6. 密切关注气象条件，避免恶劣天气飞行\n7. 安装并开启电子围栏功能"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.512091",
+    "source": "professional_dataset"
+  },
+  {
+    "id": "LOW_ALT_CONV_00300",
+    "type": "conversation",
+    "related_case_id": "LOW_ALT_CASE_00300",
+    "scenario": "事件报告",
+    "user_role": "公众-物流用户",
+    "assistant_role": "操作人员-航线规划师",
+    "messages": [
+      {
+        "role": "user",
+        "content": "报告！北京海淀区发生一起大型活动区域飞行事件，请求指示。"
+      },
+      {
+        "role": "assistant",
+        "content": "收到。请立即执行以下操作：\n1. 启动应急响应预案\n2. 疏散周边人员，确保安全\n3. 封锁现场，保留证据\n4. 联系技术专家进行风险评估\n5. 按照《轻小无人机运行规定（试行）》要求上报相关部门"
+      }
+    ],
+    "created_at": "2026-05-31T17:29:45.512091",
+    "source": "professional_dataset"
+  }
+]

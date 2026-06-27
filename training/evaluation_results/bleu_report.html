@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BLEU 系统评估报告 — 低空空域风险评估系统</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<style>
+:root {
+  --bg-primary: #0f1923;
+  --bg-secondary: #1a2634;
+  --bg-card: #1e2d3d;
+  --bg-card-hover: #263b4a;
+  --text-primary: #e8edf2;
+  --text-secondary: #8899aa;
+  --text-muted: #5a6e7e;
+  --accent-blue: #4da6ff;
+  --accent-green: #34d399;
+  --accent-yellow: #fbbf24;
+  --accent-orange: #fb923c;
+  --accent-red: #f87171;
+  --accent-purple: #a78bfa;
+  --border-color: #2a3f52;
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.3);
+  --shadow-md: 0 4px 12px rgba(0,0,0,0.4);
+  --shadow-lg: 0 8px 24px rgba(0,0,0,0.5);
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC',
+    'Microsoft YaHei', 'Helvetica Neue', sans-serif;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+.header {
+  background: linear-gradient(135deg, #0d2137 0%, #132a40 40%, #0f2842 100%);
+  border-bottom: 1px solid var(--border-color);
+  padding: 32px 40px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.header::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background:
+    radial-gradient(ellipse at 20% 50%, rgba(77,166,255,0.08) 0%, transparent 60%),
+    radial-gradient(ellipse at 80% 50%, rgba(167,139,250,0.06) 0%, transparent 60%);
+}
+
+.header-content { position: relative; z-index: 1; }
+
+.header h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  background: linear-gradient(135deg, var(--accent-blue), var(--accent-purple));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 6px;
+}
+
+.header .subtitle {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  font-weight: 400;
+}
+
+.header .meta-row {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  margin-top: 14px;
+  flex-wrap: wrap;
+}
+
+.header .meta-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.header .meta-item .dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--accent-blue);
+}
+
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 32px 24px;
+}
+
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-bottom: 32px;
+}
+
+.summary-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 24px;
+  text-align: center;
+  transition: all 0.2s ease;
+  box-shadow: var(--shadow-sm);
+}
+
+.summary-card:hover {
+  background: var(--bg-card-hover);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.summary-card .card-icon {
+  font-size: 1.6rem;
+  margin-bottom: 8px;
+}
+
+.summary-card .card-value {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 4px;
+}
+
+.summary-card .card-label {
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+.summary-card .card-sub {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
+.summary-card.bleu-score .card-value { color: var(--accent-blue); }
+.summary-card.bp .card-value { color: var(--accent-green); }
+.summary-card.length .card-value { color: var(--accent-yellow); }
+.summary-card.cases .card-value { color: var(--accent-purple); }
+
+.section {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 28px;
+  margin-bottom: 24px;
+  box-shadow: var(--shadow-sm);
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.section-header .section-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+}
+
+.section-header .section-icon.blue { background: rgba(77,166,255,0.15); color: var(--accent-blue); }
+.section-header .section-icon.green { background: rgba(52,211,153,0.15); color: var(--accent-green); }
+.section-header .section-icon.orange { background: rgba(251,146,60,0.15); color: var(--accent-orange); }
+.section-header .section-icon.purple { background: rgba(167,139,250,0.15); color: var(--accent-purple); }
+
+.section-header h2 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.ngram-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.ngram-card {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  padding: 20px;
+  text-align: center;
+}
+
+.ngram-card .ngram-title {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  font-weight: 600;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.ngram-card .ngram-precision {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.ngram-card:nth-child(1) .ngram-precision { color: var(--accent-blue); }
+.ngram-card:nth-child(2) .ngram-precision { color: var(--accent-green); }
+.ngram-card:nth-child(3) .ngram-precision { color: var(--accent-yellow); }
+.ngram-card:nth-child(4) .ngram-precision { color: var(--accent-orange); }
+
+.ngram-card .ngram-detail {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.charts-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.chart-container {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  padding: 20px;
+  position: relative;
+}
+
+.chart-container.full-width {
+  grid-column: 1 / -1;
+}
+
+.chart-container canvas {
+  max-height: 320px;
+}
+
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: 0.88rem;
+}
+
+thead th {
+  background: var(--bg-secondary);
+  color: var(--text-secondary);
+  font-weight: 600;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 2px solid var(--border-color);
+  white-space: nowrap;
+}
+
+thead th:first-child { border-radius: var(--radius-sm) 0 0 0; }
+thead th:last-child { border-radius: 0 var(--radius-sm) 0 0; }
+
+tbody td {
+  padding: 12px 16px;
+  border-bottom: 1px solid rgba(42,63,82,0.5);
+  color: var(--text-primary);
+}
+
+tbody tr:hover td {
+  background: rgba(77,166,255,0.04);
+}
+
+tbody tr:last-child td { border-bottom: none; }
+
+.badge {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.badge-high { background: rgba(248,113,113,0.15); color: var(--accent-red); }
+.badge-medium { background: rgba(251,191,36,0.15); color: var(--accent-yellow); }
+.badge-low { background: rgba(52,211,153,0.15); color: var(--accent-green); }
+.badge-extreme { background: rgba(239,68,68,0.2); color: #ef4444; }
+
+.bleu-bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.bleu-bar-track {
+  flex: 1;
+  height: 8px;
+  background: var(--bg-secondary);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.bleu-bar-fill {
+  height: 100%;
+  border-radius: 4px;
+  transition: width 0.6s ease;
+}
+
+.bleu-bar-value {
+  font-size: 0.82rem;
+  font-weight: 600;
+  min-width: 48px;
+  text-align: right;
+}
+
+.insight-box {
+  background: linear-gradient(135deg, rgba(77,166,255,0.06), rgba(167,139,250,0.06));
+  border: 1px solid rgba(77,166,255,0.2);
+  border-radius: var(--radius-md);
+  padding: 20px 24px;
+  margin-bottom: 24px;
+}
+
+.insight-box h3 {
+  font-size: 0.95rem;
+  color: var(--accent-blue);
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.insight-box ul {
+  list-style: none;
+  padding: 0;
+}
+
+.insight-box ul li {
+  padding: 6px 0;
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.insight-box ul li::before {
+  content: '▸';
+  color: var(--accent-blue);
+  font-size: 0.7rem;
+  margin-top: 3px;
+  flex-shrink: 0;
+}
+
+.footer {
+  text-align: center;
+  padding: 24px;
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  border-top: 1px solid var(--border-color);
+  margin-top: 40px;
+}
+
+@media (max-width: 1024px) {
+  .summary-grid { grid-template-columns: repeat(2, 1fr); }
+  .ngram-grid { grid-template-columns: repeat(2, 1fr); }
+  .charts-row { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 640px) {
+  .summary-grid { grid-template-columns: 1fr; }
+  .header { padding: 24px 20px; }
+  .header h1 { font-size: 1.4rem; }
+  .container { padding: 16px 12px; }
+  .section { padding: 16px; }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="header-content">
+    <h1>BLEU 系统评估报告</h1>
+    <p class="subtitle">低空空域风险评估系统 — 文本生成质量定量评价</p>
+    <div class="meta-row">
+      <div class="meta-item"><span class="dot"></span> 评估框架: JARUS SORA v2.0 + AHP</div>
+      <div class="meta-item"><span class="dot"></span> 案例集: 10个典型场景</div>
+      <div class="meta-item"><span class="dot"></span> 评价指标: BLEU (1-4 gram)</div>
+      <div class="meta-item"><span class="dot"></span> 评估时间: <span id="eval-time">--</span></div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+
+  <div class="summary-grid">
+    <div class="summary-card bleu-score">
+      <div class="card-icon">📊</div>
+      <div class="card-value" id="corpus-bleu">--</div>
+      <div class="card-label">语料级 BLEU-4</div>
+      <div class="card-sub">Corpus-level Score</div>
+    </div>
+    <div class="summary-card bp">
+      <div class="card-icon">⚖️</div>
+      <div class="card-value" id="brevity-penalty">--</div>
+      <div class="card-label">Brevity Penalty</div>
+      <div class="card-sub">长度惩罚因子</div>
+    </div>
+    <div class="summary-card length">
+      <div class="card-icon">📏</div>
+      <div class="card-value" id="length-ratio">--</div>
+      <div class="card-label">长度比率</div>
+      <div class="card-sub">候选/参考字符比</div>
+    </div>
+    <div class="summary-card cases">
+      <div class="card-icon">📋</div>
+      <div class="card-value" id="num-cases">--</div>
+      <div class="card-label">评估案例数</div>
+      <div class="card-sub">案例集覆盖率</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <div class="section-icon blue">🔍</div>
+      <h2>N-gram 精确率分析</h2>
+    </div>
+    <div class="ngram-grid">
+      <div class="ngram-card">
+        <div class="ngram-title">BLEU-1 (1-gram)</div>
+        <div class="ngram-precision" id="bleu1">--</div>
+        <div class="ngram-detail">单字符匹配精确率</div>
+      </div>
+      <div class="ngram-card">
+        <div class="ngram-title">BLEU-2 (2-gram)</div>
+        <div class="ngram-precision" id="bleu2">--</div>
+        <div class="ngram-detail">双字符序列匹配率</div>
+      </div>
+      <div class="ngram-card">
+        <div class="ngram-title">BLEU-3 (3-gram)</div>
+        <div class="ngram-precision" id="bleu3">--</div>
+        <div class="ngram-detail">三字符序列匹配率</div>
+      </div>
+      <div class="ngram-card">
+        <div class="ngram-title">BLEU-4 (4-gram)</div>
+        <div class="ngram-precision" id="bleu4">--</div>
+        <div class="ngram-detail">四字符序列匹配率</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="charts-row">
+    <div class="chart-container">
+      <canvas id="precisionChart"></canvas>
+    </div>
+    <div class="chart-container">
+      <canvas id="bleuComparisonChart"></canvas>
+    </div>
+  </div>
+
+  <div class="charts-row">
+    <div class="chart-container">
+      <canvas id="caseBleuChart"></canvas>
+    </div>
+    <div class="chart-container">
+      <canvas id="lengthComparisonChart"></canvas>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <div class="section-icon green">📐</div>
+      <h2>N-gram 精确率详细统计</h2>
+    </div>
+    <div style="overflow-x: auto;">
+      <table>
+        <thead>
+          <tr>
+            <th>N-gram</th>
+            <th>精确率 (Precision)</th>
+            <th>Clipped Count</th>
+            <th>Total Count</th>
+            <th>匹配率可视化</th>
+          </tr>
+        </thead>
+        <tbody id="precision-table-body">
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <div class="section-icon orange">📝</div>
+      <h2>各案例 BLEU 分数明细</h2>
+    </div>
+    <div style="overflow-x: auto;">
+      <table id="case-table">
+        <thead>
+          <tr>
+            <th>案例ID</th>
+            <th>场景</th>
+            <th>风险等级</th>
+            <th>SAIL</th>
+            <th>BLEU-4</th>
+            <th>1-gram P</th>
+            <th>2-gram P</th>
+            <th>3-gram P</th>
+            <th>4-gram P</th>
+            <th>BP</th>
+            <th>参考长度</th>
+            <th>候选长度</th>
+          </tr>
+        </thead>
+        <tbody id="case-table-body">
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <div class="section-icon purple">💡</div>
+      <h2>评估结论与分析</h2>
+    </div>
+    <div class="insight-box" id="insights">
+    </div>
+  </div>
+
+</div>
+
+<div class="footer">
+  低空空域风险评估系统 BLEU 自动评估 &copy; 2025 &mdash;
+  基于 JARUS SORA v2.0 框架 & AHP 层次分析法
+</div>
+
+<script>window.__BLEU_DATA__ = {"evaluation_time": "2026-05-30 17:21:57", "num_cases": 10, "case_set_path": "D:\\bishe1\\training\\data\\fine_tuning_dialogue_dataset.json", "generation_mode": "模板回退模式 (template fallback)", "corpus_level": {"corpus_bleu": 0.107254, "brevity_penalty": 0.769545, "total_reference_chars": 5251, "total_candidate_chars": 4161, "length_ratio": 0.7924, "precisions": {"1-gram": {"precision": 0.416006, "clipped_count": 1731, "total_count": 4161}, "2-gram": {"precision": 0.204047, "clipped_count": 847, "total_count": 4151}, "3-gram": {"precision": 0.095146, "clipped_count": 394, "total_count": 4141}, "4-gram": {"precision": 0.04672, "clipped_count": 193, "total_count": 4131}}}, "individual_bleu_scores": {"BLEU-1": 0.32069, "BLEU-2": 0.224498, "BLEU-3": 0.154435, "BLEU-4": 0.107189}, "per_case_results": [{"case_id": "dialog_001", "scenario": "城市区域风险评估", "risk_level": "较高风险", "sail_level": "VI", "user_query": "请评估北京朝阳区低空空域的风险等级", "bleu": 0.127351, "brevity_penalty": 0.793923, "reference_length": 512, "candidate_length": 416, "length_ratio": 0.8125, "precisions": {"1-gram": {"precision": 0.420673, "clipped_count": 175, "total_count": 416}, "2-gram": {"precision": 0.212048, "clipped_count": 88, "total_count": 415}, "3-gram": {"precision": 0.113527, "clipped_count": 47, "total_count": 414}, "4-gram": {"precision": 0.065375, "clipped_count": 27, "total_count": 413}}}, {"case_id": "dialog_002", "scenario": "郊区区域风险评估", "risk_level": "较低风险", "sail_level": "III", "user_query": "武汉蔡甸区的低空飞行风险大吗？", "bleu": 0.110382, "brevity_penalty": 0.874334, "reference_length": 473, "candidate_length": 417, "length_ratio": 0.8816, "precisions": {"1-gram": {"precision": 0.405276, "clipped_count": 169, "total_count": 417}, "2-gram": {"precision": 0.192308, "clipped_count": 80, "total_count": 416}, "3-gram": {"precision": 0.084337, "clipped_count": 35, "total_count": 415}, "4-gram": {"precision": 0.038647, "clipped_count": 16, "total_count": 414}}}, {"case_id": "dialog_003", "scenario": "沿海城市风险评估", "risk_level": "高风险", "sail_level": "V", "user_query": "深圳南山区飞无人机风险怎么样？", "bleu": 0.099855, "brevity_penalty": 0.733194, "reference_length": 532, "candidate_length": 406, "length_ratio": 0.7632, "precisions": {"1-gram": {"precision": 0.403941, "clipped_count": 164, "total_count": 406}, "2-gram": {"precision": 0.197531, "clipped_count": 80, "total_count": 405}, "3-gram": {"precision": 0.096535, "clipped_count": 39, "total_count": 404}, "4-gram": {"precision": 0.044665, "clipped_count": 18, "total_count": 403}}}, {"case_id": "dialog_004", "scenario": "高校区域风险评估", "risk_level": "中等风险", "sail_level": "IV", "user_query": "在武汉大学校园内飞无人机需要注意什么？", "bleu": 0.111258, "brevity_penalty": 0.755349, "reference_length": 534, "candidate_length": 417, "length_ratio": 0.7809, "precisions": {"1-gram": {"precision": 0.436451, "clipped_count": 182, "total_count": 417}, "2-gram": {"precision": 0.225962, "clipped_count": 94, "total_count": 416}, "3-gram": {"precision": 0.098795, "clipped_count": 41, "total_count": 415}, "4-gram": {"precision": 0.048309, "clipped_count": 20, "total_count": 414}}}, {"case_id": "dialog_005", "scenario": "机场净空区风险评估", "risk_level": "极高风险", "sail_level": "VI", "user_query": "上海浦东机场附近能飞无人机吗？风险有多大？", "bleu": 0.096666, "brevity_penalty": 0.67541, "reference_length": 589, "candidate_length": 423, "length_ratio": 0.7182, "precisions": {"1-gram": {"precision": 0.420804, "clipped_count": 178, "total_count": 423}, "2-gram": {"precision": 0.2109, "clipped_count": 89, "total_count": 422}, "3-gram": {"precision": 0.104513, "clipped_count": 44, "total_count": 421}, "4-gram": {"precision": 0.045238, "clipped_count": 19, "total_count": 420}}}, {"case_id": "dialog_006", "scenario": "旅游景区风险评估", "risk_level": "中等风险", "sail_level": "IV", "user_query": "杭州西湖景区上空飞行风险如何？", "bleu": 0.098745, "brevity_penalty": 0.76446, "reference_length": 529, "candidate_length": 417, "length_ratio": 0.7883, "precisions": {"1-gram": {"precision": 0.446043, "clipped_count": 186, "total_count": 417}, "2-gram": {"precision": 0.197115, "clipped_count": 82, "total_count": 416}, "3-gram": {"precision": 0.081928, "clipped_count": 34, "total_count": 415}, "4-gram": {"precision": 0.038647, "clipped_count": 16, "total_count": 414}}}, {"case_id": "dialog_007", "scenario": "工业区域风险评估", "risk_level": "较低风险", "sail_level": "III", "user_query": "苏州工业园区的低空飞行风险评估一下", "bleu": 0.125279, "brevity_penalty": 0.87881, "reference_length": 472, "candidate_length": 418, "length_ratio": 0.8856, "precisions": {"1-gram": {"precision": 0.397129, "clipped_count": 166, "total_count": 418}, "2-gram": {"precision": 0.199041, "clipped_count": 83, "total_count": 417}, "3-gram": {"precision": 0.098558, "clipped_count": 41, "total_count": 416}, "4-gram": {"precision": 0.053012, "clipped_count": 22, "total_count": 415}}}, {"case_id": "dialog_008", "scenario": "政府机关区域风险评估", "risk_level": "较高风险", "sail_level": "V", "user_query": "广州天河区省政府附近的空域风险等级？", "bleu": 0.095774, "brevity_penalty": 0.741711, "reference_length": 539, "candidate_length": 415, "length_ratio": 0.7699, "precisions": {"1-gram": {"precision": 0.4, "clipped_count": 166, "total_count": 415}, "2-gram": {"precision": 0.193237, "clipped_count": 80, "total_count": 414}, "3-gram": {"precision": 0.087167, "clipped_count": 36, "total_count": 413}, "4-gram": {"precision": 0.041262, "clipped_count": 17, "total_count": 412}}}, {"case_id": "dialog_009", "scenario": "高原城市风险评估", "risk_level": "中等风险", "sail_level": "IV", "user_query": "昆明市的低空飞行风险有什么特点？", "bleu": 0.105879, "brevity_penalty": 0.706814, "reference_length": 559, "candidate_length": 415, "length_ratio": 0.7424, "precisions": {"1-gram": {"precision": 0.431325, "clipped_count": 179, "total_count": 415}, "2-gram": {"precision": 0.214976, "clipped_count": 89, "total_count": 414}, "3-gram": {"precision": 0.101695, "clipped_count": 42, "total_count": 413}, "4-gram": {"precision": 0.053398, "clipped_count": 22, "total_count": 412}}}, {"case_id": "dialog_010", "scenario": "河流沿岸风险评估", "risk_level": "较低风险", "sail_level": "III", "user_query": "成都锦江沿岸适合无人机飞行吗？", "bleu": 0.100697, "brevity_penalty": 0.796269, "reference_length": 512, "candidate_length": 417, "length_ratio": 0.8145, "precisions": {"1-gram": {"precision": 0.398082, "clipped_count": 166, "total_count": 417}, "2-gram": {"precision": 0.197115, "clipped_count": 82, "total_count": 416}, "3-gram": {"precision": 0.084337, "clipped_count": 35, "total_count": 415}, "4-gram": {"precision": 0.038647, "clipped_count": 16, "total_count": 414}}}]};</script>
+<script>
+(function() {
+  function parseQuery() {
+    var params = new URLSearchParams(window.location.search);
+    var dataParam = params.get('data');
+    if (dataParam) {
+      try { return JSON.parse(decodeURIComponent(dataParam)); }
+      catch(e) { console.error('URL data parse error:', e); }
+    }
+    var hash = window.location.hash;
+    if (hash && hash.startsWith('#data=')) {
+      try { return JSON.parse(decodeURIComponent(hash.slice(6))); }
+      catch(e) { console.error('Hash data parse error:', e); }
+    }
+    return null;
+  }
+
+  var reportData = window.__BLEU_DATA__ || parseQuery() || null;
+
+  if (!reportData) {
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', '/bleu_report_data.json', true);
+    xhr.onload = function() {
+      if (xhr.status === 200) {
+        try {
+          reportData = JSON.parse(xhr.responseText);
+          renderAll(reportData);
+        } catch(e) { showError('数据解析失败: ' + e.message); }
+      } else {
+        xhr.open('POST', '/evaluate/bleu', true);
+        xhr.setRequestHeader('Content-Type', 'application/json');
+        xhr.onload = function() {
+          if (xhr.status === 200) {
+            try {
+              var resp = JSON.parse(xhr.responseText);
+              if (resp.success && resp.result) {
+                reportData = resp.result;
+                renderAll(reportData);
+              } else {
+                showError('BLEU评估失败: ' + (resp.error || '未知错误'));
+              }
+            } catch(e) { showError('响应解析失败: ' + e.message); }
+          } else { showError('请求失败, HTTP ' + xhr.status); }
+        };
+        xhr.send(JSON.stringify({action: 'run'}));
+      }
+    };
+    xhr.onerror = function() { showError('网络请求失败'); };
+    xhr.send();
+  } else {
+    renderAll(reportData);
+  }
+
+  function showError(msg) {
+    document.body.innerHTML = '<div style="display:flex;align-items:center;justify-content:center;height:100vh;flex-direction:column;gap:16px;color:#f87171;"><div style="font-size:3rem;">⚠️</div><div style="font-size:1.2rem;">' + msg + '</div><div style="font-size:0.85rem;color:#8899aa;">请确保系统服务已启动并重试</div></div>';
+  }
+
+  function renderAll(data) {
+    renderSummary(data);
+    renderNgramScores(data);
+    renderPrecisionTable(data);
+    renderCaseTable(data);
+    renderCharts(data);
+    renderInsights(data);
+    document.getElementById('eval-time').textContent =
+      data.evaluation_time || '--';
+  }
+
+  function renderSummary(data) {
+    var corpus = data.corpus_level || {};
+    var scores = data.individual_bleu_scores || {};
+    document.getElementById('corpus-bleu').textContent =
+      (corpus.corpus_bleu * 100).toFixed(2) + '%';
+    document.getElementById('brevity-penalty').textContent =
+      (corpus.brevity_penalty || 0).toFixed(4);
+    document.getElementById('length-ratio').textContent =
+      (corpus.length_ratio || 0).toFixed(2) + 'x';
+    document.getElementById('num-cases').textContent = data.num_cases || '--';
+  }
+
+  function renderNgramScores(data) {
+    var scores = data.individual_bleu_scores || {};
+    document.getElementById('bleu1').textContent =
+      ((scores['BLEU-1'] || 0) * 100).toFixed(2) + '%';
+    document.getElementById('bleu2').textContent =
+      ((scores['BLEU-2'] || 0) * 100).toFixed(2) + '%';
+    document.getElementById('bleu3').textContent =
+      ((scores['BLEU-3'] || 0) * 100).toFixed(2) + '%';
+    document.getElementById('bleu4').textContent =
+      ((scores['BLEU-4'] || 0) * 100).toFixed(2) + '%';
+  }
+
+  function renderPrecisionTable(data) {
+    var corpus = data.corpus_level || {};
+    var precisions = corpus.precisions || {};
+    var tbody = document.getElementById('precision-table-body');
+    var rows = '';
+    var colors = ['#4da6ff','#34d399','#fbbf24','#fb923c'];
+    for (var n = 1; n <= 4; n++) {
+      var key = n + '-gram';
+      var p = precisions[key] || {};
+      var precision = (p.precision || 0) * 100;
+      var color = colors[n-1];
+      rows += '<tr>' +
+        '<td style="font-weight:600;">' + key + '</td>' +
+        '<td><strong style="color:' + color + '">' + precision.toFixed(2) + '%</strong></td>' +
+        '<td>' + (p.clipped_count || 0) + '</td>' +
+        '<td>' + (p.total_count || 0) + '</td>' +
+        '<td><div class="bleu-bar"><div class="bleu-bar-track"><div class="bleu-bar-fill" style="width:' + precision + '%;background:' + color + ';"></div></div><span class="bleu-bar-value">' + precision.toFixed(1) + '%</span></div></td>' +
+        '</tr>';
+    }
+    tbody.innerHTML = rows;
+  }
+
+  function renderCaseTable(data) {
+    var cases = data.per_case_results || [];
+    var tbody = document.getElementById('case-table-body');
+    var rows = '';
+    for (var i = 0; i < cases.length; i++) {
+      var c = cases[i];
+      var p = c.precisions || {};
+      var bleuPct = (c.bleu * 100).toFixed(2);
+      var badgeClass = bleuPct > 40 ? 'badge-high' : bleuPct > 20 ? 'badge-medium' : 'badge-low';
+      var riskBadge = '';
+      var rl = c.risk_level || '';
+      if (rl.indexOf('极高') >= 0) riskBadge = 'badge-extreme';
+      else if (rl.indexOf('较高') >= 0 || rl.indexOf('高') >= 0) riskBadge = 'badge-high';
+      else if (rl.indexOf('中等') >= 0) riskBadge = 'badge-medium';
+      else riskBadge = 'badge-low';
+
+      rows += '<tr>' +
+        '<td style="font-weight:600;color:var(--accent-blue);">' + c.case_id + '</td>' +
+        '<td>' + c.scenario + '</td>' +
+        '<td><span class="badge ' + riskBadge + '">' + c.risk_level + '</span></td>' +
+        '<td>' + c.sail_level + '</td>' +
+        '<td><strong style="color:var(--accent-blue);">' + bleuPct + '%</strong></td>' +
+        '<td>' + ((p['1-gram'] || {}).precision * 100 || 0).toFixed(1) + '%</td>' +
+        '<td>' + ((p['2-gram'] || {}).precision * 100 || 0).toFixed(1) + '%</td>' +
+        '<td>' + ((p['3-gram'] || {}).precision * 100 || 0).toFixed(1) + '%</td>' +
+        '<td>' + ((p['4-gram'] || {}).precision * 100 || 0).toFixed(1) + '%</td>' +
+        '<td>' + (c.brevity_penalty || 0).toFixed(3) + '</td>' +
+        '<td>' + (c.reference_length || 0) + '字符</td>' +
+        '<td>' + (c.candidate_length || 0) + '字符</td>' +
+        '</tr>';
+    }
+    tbody.innerHTML = rows;
+  }
+
+  function renderCharts(data) {
+    var corpus = data.corpus_level || {};
+    var precisions = corpus.precisions || {};
+    var scores = data.individual_bleu_scores || {};
+    var cases = data.per_case_results || [];
+
+    var ctx1 = document.getElementById('precisionChart').getContext('2d');
+    new Chart(ctx1, {
+      type: 'bar',
+      data: {
+        labels: ['1-gram', '2-gram', '3-gram', '4-gram'],
+        datasets: [{
+          label: 'N-gram 精确率',
+          data: [1,2,3,4].map(function(n) {
+            var key = n + '-gram';
+            return ((precisions[key] || {}).precision || 0) * 100;
+          }),
+          backgroundColor: ['rgba(77,166,255,0.7)','rgba(52,211,153,0.7)','rgba(251,191,36,0.7)','rgba(251,146,60,0.7)'],
+          borderColor: ['#4da6ff','#34d399','#fbbf24','#fb923c'],
+          borderWidth: 1.5,
+          borderRadius: 6,
+          borderSkipped: false,
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          title: { display: true, text: 'N-gram 精确率对比', color: '#e8edf2', font: { size: 14, weight: '600' }, padding: 16 },
+          legend: { display: false },
+          tooltip: {
+            callbacks: {
+              label: function(ctx) { return '精确率: ' + ctx.raw.toFixed(2) + '%'; }
+            }
+          }
+        },
+        scales: {
+          y: { beginAtZero: true, max: 100, ticks: { color: '#8899aa', callback: function(v) { return v + '%'; } }, grid: { color: 'rgba(42,63,82,0.5)' } },
+          x: { ticks: { color: '#8899aa' }, grid: { display: false } }
+        }
+      }
+    });
+
+    var ctx2 = document.getElementById('bleuComparisonChart').getContext('2d');
+    new Chart(ctx2, {
+      type: 'bar',
+      data: {
+        labels: ['BLEU-1', 'BLEU-2', 'BLEU-3', 'BLEU-4'],
+        datasets: [{
+          label: 'BLEU 分数',
+          data: [1,2,3,4].map(function(n) { return (scores['BLEU-' + n] || 0) * 100; }),
+          backgroundColor: ['rgba(77,166,255,0.6)','rgba(52,211,153,0.6)','rgba(251,191,36,0.6)','rgba(251,146,60,0.6)'],
+          borderColor: ['#4da6ff','#34d399','#fbbf24','#fb923c'],
+          borderWidth: 1.5,
+          borderRadius: 6,
+          borderSkipped: false,
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          title: { display: true, text: '各阶 BLEU 分数对比', color: '#e8edf2', font: { size: 14, weight: '600' }, padding: 16 },
+          legend: { display: false },
+          tooltip: {
+            callbacks: { label: function(ctx) { return 'BLEU: ' + ctx.raw.toFixed(2) + '%'; } }
+          }
+        },
+        scales: {
+          y: { beginAtZero: true, ticks: { color: '#8899aa', callback: function(v) { return v + '%'; } }, grid: { color: 'rgba(42,63,82,0.5)' } },
+          x: { ticks: { color: '#8899aa' }, grid: { display: false } }
+        }
+      }
+    });
+
+    var ctx3 = document.getElementById('caseBleuChart').getContext('2d');
+    var caseLabels = cases.map(function(c) { return c.case_id.replace('dialog_','D'); });
+    var caseBleus = cases.map(function(c) { return c.bleu * 100; });
+    var caseColors = caseBleus.map(function(v) {
+      if (v > 40) return 'rgba(52,211,153,0.7)';
+      if (v > 25) return 'rgba(251,191,36,0.7)';
+      return 'rgba(248,113,113,0.7)';
+    });
+    new Chart(ctx3, {
+      type: 'bar',
+      data: {
+        labels: caseLabels,
+        datasets: [{
+          label: 'BLEU-4 (%)',
+          data: caseBleus,
+          backgroundColor: caseColors,
+          borderColor: caseColors.map(function(c) { return c.replace('0.7','1'); }),
+          borderWidth: 1,
+          borderRadius: 5,
+          borderSkipped: false,
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          title: { display: true, text: '各案例 BLEU-4 分数分布', color: '#e8edf2', font: { size: 14, weight: '600' }, padding: 16 },
+          legend: { display: false },
+          tooltip: { callbacks: { label: function(ctx) { return 'BLEU-4: ' + ctx.raw.toFixed(2) + '%'; } } }
+        },
+        scales: {
+          y: { beginAtZero: true, ticks: { color: '#8899aa', callback: function(v) { return v + '%'; } }, grid: { color: 'rgba(42,63,82,0.5)' } },
+          x: { ticks: { color: '#8899aa' }, grid: { display: false } }
+        }
+      }
+    });
+
+    var ctx4 = document.getElementById('lengthComparisonChart').getContext('2d');
+    var refLengths = cases.map(function(c) { return c.reference_length; });
+    var candLengths = cases.map(function(c) { return c.candidate_length; });
+    new Chart(ctx4, {
+      type: 'bar',
+      data: {
+        labels: caseLabels,
+        datasets: [
+          { label: '参考报告 (字符)', data: refLengths, backgroundColor: 'rgba(77,166,255,0.6)', borderColor: '#4da6ff', borderWidth: 1, borderRadius: 4, borderSkipped: false },
+          { label: '生成报告 (字符)', data: candLengths, backgroundColor: 'rgba(167,139,250,0.6)', borderColor: '#a78bfa', borderWidth: 1, borderRadius: 4, borderSkipped: false }
+        ]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          title: { display: true, text: '参考 vs 生成报告字符长度对比', color: '#e8edf2', font: { size: 14, weight: '600' }, padding: 16 },
+          legend: { labels: { color: '#8899aa' } },
+        },
+        scales: {
+          y: { beginAtZero: true, ticks: { color: '#8899aa' }, grid: { color: 'rgba(42,63,82,0.5)' } },
+          x: { ticks: { color: '#8899aa' }, grid: { display: false } }
+        }
+      }
+    });
+  }
+
+  function renderInsights(data) {
+    var corpus = data.corpus_level || {};
+    var scores = data.individual_bleu_scores || {};
+    var cases = data.per_case_results || [];
+    var bleu4 = (scores['BLEU-4'] || 0) * 100;
+    var bleu1 = (scores['BLEU-1'] || 0) * 100;
+    var bp = corpus.brevity_penalty || 0;
+
+    var maxCase = cases.reduce(function(a, b) { return (a.bleu > b.bleu) ? a : b; }, cases[0] || {});
+    var minCase = cases.reduce(function(a, b) { return (a.bleu < b.bleu) ? a : b; }, cases[0] || {});
+    var avgBleu = cases.length > 0 ? cases.reduce(function(s, c) { return s + c.bleu; }, 0) / cases.length * 100 : 0;
+
+    var qualityLevel = bleu4 > 50 ? '优秀 (Excellent)' : bleu4 > 30 ? '良好 (Good)' : bleu4 > 15 ? '一般 (Fair)' : '较低 (Low)';
+    var qualityColor = bleu4 > 50 ? '#34d399' : bleu4 > 30 ? '#4da6ff' : bleu4 > 15 ? '#fbbf24' : '#f87171';
+
+    var bpStatus = bp >= 1.0 ? '无惩罚 (候选文本长度 ≥ 参考文本)' :
+                    bp >= 0.9 ? '轻微惩罚' :
+                    bp >= 0.7 ? '中等惩罚' : '严重惩罚 (候选文本显著短于参考文本)';
+
+    var html = '<h3 style="color:' + qualityColor + ';">整体评价: ' + qualityLevel + '</h3>';
+    html += '<ul>';
+    html += '<li><strong>语料级 BLEU-4 得分:</strong> ' + (corpus.corpus_bleu * 100).toFixed(2) +
+      '% — 评估生成报告与参考报告的 n-gram 重叠度。在中文低空风险评估领域，BLEU > 5% 即表示生成文本在词汇层面与参考标准存在可观测的相似性。</li>';
+    html += '<li><strong>1-gram 精确率:</strong> ' + bleu1.toFixed(2) +
+      '% — 反映系统生成报告在单字符层面的覆盖率，' + (bleu1 > 60 ? '说明系统使用的术语和关键词与参考标准高度一致。' : '说明系统使用的术语与参考标准存在一定偏差。') + '</li>';
+    html += '<li><strong>高阶 n-gram 衰减:</strong> 从 1-gram (' + bleu1.toFixed(1) +
+      '%) 到 4-gram (' + bleu4.toFixed(1) + '%) 的衰减反映了系统在长距离语序和短语搭配层面与人工参考的差异。</li>';
+    html += '<li><strong>Brevity Penalty:</strong> ' + bp.toFixed(4) + ' — ' + bpStatus +
+      '。这反映了系统生成报告的详细程度。</li>';
+    html += '<li><strong>最佳案例:</strong> ' + (maxCase.case_id || '--') + ' (' + (maxCase.scenario || '') +
+      ') — BLEU-4 = ' + (maxCase.bleu * 100).toFixed(2) + '%</li>';
+    html += '<li><strong>最差案例:</strong> ' + (minCase.case_id || '--') + ' (' + (minCase.scenario || '') +
+      ') — BLEU-4 = ' + (minCase.bleu * 100).toFixed(2) + '%</li>';
+    html += '<li><strong>平均 BLEU-4:</strong> ' + avgBleu.toFixed(2) +
+      '% — 10个案例的平均表现。标准差越大说明系统在不同场景下的表现差异越显著。</li>';
+    html += '<li><strong>应用意义:</strong> BLEU 分数用于定量衡量系统生成报告与专家人工撰写的案例集参考报告之间的文本相似度。'
+      + '该指标作为系统输出质量的客观评价维度之一，与 SAIL 分布一致性、权重稳定性、评分校准等指标共同构成系统的综合评价体系。</li>';
+    html += '</ul>';
+    document.getElementById('insights').innerHTML = html;
+  }
+})();
+</script>
+</body>
+</html>
